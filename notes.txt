@@ -1,0 +1,117 @@
+TO DO:
+
+Wireframes √
+Database Scheme √
+Fonts
+Colors
+Bootstrap
+Font awesome
+
+404 page
+Page name in tab title
+Meta tags
+Code blocks
+
+Create Home app
+
+        home, dontgnochit, shop, user fa image, bag fa image
+        Using template literalls to add css in the class of the page 
+    Base page
+    Favourite Suppliers - Side scroller
+    The misson of the company
+    Want to sell with us section
+    Contact link in footer
+    Jobs Page
+    Coming Soon Features
+    Sitemap/Development roadmap
+
+    Support page        
+        Contact form
+            Option for contact(review/support/account/order etc...)
+        Contact email
+        Contact Address
+        Phone Number 
+
+Create Store app
+    Categories on left hand side
+    Image of item
+    price
+    quick add to basket
+    rating
+    Filtering options
+    Item models
+    Rating Model
+Create Bag app
+    Items in basket
+    Total cost
+    Quantity of items  
+        Edit Quantity
+        Remove items
+    Secure checkout
+    Checkout form
+    Stripe payments
+    Loading animation
+    Generate order number and order completion
+Create Profiles app
+    User:
+        Shipping Information
+        Billing Information
+        Favourites
+        Support
+        Previous orders
+            Show completed order - Slight edit to info on page (if statement)
+        Account Settings(password, email etc...)
+        Model
+    Store Owner:
+        Shop Information
+        Bio
+        Address
+        Current items in store
+        Item CRUD
+        Support
+        Orders
+        Beta Features(Earnings/expected earnings)
+        Account Settings
+        Model
+    Admin:
+        Beta Features(Support Chats, Show earnings)
+        Create supplier accounts
+        Check Orders
+
+Create DontGnochIt app 
+    news letter
+    What it is
+    When its Coming
+    Images
+
+User Testimonials 
+Django Messages - Toasts
+Favicon
+
+Social media page for the application(facebook)
+
+DEPLOYMENT:
+
+Testing
+    Automated?
+    Lighthouse
+    JS linter
+    w3c
+    css testing
+    pep8 
+    Write testing in readme
+
+Remove unused Code
+Put code into separate filed(js/css)
+Code comments
+config vars
+debug to false
+
+Business model for the app
+Django emails
+Keyword Research
+sitemap.xml
+robots.txt
+AWS Hosting/cloudinary
+Database migrations
+Readme
