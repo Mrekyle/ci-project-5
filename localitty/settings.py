@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # APPS
 
     'home',
+    'dontgnochit',
 ]
 
 MIDDLEWARE = [
