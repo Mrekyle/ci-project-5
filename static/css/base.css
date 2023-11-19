@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto+Mono&display=swap');
 
-body {
+header, body {
     font-family: 'Roboto Mono', monospace, sans-serif, 'Times New Roman', Times, serif;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.header-container {
+    margin-top: 104px;
+}
+
+.nav-border {
+    border-bottom: 2px solid #dee2e6;
 }

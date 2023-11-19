@@ -17,13 +17,20 @@ Create Home app
         home, dontgnochit, shop, user fa image, bag fa image
         Using template literalls to add css in the class of the page 
     Base page
-    Favourite Suppliers - Side scroller
-    The misson of the company
-    Want to sell with us section
-    Contact link in footer
-    Jobs Page
-    Coming Soon Features
-    Sitemap/Development roadmap
+        navigation
+            mobile navigation
+        main body
+        supplier scroller
+        What we are 
+        reviews
+        footer
+            company mission
+            page navigation
+                sitemap
+                roadmap
+                jobs page
+            work with us
+            contact us
 
     Support page        
         Contact form
