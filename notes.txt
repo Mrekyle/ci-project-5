@@ -17,24 +17,17 @@ Create Home app
         home, dontgnochit, shop, user fa image, bag fa image
         Using template literalls to add css in the class of the page 
     Base page
-        navigation
-            mobile navigation
         main body
         supplier scroller
         What we are 
         reviews
         footer
             company mission
-            page navigation
-                sitemap
-                roadmap
-                jobs page
-            work with us
-            contact us
+            STYLE FOOTER
 
     Support page        
         Contact form
-            Option for contact(review/support/account/order etc...)
+            Build functionality
         Contact email
         Contact Address
         Phone Number 

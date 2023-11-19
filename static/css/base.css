@@ -8,7 +8,8 @@ body {
     font-family: 'Roboto Mono', monospace, sans-serif, 'Times New Roman', Times, serif;
     min-height: 100vh;
     padding: 0;
-    height: calc(100vh - 124px);
+    height: calc(100vh - 90px);
+    font-size: 14px;
 }
 
 .text-black {
@@ -23,9 +24,26 @@ body {
     border-bottom: 2px solid #dee2e6;
 }
 
+.t-bold {
+    font-weight: bold;
+}
+
+footer {
+    font-size: 12px;
+    background-color: #232f3e;
+}
+
+.hr-w {
+    background-color: white;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
 .footer-block {
-    height: 4px;
-    background-color: rgb(30, 110, 230);
+    height: 5px;
+    background-color: black;
 }
 
 .git-link {
@@ -36,6 +54,7 @@ body {
 .f-bg {
     background-color: #444544;
     color: white;
+    font-size: 12px;
 }
 
 /* MEDIA QUERY */
@@ -50,7 +69,7 @@ body {
     }
 
     .header-container {
-        padding-top: 124px;
+        padding-top: 90px;
     }
 }
 

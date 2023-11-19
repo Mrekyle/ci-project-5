@@ -36,7 +36,7 @@
     
         {% block extra_js %}
         {% endblock %}
-        <title>Localitty {% block extra_title%}{% endblock %}</title>
+        <title>Localitty {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
         <header class="container-fluid fixed-top">
@@ -85,11 +85,17 @@
                                     <p class="my-0">My Account</p>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-top-0 border-2" aria-labelledby="user-options">
-                                    <a href="" class="dropdown-item">My Profile</a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                {% if request.user.is_authenticated %}
+                                    {% if request.user.is_superuser %}
+                                        <a href="" class="dropdown-item">Product Management</a>
+                                    {% endif %}
+                                    <a class="dropdown-item" href="">My Profile</a>
                                     <a href="" class="dropdown-item">Logout</a>
+                                {% else %}
                                     <a href="" class="dropdown-item">Login</a>
                                     <a href="" class="dropdown-item">Register</a>
+                                {% endif %}
                             </div>
                         </li>
                         <li class="list-inline-item">
@@ -129,26 +135,31 @@
 
         {% endblock %}
 
-        <section class="main-footer">
+        <div class="main-footer">
             <div class="footer-block w-100"></div>
             <footer>
-                <div class="container">
+                <div class="container text-white pt-2">
                     <div class="row mt-3 text-center">
-                        <div class="col-lg-3 col-md-6">MISSION STATMEMENT</div>
+                        <div class="col-lg-3 col-md-6">
+                            <p>
+                                Localitty is your one stop shop for all things local. We pride ourselves on working with the best local
+                                produce and supplies we can find.
+                            </p>
+                        </div>
                         <div class="col-lg-2 col-md-6">
                             <div class="list-group">
-                                <a href="#" class="list-group-item-action disabled" aria-disabled="true">Roadmap</a>
-                                <a href="#" class="list-group-item-action disabled" aria-disabled="true">FAQ'S</a>
-                                <a href="#" class="list-group-item-action disabled" aria-disabled="true">Jobs</a>
-                                <a href="#" class="list-group-item-action disabled" aria-disabled="true">Privacy Statement</a>
+                                <a href="#" class="list-group-item-action disabled mb-1 text-white" aria-disabled="true">Roadmap</a>
+                                <a href="#" class="list-group-item-action disabled mb-1 text-white" aria-disabled="true">FAQ'S</a>
+                                <a href="#" class="list-group-item-action disabled mb-1 text-white" aria-disabled="true">Jobs</a>
+                                <a href="#" class="list-group-item-action disabled mb-1 text-white" aria-disabled="true">Privacy Statement</a>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6">
                             <div class="list-group">
-                                <a href="#" class="list-group-item-action">Shop</a>
-                                <a href="#" class="list-group-item-action">DontGnochIt</a>
-                                <a href="#" class="list-group-item-action">My Profile</a>
-                                <a href="#" class="list-group-item-action">Basket</a>
+                                <a href="#" class="list-group-item-action mb-1 text-white">Shop</a>
+                                <a href="#" class="list-group-item-action mb-1 text-white">DontGnochIt</a>
+                                <a href="#" class="list-group-item-action mb-1 text-white">My Profile</a>
+                                <a href="#" class="list-group-item-action mb-1 text-white">Basket</a>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6">
@@ -156,17 +167,17 @@
                                 <div class="col-lg-10">
                                     <p class="my-0 mb-2">Need help with something?<br> Contact support now!</p>
                                 </div>
-                                
                                 <div class="col-lg-2">
-                                    <a href=""><button class="text-white btn btn-dark" type="button">Support!</button></a>
+                                    <a href="{% url 'support' %}"><button class="text-white btn btn-dark size-14" type="button">Support!</button></a>
                                 </div>
                             </div>
+                            <hr class="hr-w w-50">
                             <div class="row">
                                 <div class="col-lg-10">
                                     <p class="my-0">Want to sell with us? Let us know, <br>by contacting us today!</p><br>
                                 </div>
                                 <div class="col-lg-2">
-                                    <a href=""><button class="text-white btn btn-dark" type="button">Sell!</button></a>
+                                    <a href=""><button class="text-white btn btn-dark size-14" type="button">Sell!</button></a>
                                 </div>
                             </div>
                         </div>
@@ -175,10 +186,13 @@
             </footer>
             <div class="footer-block w-100">
                 <div class="f-bg text-center p-2">
-                    &copy  <script>document.write(new Date().getFullYear())</script> myRecipe |  Kyle Chart |  <a target="_blank" aria-label="Opens up Kyle Charts github" href="https://www.github.com/mrekyle"><i class="fa-brands fa-github git-link ps-2"></i></a>
+                   <a target="_blank" href="https://www.instagram.com" aria-label="Opens Localitty's Instagram"><i class="fa-brands fa-instagram git-link pe-2"></i></a> 
+                   <a target="_blank" href="https://www.facebook.com" aria-label="Opens Localitty's Facebook"><i class="fa-brands fa-facebook git-link pe-2"></i></a> 
+                   <a target="_blank" href="https://www.youtube.com" aria-label="Opens Localitty's Youtube"><i class="fa-brands fa-youtube git-link pe-2"></i></a> 
+                   | &copy  <script>document.write(new Date().getFullYear())</script> Loaclitty |  Kyle Chart |  <a target="_blank" aria-label="Opens up Kyle Charts github" href="https://www.github.com/mrekyle"><i class="fa-brands fa-github git-link ps-2"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
         
         {% block postloadjs %}
         

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+    - Support
+{% endblock %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr class="w-75 mb-2">
+                    <h2 class="page-title text-center">Support</h2>
+                <hr class="w-75 mt-2">
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 mt-3">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <form class="mb-5">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone Number</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="1234567890">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Reason for Contact</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Help with your account</option>
+                          <option>Help with an order</option>
+                          <option>Missing Items</option>
+                          <option>Sell your products with us</option>
+                          <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Type your message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-0">Send message</button>
+                </form>
+            </div> 
+            <div class="col-lg-6 col-sm-12 text-center">
+                <div class="col">
+                    <h6 class="my-0">Alternatively you can reach out to us at the following</h6>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col">
+                            <p class="text-center">Give us a call:</p>
+                            <hr class="w-25">
+                            <div class="t-bold">
+                                <span>01206 864738</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col">
+                            <p>Send an email:</p>
+                            <hr class="w-25">
+                            <div class="t-bold">
+                                <span>support@localitty.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col">
+                            <p>Write us a letter:</p>
+                            <small class="text-muted">If you prefer the old fashioned way</small>
+                            <hr class="w-25">
+                            <div class="t-bold">
+                                <span>123 Localitty Way</span><br>
+                                <span>Colchester, Essex</span><br>
+                                <span>C01 1SA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+{% endblock %}
