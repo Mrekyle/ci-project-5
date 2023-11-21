@@ -37,6 +37,10 @@ footer {
     background-color: white;
 }
 
+.pt-18 {
+    padding-top: 18%;
+}
+
 .size-14 {
     font-size: 14px;
 }

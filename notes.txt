@@ -2,35 +2,34 @@ TO DO:
 
 Wireframes √
 Database Scheme √
-Fonts
-Colors
-Bootstrap
-Font awesome
+Fonts √
+Colors √
+Bootstrap √
+Font awesome √
 
 404 page
-Page name in tab title
+Finish/update Toasts
+
+Page name in tab title √
 Meta tags
-Code blocks
+Code blocks √
+
+
 
 Create Home app
 
-        home, dontgnochit, shop, user fa image, bag fa image
+        
         Using template literalls to add css in the class of the page 
     Base page
         main body
         supplier scroller
         What we are 
         reviews
-        footer
-            company mission
-            STYLE FOOTER
+        STYLE FOOTER
 
     Support page        
         Contact form
             Build functionality
-        Contact email
-        Contact Address
-        Phone Number 
 
 Create Store app
     Categories on left hand side
@@ -41,6 +40,7 @@ Create Store app
     Filtering options
     Item models
     Rating Model
+
 Create Bag app
     Items in basket
     Total cost
@@ -52,6 +52,7 @@ Create Bag app
     Stripe payments
     Loading animation
     Generate order number and order completion
+
 Create Profiles app
     User:
         Shipping Information
@@ -79,10 +80,9 @@ Create Profiles app
         Check Orders
 
 Create DontGnochIt app 
-    news letter
-    What it is
-    When its Coming
+    Add page content
     Images
+    Finalize Design
 
 User Testimonials 
 Django Messages - Toasts
