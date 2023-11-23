@@ -37,8 +37,15 @@ footer {
     background-color: white;
 }
 
-.pt-18 {
-    padding-top: 18%;
+.main-img-container {
+    height: 475px;
+    -webkit-clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+    clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+}
+
+
+.img-container {
+    height: 320px;
 }
 
 .size-14 {

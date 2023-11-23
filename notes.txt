@@ -82,8 +82,6 @@ Create Profiles app
 Create DontGnochIt app 
     Add page content
     Images
-		convert signup text into col to place in center. remove padding
-    Finalize Design
 
 User Testimonials 
 Django Messages - Toasts
