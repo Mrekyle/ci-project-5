@@ -22,7 +22,7 @@ Create Home app
         Using template literalls to add css in the class of the page 
     Base page
         main body
-        supplier scroller
+        Add supplier images
         What we are 
         reviews
         STYLE FOOTER
