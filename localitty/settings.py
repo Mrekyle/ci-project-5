@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'home',
     'dontgnochit',
     'products',
+    'profiles',
+    'bag',
 ]
 
 MIDDLEWARE = [
