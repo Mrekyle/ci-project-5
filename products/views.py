@@ -35,4 +35,4 @@ def renderproductdetail(request, product_id):
         'product': product
     }
 
-    return render(request, context, template)
+    return render(request, template, context)

@@ -39,6 +39,7 @@ Create Store app
     rating
     Filtering options
     Add pagination 
+    Edit scroll to top button
 
 Create Bag app
     Items in basket

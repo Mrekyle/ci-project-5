@@ -68,6 +68,10 @@ footer {
     font-size: 12px;
 }
 
+.padding-container {
+    height: 5rem;
+}
+
 .text-white:hover {
     color: #fff !important;
     text-decoration: none;
