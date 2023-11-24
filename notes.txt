@@ -95,7 +95,7 @@ Create DontGnochIt app
 User Testimonials 
 Django Messages - Toasts
 Favicon
-
+Edit allauth templates to forward to own base.html
 Add everything to Roadmap
 
 Social media page for the application(facebook)
