@@ -10,13 +10,70 @@
     - Store
 {% endblock %}
 
-{% block content %}
+{% block pageheader %}
     <div class="container header-container">
-        <div class="row"></div>
+        <div class="row">
+            <div class="col"></div>
+        </div>
     </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-center">Shop</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+</div>
     <div class="container">
         <div class="row">
 
+            <!-- Products Section  -->
+
+            {% for product in products %}
+                <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 mt-4 mb-4">
+                    <div class="card h-100 border-0 shadow rounded">
+                        <div class="card-img">
+                            {% if product.image %}
+                                <a href="#" aria-label="Opens the products main detail view">
+                                    <img alt="{{ product.name }}" src="{{ product.image_url }}" class="card-img-top img-zoom img-fluid">
+                                </a>
+                            {% else %}
+                            <a href="#" aria-label="Opens the products main detail view">
+                                <img alt="{{ product.name }}" src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-zoom img-fluid">
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="card-body mt-2 mb-2">
+                            <p class="my-0">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer pt-0 border-0">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }} | </p>
+                                        <p class="lead text-right mb-0 font-weight-bold"><a href="#" class="" aria-label="Adds product to shopping bag">  Add</a></p>
+                                    </div>
+                                    {% if product.rating %}
+                                        <small class="text-muted"><i class="fas fa-star mr-2"></i>{{ product.rating }} / <strong>5</strong></small>
+                                    {% else %}
+                                        <small class="text-muted">Product has no rating</small>
+                                    {% endif %}
+                                    {% if user.is_superuser %}
+                                        <small class="text-muted ml-3">
+                                            <a class="" href="#" aria-label="Opens the edit page for admins">Edit</a> |
+                                            <a class="text-danger" href="#" aria-label="Deletes the product from the store">Delete</a>
+                                        </small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

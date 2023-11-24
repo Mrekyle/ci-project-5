@@ -38,8 +38,7 @@ Create Store app
     quick add to basket
     rating
     Filtering options
-    Item models
-    Rating Model
+    Add pagination 
 
 Create Bag app
     Items in basket

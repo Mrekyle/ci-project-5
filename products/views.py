@@ -13,7 +13,7 @@ def rendershop(request):
     template = 'shop.html'
 
     context = {
-        'product': product
+        'products': product
     }
 
     return render(request, template, context)

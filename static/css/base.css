@@ -73,6 +73,20 @@ footer {
     text-decoration: none;
 }
 
+.card-img {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-zoom {
+    transition: 2s all ease-in-out;
+    overflow: hidden;
+}
+
+.img-zoom:hover {
+    transform: scale(1.5);
+    overflow: hidden;
+}
 
 /* SUPPLIER SLIDER  */
 
