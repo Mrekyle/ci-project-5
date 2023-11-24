@@ -21,3 +21,23 @@ def rendersupport(request):
     template = 'home/support.html'
 
     return render(request, template)
+
+
+def renderjobs(request):
+    """
+        Renders the jobs page of the application
+    """
+
+    template = 'home/jobs.html'
+
+    return render(request, template)
+
+
+def renderroadmap(request):
+    """
+        Renders the roadmap page of the application
+    """
+
+    template = 'home/roadmap.html'
+
+    return render(request, template)

@@ -14,6 +14,7 @@ Page name in tab title √
 Meta tags
 Code blocks √
 
+Add extra meta tags to all pages 
 
 
 Create Home app
@@ -27,19 +28,27 @@ Create Home app
         reviews
         STYLE FOOTER
 
+    Jobs Page √
+        Add content
+
+    Roadmap Page
+        Add content and styling
+
     Support page        
         Contact form
             Build functionality
 
 Create Store app
-    Categories on left hand side
-    Image of item
-    price
     quick add to basket
     rating
     Filtering options
     Add pagination 
     Edit scroll to top button
+
+    Products Detail Page
+        Finish styling
+        Finish quantity selection
+        Finish add to bag functionality
 
 Create Bag app
     Items in basket
@@ -86,6 +95,8 @@ Create DontGnochIt app
 User Testimonials 
 Django Messages - Toasts
 Favicon
+
+Add everything to Roadmap
 
 Social media page for the application(facebook)
 
