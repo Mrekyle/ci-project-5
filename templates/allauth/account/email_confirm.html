@@ -3,14 +3,26 @@
 {% load i18n %}
 {% load account %}
 
-{% block head_title %}{% trans "Confirm Email Address" %}{% endblock head_title %}
+{% block head_title %}{% trans "- Confirm Email Address" %}{% endblock head_title %}
 
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Confirm Email" %}</h2>
-<hr>
-
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-center">Confirm Your Email</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+  </div>
 {% if confirmation %}
 
 {% user_display confirmation.email_address.user as user_display %}
@@ -36,3 +48,11 @@
 {% endif %}
 
 {% endblock inner_content %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}

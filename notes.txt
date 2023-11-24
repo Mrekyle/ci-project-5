@@ -7,15 +7,17 @@ Colors √
 Bootstrap √
 Font awesome √
 
-404 page
-Finish/update Toasts
+404 page √
+Finish/update Toasts - Update success toast
 
 Page name in tab title √
 Meta tags
 Code blocks √
 
 Add extra meta tags to all pages 
-
+Style auth buttons/Application buttons
+Allauth pages needs to be central √
+Finish styling allauth pages 
 
 Create Home app
 

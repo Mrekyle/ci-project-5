@@ -4,9 +4,15 @@
     {% trans "Email Address" %}
 {% endblock head_title %}
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Change Email" %}</h2>
-<hr>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-center">Change Your Email Address</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+  </div>
     {% if emailaddresses %}
         {% if current_emailaddress %}
             <p>
@@ -34,3 +40,11 @@
         <button name="action_add" type="submit">{% trans "Change Email" %}</button>
     </form>
 {% endblock inner_content %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}

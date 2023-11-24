@@ -2,12 +2,39 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Account Inactive" %}{% endblock head_title %}
+{% block extra_title %}{% trans "- Account Inactive" %}{% endblock %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Account Inactive" %}</h2>
-<hr>
-
-<p>{% trans "This account is inactive." %}</p>
+<div class="container">
+        <div class="row mt-2 mb-2">
+            <div class="col">
+                <hr class="w-75 mb-2">
+                    <h2 class="page-title text-center">Inactive Account</h2>
+                <hr class="w-75 mt-2">
+            </div>
+        </div>
+        <div class="row mb-5 text-center">
+            <div class="col mb-5">
+                <h4>Your account <strong>{{ user }}</strong> appears to be inactive?</h4><br>
+                <h4>If this is a mistake please contact <a href="{% url 'support' %}" aria-label="Opens the support account">Support</a></h4><br>
+                <h4>If you don't have an account and wish to make one. Please <a href="{% url 'account_signup' %}"><br>Sign Up here</a></h4><br>
+            </div>
+        </div>
+</div>
 {% endblock inner_content %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}

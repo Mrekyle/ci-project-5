@@ -2,12 +2,18 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Verify Your Email Address" %}{% endblock head_title %}
+{% block head_title %}{% trans "- Verify Your Email Address" %}{% endblock head_title %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Verified Email Required" %}</h2>
-<hr>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-center">Verify Your Email</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+  </div>
 
 {% url 'account_email' as email_url %}
 
@@ -23,3 +29,11 @@ contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
 
 
 {% endblock inner_content %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}

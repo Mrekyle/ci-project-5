@@ -2,12 +2,26 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock head_title %}
+{% block head_title %}{% trans "- Signup" %}{% endblock head_title %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign Up" %}</h2>
-<hr>
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <hr class="w-75 mb-2">
+              <h2 class="page-title text-center">Sign Up</h2>
+          <hr class="w-75 mt-2">
+      </div>
+  </div>
+</div>
 
 <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
@@ -21,3 +35,11 @@
 </form>
 
 {% endblock inner_content %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}

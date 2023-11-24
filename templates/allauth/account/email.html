@@ -5,9 +5,15 @@
 {% block head_title %}{% trans "Email Addresses" %}{% endblock head_title %}
 
 {% block inner_content %}
-<hr>
-<h2 class="logo-font mb-4">{% trans "User Emails" %}</h2>
-<hr>
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <hr class="w-75 mb-2">
+              <h2 class="page-title text-center">Email Addresses</h2>
+          <hr class="w-75 mt-2">
+      </div>
+  </div>
+</div>
 {% if emailaddresses %}
 <p>{% trans 'The following email addresses are associated with your account:' %}</p>
 
@@ -74,3 +80,11 @@
 })();
 </script>
 {% endblock extra_body %}
+
+{% block padding %}
+<div class="container">
+    <div class="row">
+        <div class="padding-container"></div>
+    </div>
+</div>
+{% endblock %}
