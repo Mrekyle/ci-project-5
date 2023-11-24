@@ -68,6 +68,11 @@ footer {
     font-size: 12px;
 }
 
+.text-white:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
 
 /* SUPPLIER SLIDER  */
 

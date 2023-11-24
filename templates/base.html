@@ -71,7 +71,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="text-black nav-link" href="#">
+                            <a class="text-black nav-link" href="{% url 'shop' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-shop fa-lg"></i></div>
                                     <p class="my-0">Shop</p>
@@ -156,8 +156,8 @@
                         </div>
                         <div class="col-lg-2 col-md-6">
                             <div class="list-group">
-                                <a href="#" class="list-group-item-action mb-1 text-white">Shop</a>
-                                <a href="#" class="list-group-item-action mb-1 text-white">DontGnochIt</a>
+                                <a href="{% url 'shop' %}" class="list-group-item-action mb-1 text-white">Shop</a>
+                                <a href="{% url 'dontgnochit' %}" class="list-group-item-action mb-1 text-white">DontGnochIt</a>
                                 <a href="#" class="list-group-item-action mb-1 text-white">My Profile</a>
                                 <a href="#" class="list-group-item-action mb-1 text-white">Basket</a>
                             </div>
