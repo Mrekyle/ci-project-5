@@ -72,6 +72,13 @@ footer {
     height: 5rem;
 }
 
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
 .text-white:hover {
     color: #fff !important;
     text-decoration: none;

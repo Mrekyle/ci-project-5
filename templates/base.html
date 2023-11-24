@@ -85,16 +85,16 @@
                                     <p class="my-0">My Account</p>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu border-1" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
                                         <a href="" class="dropdown-item">Product Management</a>
                                     {% endif %}
-                                    <a class="dropdown-item" href="">My Profile</a>
-                                    <a href="" class="dropdown-item">Logout</a>
+                                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
-                                    <a href="" class="dropdown-item">Login</a>
-                                    <a href="" class="dropdown-item">Register</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -126,6 +126,27 @@
                 </nav>
             </div>
         </header>
+
+        {% if messages %}
+            <div class="message-container">
+                {% for message in messages %}
+                    {% with message.level as level %}
+                            <!-- Error -->
+                        {% if level == 40 %}
+                            {% include 'includes/toasts/toast_error.html' %}
+                            <!-- Warning  -->
+                        {% elif level == 30 %}
+                            {% include 'includes/toasts/toast_warning.html' %}
+                            <!-- Success  -->
+                        {% elif level == 25 %}
+                            {% include 'includes/toasts/toast_success.html' %}
+                        {% else %}
+                            {% include 'includes/toasts/toast_info.html' %}
+                        {% endif %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
+        {% endif %}
         
         {% block pageheader %}
 
