@@ -8,10 +8,10 @@ layout -->
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'shop' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'shop' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'shop' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -37,7 +37,7 @@ layout -->
                 <a href="{% url 'shop' %}?category=whitefish,oilyfish" class="dropdown-item">All Fish</a>
                 <a href="{% url 'shop' %}?category=white" class="dropdown-item">White Fish</a>
                 <a href="{% url 'shop' %}?category=oily" class="dropdown-item">Oily Fish</a>
-                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 
@@ -50,7 +50,7 @@ layout -->
                 <a href="{% url 'shop' %}?category=root" class="dropdown-item">Root Vegetables</a>
                 <a href="{% url 'shop' %}?category=greens" class="dropdown-item">Green Vegetables</a>
                 <a href="{% url 'shop' %}?category=herbs" class="dropdown-item">Herbs</a>
-                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 
@@ -63,7 +63,7 @@ layout -->
                 <a href="{% url 'shop' %}?category=meats" class="dropdown-item">Meat Substitutes</a>
                 <a href="{% url 'shop' %}?category=dairy" class="dropdown-item">Dairy &amp; Eggs</a>
                 <a href="{% url 'shop' %}?category=grains" class="dropdown-item">Grains</a>
-                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 

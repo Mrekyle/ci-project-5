@@ -71,6 +71,32 @@ footer {
     font-size: 1.4rem;
 }
 
+.icon {
+    color: black;
+    font-size: 0.7rem;
+}
+
+a {
+    color: #444544;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a.cat-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.t-btn {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+
 .f-bg {
     background-color: #444544;
     color: white;

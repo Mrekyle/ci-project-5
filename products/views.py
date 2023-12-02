@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Product, Category
 
 # Create your views here.
@@ -14,7 +15,7 @@ def rendershop(request):
     products = Product.objects.all()
     template = 'shop.html'
     query = None
-    category = None
+    categories = None
     sort = None
     direction = None
 
@@ -52,11 +53,21 @@ def rendershop(request):
             if sorting == 'name':
                 sorting = 'lower_name'
                 product = product.annotate(lower_name=Lower('name'))
+            if sorting == 'category':
+                sorting = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sorting = f'-{sorting}'
+            products = products.order_by(sorting)
+
+    sorted = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'user_search': query,
-        'category_filter': category,
+        'category_filter': categories,
+        'sorted': sorted,
     }
 
     return render(request, template, context)
