@@ -8,7 +8,7 @@ layout -->
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
+                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
                 <a href="" class="dropdown-item">All Products</a>
@@ -20,10 +20,12 @@ layout -->
                 Proteins
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'shop' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'shop' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'shop' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'shop' %}?category=chicken,beef,pork,lamb" class="dropdown-item">All Proteins</a>
+                <a href="{% url 'shop' %}?category=chicken" class="dropdown-item ">Chicken</a>
+                <a href="{% url 'shop' %}?category=beef" class="dropdown-item ">Beef</a>
+                <a href="{% url 'shop' %}?category=pork" class="dropdown-item">Pork</a>
+                <a href="{% url 'shop' %}?category=lamb" class="dropdown-item">Lamb</a>
+                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">All Proteins</a>
             </div>
         </li>
 
@@ -32,9 +34,10 @@ layout -->
                 Fish
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'shop' %}?category=whitefish,oilyfish" class="dropdown-item">All Fish</a>
+                <a href="{% url 'shop' %}?category=white" class="dropdown-item">White Fish</a>
+                <a href="{% url 'shop' %}?category=oily" class="dropdown-item">Oily Fish</a>
+                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 
@@ -43,9 +46,11 @@ layout -->
                 Vegetables
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'shop' '}?category=root,greens,herbs" class="dropdown-item">All Vegetables</a>
+                <a href="{% url 'shop' %}?category=root" class="dropdown-item">Root Vegetables</a>
+                <a href="{% url 'shop' %}?category=greens" class="dropdown-item">Green Vegetables</a>
+                <a href="{% url 'shop' %}?category=herbs" class="dropdown-item">Herbs</a>
+                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 
@@ -54,9 +59,11 @@ layout -->
                 Plant Based
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'shop' %}?category=meats,dairy,grains" class="dropdown-item">All Plant Based</a>
+                <a href="{% url 'shop' %}?category=meats" class="dropdown-item">Meat Substitutes</a>
+                <a href="{% url 'shop' %}?category=dairy" class="dropdown-item">Dairy &amp; Eggs</a>
+                <a href="{% url 'shop' %}?category=grains" class="dropdown-item">Grains</a>
+                <a href="{% url 'shop' %}?sortprice&direction=asc" class="dropdown-item">By Price</a>
             </div>
         </li>
 
@@ -65,10 +72,10 @@ layout -->
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'shop' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'shop' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'shop' %}?category=before_gone" class="dropdown-item">Before It's Gone</a>
+                <a href="{% url 'shop' %}?category=new_arrivals,deals,before_gone" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

@@ -1,7 +1,7 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product
+from .models import Product, Category
 
 # Create your views here.
 
@@ -14,11 +14,17 @@ def rendershop(request):
     products = Product.objects.all()
     template = 'shop.html'
     query = None
+    category = None
+    sort = None
+    direction = None
 
     """
         User searching logic 
     """
     if request.GET:
+        """
+            Search Bar
+        """
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -29,9 +35,28 @@ def rendershop(request):
                 description__icontains=query)
             products = products.filter(queries)
 
+        """
+            Shop Page Navigation
+        """
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+        """
+            Sorting on shop page filtering
+        """
+        if 'sort' in request.GET:
+            sorting = request.GET['sort']
+            sort = sorting
+            if sorting == 'name':
+                sorting = 'lower_name'
+                product = product.annotate(lower_name=Lower('name'))
+
     context = {
         'products': products,
         'user_search': query,
+        'category_filter': category,
     }
 
     return render(request, template, context)
