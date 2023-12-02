@@ -22,13 +22,10 @@ Finish styling allauth pages
 Create Home app
 
         
-        Using template literalls to add css in the class of the page 
     Base page
-        main body
+        main image and text
         Add supplier images
-        What we are 
-        reviews
-        STYLE FOOTER
+        
 
     Jobs Page √
         Add content
