@@ -10,6 +10,8 @@ class Category(models.Model):
 
     name = models.CharField(max_length=180)
     friendly_name = models.CharField(max_length=180, blank=True, null=True)
+    image_url = models.URLField(max_length=1024, blank=True, null=True)
+    image = models.ImageField(blank=True, null=True)
 
     def __str__(self):
         return self.name

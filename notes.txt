@@ -52,6 +52,8 @@ Create Store app
         Finish quantity selection
         Finish add to bag functionality
 
+    edit products nav to represent new categories on manual input
+
 Create Bag app
     Items in basket
     Total cost
