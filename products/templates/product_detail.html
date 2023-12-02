@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 col-offset-lg-2">
-                <div class="imag-container">
+                <div class="img-container">
                     {% if product.image %}
                         <a href="{{ product.image_url }}" target="_blank" aria-label="Opens the products image in a new window">
                             <img alt="{{ product.name }}" src="{{ product.image_url }}" class="card-img-top img-fluid">
@@ -45,7 +45,6 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-offset-lg-2">
                 <div class="details-container mb-4 mt-5 ms-5">
-                    <p class="mb-2">{{ product.name }}</p>
                     <p class="lead mb-2 text-left font-weight-bold">£{{ product.price }}</p>
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-2"></i>{{ product.rating }} / <strong>5</strong></small>

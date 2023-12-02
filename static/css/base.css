@@ -156,7 +156,15 @@ footer {
 
 /* MEDIA QUERY */
 
+@media (min-width:1200px) {
+
+    .padding-container {
+        height: 17rem;
+    }
+}
+
 @media (min-width: 992px) {
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -171,6 +179,7 @@ footer {
 }
 
 @media (max-width: 991px) {
+
     .header-container {
         padding-top: 116px;
     }

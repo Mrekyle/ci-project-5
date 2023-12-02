@@ -30,7 +30,7 @@ Create Home app
     Jobs Page √
         Add content
 
-    Roadmap Page
+    Roadmap Page √
         Add content and styling
 
     Support page        
@@ -93,11 +93,11 @@ Create DontGnochIt app
     Add page content
     Images
 
-User Testimonials 
+User Testimonials √
 Django Messages - Toasts
 Favicon
-Edit allauth templates to forward to own base.html
-Add everything to Roadmap
+Edit allauth templates to forward to own base.html √
+Add everything to Roadmap √
 
 Social media page for the application(facebook)
 
