@@ -34,15 +34,15 @@ Create Home app
         Add content and styling
 
     Support page        
-        Contact form
+        Contact form √
             Build functionality
 
 Create Store app
-    quick add to basket
-    rating
-    Filtering options
+    quick add to basket 
+    rating √
+    Filtering options √
     Add pagination 
-    Edit scroll to top button
+    Edit scroll to top button √
 
     Products Detail Page
         Finish styling

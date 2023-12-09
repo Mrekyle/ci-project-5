@@ -128,14 +128,20 @@
                     </table>
                 </div>
             {% else %}
-                <p class="lead">Your shopping cart is currently empty!</p>
-                <small class="mb-3 text-muted">Please click below to continue shopping and add items to your cart.</small><br>
-                <a href="{% url 'shop' %}" aria-label="Send the user back to the main shopping page" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon-bag">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping!</span>
-                </a>
+                <div class="row mb-6">
+                    <p class="lead col-12 text-center mt-5">Your shopping cart is currently empty!</p>
+                    <div class="col-12 text-center">
+                        <a href="{% url 'shop' %}" aria-label="Send the user back to the main shopping page" class="mt-5 mb-5 btn btn-outline-black rounded-0 btn-lg">
+                            <span class="icon-bag">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Shopping!</span>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="extra-padding-container"></div>
+                    </div>
+                </div>
             {% endif %}
         </div>
     </div>
@@ -143,11 +149,13 @@
 {% endblock %}
 
 {% block padding %}
+
 <div class="container">
     <div class="row">
         <div class="padding-container"></div>
     </div>
 </div>
+
 {% endblock %}
 
 {% block postloadjs %}

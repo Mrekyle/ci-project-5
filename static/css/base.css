@@ -124,7 +124,11 @@ a.cat-badge > span.badge:hover {
 }
 
 .padding-container {
-    height: 5rem;
+    height: 8rem;
+}
+
+.extra-padding-container {
+    height: 19.7rem;
 }
 
 .message-container {
