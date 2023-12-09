@@ -105,9 +105,7 @@
                                     <p class="my-0">
                                         {% if grand_total %} 
                                             £{{ grand_total | floatformat:2 }}
-                                            <!-- floatformat is formatting the grand total variable to 2 decimal places. If the cart has items in it -->
                                         {% else %}
-                                            <!-- Else it will display the value of nothing  -->
                                             £0.00
                                         {% endif %}
                                     </p>
