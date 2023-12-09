@@ -115,6 +115,11 @@
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+    <script type="text/javascript" src="{% static 'js/productQuantity.js' %}"></script>
+{% endblock %}
+
 {% block padding %}
     <div class="container">
         <div class="row">

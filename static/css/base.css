@@ -154,6 +154,17 @@ a.cat-badge > span.badge:hover {
     overflow: hidden;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 2px solid black;
+}
+
+.btn-outline-black:hover, .btn-outline-black:active, .btn-outline-black:focus {
+    background: black;
+    columns: white !important;
+}
+
 /* SUPPLIER SLIDER  */
 
 @keyframes scroll {
@@ -205,7 +216,7 @@ a.cat-badge > span.badge:hover {
 @media (min-width:1200px) {
 
     .padding-container {
-        height: 17rem;
+        height: 11rem;
     }
 }
 
