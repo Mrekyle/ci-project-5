@@ -92,9 +92,21 @@ a.cat-badge > span.badge:hover {
 }
 
 .t-btn {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     padding: 4px;
+}
+
+.t-btn:hover {
+    background-color: #777777;
+}
+
+.icon-link {
+    color: black;
+}
+
+.t-btn-cursor {
+    cursor: pointer;
 }
 
 .f-bg {

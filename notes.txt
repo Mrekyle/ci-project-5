@@ -98,6 +98,8 @@ Django Messages - Toasts
 Favicon
 Edit allauth templates to forward to own base.html √
 Add everything to Roadmap √
+Add hover state top rerutn to top button on shop page
+Add hover efect to item navigation in store page
 
 Social media page for the application(facebook)
 

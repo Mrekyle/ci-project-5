@@ -52,7 +52,7 @@ def rendershop(request):
             sort = sorting
             if sorting == 'name':
                 sorting = 'lower_name'
-                product = product.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
             if sorting == 'category':
                 sorting = 'category__name'
             if 'direction' in request.GET:
