@@ -76,6 +76,14 @@ footer {
     font-size: 0.7rem;
 }
 
+.icon-bag {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
 a {
     color: #444544;
     text-decoration: none;
