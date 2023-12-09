@@ -33,16 +33,6 @@ def bag_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
-    else:
-        product = get_object_or_404(Product, pk=item_id)
-        for quantity in item_data['quantity'].items():
-            total_cost += quantity * product.price
-            product_count += quantity
-            bag_items.append({
-                'item_id': item_id,
-                'quantity': quantity,
-                'product': product,
-            })
 
     """
         Calculating the delivery charges
