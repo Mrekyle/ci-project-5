@@ -131,6 +131,14 @@ a.cat-badge > span.badge:hover {
     height: 19.7rem;
 }
 
+.product-edit {
+    color: rgb(0, 219, 219);
+}
+
+.product-edit:hover {
+    color: rgb(0, 156, 156);
+}
+
 .message-container {
     position: fixed;
     top: 72px;

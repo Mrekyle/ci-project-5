@@ -25,7 +25,6 @@ Create Home app
     Base page
         main image and text
         Add supplier images
-        
 
     Jobs Page √
         Add content
@@ -38,16 +37,15 @@ Create Home app
             Build functionality
 
 Create Store app
-    quick add to basket 
     rating √
     Filtering options √
     Add pagination 
     Edit scroll to top button √
 
-    Products Detail Page
-        Finish styling
-        Finish quantity selection
-        Finish add to bag functionality
+    Products Detail Page √
+        Finish styling √
+        Finish quantity selection √
+        Finish add to bag functionality √
 
     edit products nav to represent new categories on manual input
 

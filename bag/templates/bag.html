@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load calc_total %}
 
 {% block extra_meta %}
     <meta name="keywords" content="">
@@ -93,7 +94,7 @@
                                     <a class="remove-item text-danger t-btn-cursor float-right" id="remove_{{ item.item_id }}"><small>Remove Item</small></a>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">£{{ item.product.price }}</p>
+                                    <p class="my-0">£{{ item.product.price | calc_total:item.quantity }}</p>
                                 </td>
                             </tr>
                         {% endfor %}

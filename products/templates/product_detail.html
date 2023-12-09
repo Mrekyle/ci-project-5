@@ -43,7 +43,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-offset-lg-2">
+            <div class="col-12 col-md-6 col-lg-6 col-offset-lg-2">
                 <div class="details-container mb-4 mt-5 ms-5">
                     <p class="lead mb-2 text-left font-weight-bold">£{{ product.price }}</p>
                     {% if product.category %}
@@ -60,7 +60,7 @@
                     {% endif %}
                     {% if user.is_superuser %}
                         <small class="text-muted ml-3">
-                            <a class="" href="#" aria-label="Opens the edit page for admins">Edit</a> |
+                            <a class="product-edit" href="#" aria-label="Opens the edit page for admins">Edit</a> |
                             <a class="text-danger" href="#" aria-label="Deletes the product from the store">Delete</a>
                         </small>
                     {% endif %}

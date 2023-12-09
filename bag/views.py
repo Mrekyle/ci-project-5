@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.urls import reverse
+from django.contrib import messages
 
 # Create your views here.
 
@@ -69,10 +70,14 @@ def remove_bag_items(request, item_id):
         Handles the user removing items from the shopping bag
     """
 
-    bag = request.session.get('bag', {})
+    try:
+        bag = request.session.get('bag', {})
 
-    bag.pop(item_id)
+        bag.pop(item_id)
+        messages.success(request, f"Product successfully removed from bag")
 
-    request.session['bag'] = bag
+        request.session['bag'] = bag
 
-    return redirect(reverse('bag'))
+        return HttpResponse(status=200)
+    except:
+        return HttpResponse(status=500)
