@@ -212,13 +212,15 @@
                    <a target="_blank" href="https://www.instagram.com" aria-label="Opens Localitty's Instagram"><i class="fa-brands fa-instagram git-link pe-2"></i></a> 
                    <a target="_blank" href="https://www.facebook.com" aria-label="Opens Localitty's Facebook"><i class="fa-brands fa-facebook git-link pe-2"></i></a> 
                    <a target="_blank" href="https://www.youtube.com" aria-label="Opens Localitty's Youtube"><i class="fa-brands fa-youtube git-link pe-2"></i></a> 
-                   | &copy  <script>document.write(new Date().getFullYear())</script> Loaclitty |  Kyle Chart |  <a target="_blank" aria-label="Opens up Kyle Charts github" href="https://www.github.com/mrekyle"><i class="fa-brands fa-github git-link ps-2"></i></a>
+                   | &copy  <script>document.write(new Date().getFullYear())</script> Localitty |  Kyle Chart |  <a target="_blank" aria-label="Opens up Kyle Charts github" href="https://www.github.com/mrekyle"><i class="fa-brands fa-github git-link ps-2"></i></a>
                 </div>
             </div>
         </div>
         
         {% block postloadjs %}
-        
+            <script type="text/javascript">
+                $('.toast').toast('show')
+            </script>
         {% endblock %}
     </body>
 </html>

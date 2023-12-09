@@ -50,11 +50,11 @@ Create Store app
     edit products nav to represent new categories on manual input
 
 Create Bag app
-    Items in basket
-    Total cost
-    Quantity of items  
-        Edit Quantity
-        Remove items
+    Items in basket √
+    Total cost √
+    Quantity of items √  
+        Edit Quantity √
+        Remove items √
     Secure checkout
     Checkout form
     Stripe payments

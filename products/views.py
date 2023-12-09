@@ -30,7 +30,7 @@ def rendershop(request):
             query = request.GET['q']
             if not query:
                 messages.error(
-                    request, 'We cant search a blank search. Please enter a valid search request!')
+                    request, f'We cant search a blank search. Please enter a valid search request!')
                 return redirect(reverse('shop'))
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)

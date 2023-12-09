@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.urls import reverse
+from products.models import Product
 from django.contrib import messages
 
 # Create your views here.
@@ -28,6 +29,7 @@ def add_bag_items(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirection = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
+    product = Product.objects.get(pk=item_id)
 
     """
         If the item exists in the bags session
@@ -35,8 +37,11 @@ def add_bag_items(request, item_id):
     """
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
+        messages.success(
+            request, f'Added {bag[item_id]} of {product.name} to your bag!')
     else:
         bag[item_id] = quantity
+        messages.success(request, f'Added {product.name} to your bag!')
 
     request.session['bag'] = bag
 
@@ -50,6 +55,7 @@ def adjust_bag_items(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
+    product = Product.objects.get(pk=item_id)
 
     """
         If the item exists in the bags session
@@ -57,8 +63,11 @@ def adjust_bag_items(request, item_id):
     """
     if quantity > 0:
         bag[item_id] = quantity
+        messages.success(
+            request, f'Updated {product.name} quantity to {bag[item_id]}')
     else:
         bag.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your bag!')
 
     request.session['bag'] = bag
 
@@ -79,5 +88,7 @@ def remove_bag_items(request, item_id):
         request.session['bag'] = bag
 
         return HttpResponse(status=200)
-    except:
+    except Exception as e:
+        messages.error(
+            request, f'Error removing item: {e}. If the problem persists, please contact support')
         return HttpResponse(status=500)

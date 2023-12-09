@@ -76,6 +76,20 @@ footer {
     font-size: 0.7rem;
 }
 
+.checkout-icon {
+    color: black;
+    font-size: 0.7rem;
+}
+
+.checkout-icon:hover {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.y-bg {
+    background: yellow;
+}
+
 .icon-bag {
     align-items: center;
     display: inline-flex;
@@ -131,6 +145,8 @@ a.cat-badge > span.badge:hover {
     height: 19.7rem;
 }
 
+
+
 .product-edit {
     color: rgb(0, 219, 219);
 }
@@ -139,12 +155,6 @@ a.cat-badge > span.badge:hover {
     color: rgb(0, 156, 156);
 }
 
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 9999999999;
-}
 
 .text-white:hover {
     color: #fff !important;
@@ -169,7 +179,7 @@ a.cat-badge > span.badge:hover {
 .btn-outline-black {
     background: white;
     color: black !important;
-    border: 2px solid black;
+    border: 1.5px solid black;
 }
 
 .btn-outline-black:hover,
@@ -177,6 +187,17 @@ a.cat-badge > span.badge:hover {
 .btn-outline-black:focus {
     background: #444544;
     color: white !important;
+}
+
+.btn-toast {
+    background: rgb(197, 197, 197);
+}
+
+.btn-toast:hover,
+.btn-toast:active,
+.btn-toast:focus {
+    background-color: #444544;
+    color: white;
 }
 
 .shop-now-button:hover,
@@ -188,6 +209,73 @@ a.cat-badge > span.badge:hover {
     background-color: #444544;
     color: white;
 }
+
+/* TOASTS */
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.message-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* SUPPLIER SLIDER  */
 
 @keyframes scroll {
