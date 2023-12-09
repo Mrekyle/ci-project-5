@@ -160,11 +160,22 @@ a.cat-badge > span.badge:hover {
     border: 2px solid black;
 }
 
-.btn-outline-black:hover, .btn-outline-black:active, .btn-outline-black:focus {
-    background: black;
-    columns: white !important;
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #444544;
+    color: white !important;
 }
 
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background-color: #444544;
+    color: white;
+}
 /* SUPPLIER SLIDER  */
 
 @keyframes scroll {
