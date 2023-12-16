@@ -8,13 +8,13 @@ Bootstrap √
 Font awesome √
 
 404 page √
-Finish/update Toasts - Update success toast
+Finish/update Toasts - Update success toast √
 
 Page name in tab title √
 Meta tags
 Code blocks √
 
-Add extra meta tags to all pages 
+Add extra meta tags to all pages  √
 Style auth buttons/Application buttons
 Allauth pages needs to be central √
 Finish styling allauth pages 
@@ -55,7 +55,7 @@ Create Bag app
         Edit Quantity √
         Remove items √
     Secure checkout
-    Checkout form
+    Checkout form √
     Checkout order scrollable 
     Stripe payments
     Loading animation
@@ -122,6 +122,7 @@ debug to false
 
 Business model for the app
 Django emails
+Facebook page 
 Keyword Research
 sitemap.xml
 robots.txt

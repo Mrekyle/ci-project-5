@@ -176,6 +176,12 @@ a.cat-badge > span.badge:hover {
     overflow: hidden;
 }
 
+/* BUTTON STYLING  */
+
+.list-group-item-action:hover {
+    background: #6c757db4;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important;
