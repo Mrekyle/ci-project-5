@@ -6,7 +6,7 @@ from django.conf import settings
 from .forms import OrderForm
 # from .models import Order, NewItem
 # from products.models import Product
-# from bag.contexts import bag_contents
+from bag.contexts import bag_contents
 # from profiles.models import UserProfile
 # from profiles.forms import UserProfileForm
 
@@ -24,6 +24,9 @@ def rendercheckout(request):
         to allow them to save there shipping and billing information
     """
 
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = settings.STRIPE_SECRET_KEY
+
     bag = request.session.get('bag', {})
 
     if not bag:
@@ -31,10 +34,16 @@ def rendercheckout(request):
             request, f'There is nothing in your bag at the moment. Please add some items to get started')
         return redirect(reverse('shop'))
 
+    current_bag = bag_contents(request)
+    total = current_bag['grand_total']
+    stripe_total = round(total * 100)
+
     order_form = OrderForm()
     template = 'checkout.html'
     context = {
         'order_form': order_form,
+        'stripe_public_key': stripe_public_key,
+        'stripe_secret_key': stripe_secret_key,
     }
 
     return render(request, template, context)
