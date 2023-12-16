@@ -21,7 +21,6 @@ Finish styling allauth pages
 
 Create Home app
 
-        
     Base page
         main image and text
         Add supplier images
@@ -91,8 +90,9 @@ Create DontGnochIt app
     Add page content
     Images
 
+CRUD
 User Testimonials √
-Django Messages - Toasts
+Django Messages - Toasts √
 Favicon
 Edit allauth templates to forward to own base.html √
 Add everything to Roadmap √
