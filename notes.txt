@@ -56,6 +56,7 @@ Create Bag app
         Remove items √
     Secure checkout
     Checkout form
+    Checkout order scrollable 
     Stripe payments
     Loading animation
     Generate order number and order completion
@@ -85,6 +86,7 @@ Create Profiles app
         Beta Features(Support Chats, Show earnings)
         Create supplier accounts
         Check Orders
+        Order dispatch email
 
 Create DontGnochIt app 
     Add page content

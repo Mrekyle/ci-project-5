@@ -48,10 +48,10 @@
                             <tr>
                                 <td class="p-2 w-25">
                                     {% if item.product.image %}
-                                        <small class="text-muted">{{ item.product.name }}</small>
+                                        <small class="text-muted mb-3">{{ item.product.name }}</small>
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                     {% else %}
-                                        <small class="text-muted">{{ item.product.name }}</small>
+                                        <small class="text-muted mb-3">{{ item.product.name }}</small>
                                         <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                     {% endif %}
                                 </td>
@@ -118,8 +118,8 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <a href="" aria-label="Send the user to a secure checkout page" class="btn btn-outline-black rounded-0 btn-lg">
-                                    <span class="text-uppercase">Checkout Securely</span>
+                                <a href="{% url 'checkout' %}" aria-label="Send the user to a secure checkout page" class="btn btn-outline-black btn-lg rounded-0">
+                                    <span class="text-uppercase">Checkout Securely</span> 
                                     <span class="icon-bag">
                                         <i class="fas fa-lock"></i>
                                     </span>

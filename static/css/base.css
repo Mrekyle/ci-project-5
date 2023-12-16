@@ -210,6 +210,13 @@ a.cat-badge > span.badge:hover {
     color: white;
 }
 
+.text-black {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: black !important;
+    font-size: medium;
+}
+
 /* TOASTS */
 
 .custom-toast {
