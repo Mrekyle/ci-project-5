@@ -79,6 +79,9 @@ class Order(models.Model):
         """
         return self.order_number
 
+    class Meta:
+        verbose_name_plural = 'Order'
+
 
 class NewItem(models.Model):
     """
@@ -104,3 +107,6 @@ class NewItem(models.Model):
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
+
+    class Meta:
+        verbose_name_plural = 'New Item'
