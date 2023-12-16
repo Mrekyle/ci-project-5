@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
+from django.urls import reverse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -30,8 +31,6 @@ def rendercheckout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
-    bag = request.session.get('bag', {})
-
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
@@ -48,8 +47,7 @@ def rendercheckout(request):
 
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save(commit=False)
-            order_form.save()
+            order = order_form.save()
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -65,15 +63,16 @@ def rendercheckout(request):
                                    Please contact us for assistance in getting this fixed.')
                     order.delete()
                     return redirect(reverse('bag'))
+
             request.session['save-info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(
-                request, f'The order form was not valid. Please take another look and try again. \
+                request, f'Oops the order form was not valid. Please take another look and try again. \
                       If the problem persists, please contact support')
     else:
+        bag = request.session.get('bag', {})
         if not bag:
-            bag = request.session.get('bag', {})
             messages.error(
                 request, f'There is nothing in your bag at the moment. \
                       Please add some items to get started')
@@ -114,10 +113,10 @@ def rendercheckout_success(request, order_number):
         be sent shortly
     """
 
-    save_info = request.session.get('save-info')
+    save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
     messages.success(request, f'Order successfully submitted! \
-                     Your order number is {order_number} \
+                    Your order number is {order_number} \
                     A confirmation email will be sent to \
                     {order.email}')
 
