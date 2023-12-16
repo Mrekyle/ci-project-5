@@ -178,6 +178,10 @@ a.cat-badge > span.badge:hover {
 
 /* BUTTON STYLING  */
 
+.product-nav:hover {
+    color: black !important;
+}
+
 .list-group-item-action:hover {
     background: #6c757db4;
 }

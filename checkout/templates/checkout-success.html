@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_meta %}
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+{% endblock %}
+
+{% block extra_title %}
+    - Checkout Successful
+{% endblock %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title">Checkout Complete</h2>
+                <p class="text-muted">Order Number: {{ order.order_number }}</p>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-muted">
+                A confirmation email has been sent to {{ order.email }}. Once our team have finished processing 
+                your order a dispatch email will be sent to you. 
+            </p>
+            <p class="text-muted small ">Please see your order information below:</p>
+        </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+        <div class="col-6 col-lg-4">
+            <p>Missed something from your order?</p>
+            <a href="{% url 'shop' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the main shopping page">
+                <span class="icon-bag">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+        </div>
+        <div class="col-6 col-lg-4">
+            <p>Checkout our latest deals</p>
+            <a href="{% url 'shop' %}?category=new_arrivals,deals,before_gone" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the deals section of the shop">
+                <span class="icon-bag">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+                <span class="text-uppercase">Latest Deals</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
