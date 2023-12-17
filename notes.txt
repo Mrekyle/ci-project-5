@@ -61,6 +61,8 @@ Create Bag app
     Loading animation
     Generate order number and order completion
 
+    Order not posting. 
+
 Create Profiles app
     User:
         Shipping Information
@@ -104,6 +106,8 @@ Add hover effect to item navigation in store page
 Social media page for the application(facebook)
 
 DEPLOYMENT:
+
+Add webhook handler to stripe dashboard into whsecret
 
 Testing
     Automated?
