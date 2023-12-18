@@ -81,6 +81,10 @@ footer {
     font-size: 0.7rem;
 }
 
+.text-balance {
+    text-wrap: balance;
+}
+
 .checkout-icon:hover {
     color: white;
     font-size: 0.7rem;

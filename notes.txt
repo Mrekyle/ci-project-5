@@ -57,11 +57,11 @@ Create Bag app
     Secure checkout
     Checkout form √
     Checkout order scrollable 
-    Stripe payments
-    Loading animation
-    Generate order number and order completion
+    Stripe payments √
+    Loading animation √
+    Generate order number and order completion √
 
-    Order not posting. 
+    Style checkout success Page
 
 Create Profiles app
     User:
