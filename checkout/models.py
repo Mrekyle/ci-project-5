@@ -43,7 +43,7 @@ class Order(models.Model):
         """
             Generates the unique order number for tracking
         """
-        return uuid.uuid().hex.upper()
+        return uuid.uuid4().hex.upper()
 
     def update_total(self):
         """
@@ -51,7 +51,7 @@ class Order(models.Model):
             Including the orders delivery costs
         """
         self.order_total = self.newitem.aggregate(Sum('newitem_total'))[
-            'newitem_total_sum'] or 0
+            'newitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY:
             self.delivery_cost = self.order_total * \
                 settings.STANDARD_DELIVERY_CHARGE
