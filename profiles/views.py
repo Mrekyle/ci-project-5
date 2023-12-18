@@ -18,3 +18,17 @@ def renderprofile(request):
     }
 
     return render(request, template, context)
+
+
+def renderadmin(request):
+    """
+        Renders the admin dashboard 
+    """
+
+    template = 'admin_dashboard.html'
+
+    context = {
+
+    }
+
+    return render(request, template, context)

@@ -81,6 +81,13 @@ footer {
     font-size: 0.7rem;
 }
 
+.preview-container {
+    height: 4.4rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    background-color: #17a2b8;
+}
+
 .text-balance {
     text-wrap: balance;
 }
