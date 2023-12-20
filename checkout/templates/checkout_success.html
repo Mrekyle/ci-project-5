@@ -194,6 +194,17 @@
                 <span class="text-uppercase">Keep Shopping</span>
             </a>
         </div>
+        {% if from_profile %}  
+        <div class="col-6 col-lg-6">
+            <p>Go Back</p>
+            <a href="{% url 'order-history' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the full order history page">
+                <span class="text-uppercase">Order History</span>
+                <span class="icon-bag">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+        {% else %}
         <div class="col-6 col-lg-6">
             <p>Checkout our latest deals</p>
             <a href="{% url 'shop' %}?category=new_arrivals,deals,before_gone" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the deals section of the shop">
@@ -203,6 +214,7 @@
                 </span>
             </a>
         </div>
+        {% endif %}
     </div>
 </div>
 
