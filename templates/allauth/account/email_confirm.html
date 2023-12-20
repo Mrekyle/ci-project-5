@@ -3,7 +3,7 @@
 {% load i18n %}
 {% load account %}
 
-{% block head_title %}{% trans "- Confirm Email Address" %}{% endblock head_title %}
+{% block extra_title %}{% trans "- Confirm Email Address" %}{% endblock extra_title %}
 
 {% block pageheader %}
     <div class="container header-container">
@@ -43,7 +43,19 @@
 
 {% url 'account_email' as email_url %}
 
-<p>{% blocktrans %}This email confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new email confirmation request</a>.{% endblocktrans %}</p>
+<div class="row text-center">
+    <div class="col-12 mt-5">
+        <p>
+            Sorry, it appears that this confirmation link has expired or is invalid. 
+            Please request a new one to confirm your email.
+        </p>
+    </div>
+</div>
+<div class="row text-center mt-5 mb-5">
+    <div class="col-4"><a class="btn btn-outline-black" aria-label="Send the user home"  href="{% url 'home' %}"><i class="fas fa-chevron-left"></i> Home</a></div>
+    <div class="col-4"><a class="btn btn-outline-black" aria-label="Send the user to request a new password change link"  href="{% url 'account_change_password' %}"><i class="fas fa-chevron-left"></i> Reset your password</a></div>
+    <div class="col-4"><a class="btn btn-outline-black" aria-label="Send the user back to the profile page" href="{% url 'profile' %}">My Profile <i class="fas fa-chevron-right"></i></a></div>
+  </div>
 
 {% endif %}
 
@@ -52,7 +64,7 @@
 {% block padding %}
 <div class="container">
     <div class="row">
-        <div class="padding-container"></div>
+        <div class="emailconfirm-auth-padding-container"></div>
     </div>
 </div>
 {% endblock %}

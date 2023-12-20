@@ -71,6 +71,10 @@ footer {
     font-size: 1.4rem;
 }
 
+.profile-padding {
+    height: 6.7rem;
+}
+
 .icon {
     color: black;
     font-size: 0.7rem;
@@ -164,7 +168,29 @@ a.cat-badge > span.badge:hover {
     height: 19.7rem;
 }
 
+.email-text {
+    font-size: medium;
+}
 
+.auth-padding-container {
+    height: 14rem;
+}
+
+.support:hover {
+    color: #dc3545;
+}
+
+.email-auth-padding-container {
+    height: 18rem;
+}
+
+.emailconfirm-auth-padding-container {
+    height: 21.4rem;
+}
+
+.pass-auth-padding-container {
+    height: 17rem;
+}
 
 .product-edit {
     color: rgb(0, 219, 219);
@@ -216,6 +242,23 @@ a.cat-badge > span.badge:hover {
 .btn-outline-black:focus {
     background: #444544;
     color: white !important;
+}
+
+.btn-logout {
+    background: white;
+    color: black !important;
+    border: 1.5px solid black;
+}
+
+.btn-logout:hover,
+.btn-logout:active,
+.btn-logout:focus {
+    background: #c72f3e;
+    color: white !important;
+}
+
+.btn-pass-reset:hover {
+    color: #dc3545;
 }
 
 .btn-toast {

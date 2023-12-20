@@ -1,8 +1,8 @@
 {% extends "account/base.html" %}
 {% load i18n %}
-{% block head_title %}
+{% block extra_title %}
     {% trans "Email Address" %}
-{% endblock head_title %}
+{% endblock extra_title %}
 {% block inner_content %}
 <div class="container">
     <div class="row">
@@ -44,7 +44,7 @@
 {% block padding %}
 <div class="container">
     <div class="row">
-        <div class="padding-container"></div>
+        <div class="auth-padding-container"></div>
     </div>
 </div>
 {% endblock %}

@@ -20,7 +20,7 @@
       <div class="col">
           <hr class="w-75 mb-2">
               <h2 class="page-title text-center">Login</h2>
-          <hr class="w-75 mt-2">
+          <hr class="w-75 mt-4">
       </div>
   </div>
 </div>
@@ -55,10 +55,11 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Home</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+  <a class="btn btn-outline-black rounded-0 p-2" href="{% url 'home' %}">
+    <i class="pl-2 fas fa-chevron-left"></i> Home</a>
+  <button class="primaryAction btn btn-outline-black p-2 rounded-0" type="submit">{% trans "Sign In" %}  <i class="pr-2 fa-solid fa-arrow-right-from-bracket"></i></button>
   <p class="mt-2">
-    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+    <a class="button secondaryAction btn-pass-reset" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>
 {% endblock inner_content %}
@@ -66,7 +67,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% block padding %}
 <div class="container">
     <div class="row">
-        <div class="padding-container"></div>
+        <div class="auth-padding-container"></div>
     </div>
 </div>
 {% endblock %}

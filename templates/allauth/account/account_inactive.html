@@ -21,11 +21,16 @@
                 <hr class="w-75 mt-2">
             </div>
         </div>
-        <div class="row mb-5 text-center">
+        <div class="row mb-5 mt-5 text-center">
             <div class="col mb-5">
-                <h4>Your account <strong>{{ user }}</strong> appears to be inactive?</h4><br>
-                <h4>If this is a mistake please contact <a href="{% url 'support' %}" aria-label="Opens the support account">Support</a></h4><br>
-                <h4>If you don't have an account and wish to make one. Please <a href="{% url 'account_signup' %}"><br>Sign Up here</a></h4><br>
+                <h5>Your account <strong>{{ user }}</strong> appears to be inactive?</h5><br>
+                <h5>If this is a mistake please contact <a href="{% url 'support' %}" aria-label="Opens the support account">Support</a></h5><br>
+                <h5>If you don't have an account and wish to make one.</h5>
+                <div class="row text-center">
+                    <div class="col-12 mt-3">
+                        <a class="btn btn-outline-black" href="{% url 'account_signup' %}">Sign Up here <i class="fas fa-chevron-right"></i></a><br>
+                    </div>    
+                </div>
             </div>
         </div>
 </div>
@@ -34,7 +39,7 @@
 {% block padding %}
 <div class="container">
     <div class="row">
-        <div class="padding-container"></div>
+        <div class="auth-padding-container"></div>
     </div>
 </div>
 {% endblock %}

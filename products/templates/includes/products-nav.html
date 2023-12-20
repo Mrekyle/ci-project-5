@@ -2,7 +2,7 @@
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold border-right border-left nav-link mr-5 pl-5 pr-5 product-nav" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+                All Products <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'shop' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -14,7 +14,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold border-right nav-link mr-5 ml-1 pr-5 product-nav" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Proteins
+                Proteins <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'shop' %}?category=chicken,beef,pork,lamb" class="dropdown-item">All Proteins</a>
@@ -28,7 +28,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="llogo-font font-weight-bold border-right nav-link mr-5 ml-1 pr-5 product-nav" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Vegetables
+                Vegetables <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'shop' '}?category=root,greens,herbs" class="dropdown-item">All Vegetables</a>
@@ -41,7 +41,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold border-right nav-link mr-5 ml-1 pr-5 product-nav" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plant Based
+                Plant Based <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'shop' %}?category=meats,dairy,grains" class="dropdown-item">All Plant Based</a>
@@ -54,7 +54,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold border-right nav-link mr-5 ml-1 pr-5 product-nav" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
+                Special Offers <i class="fas fa-chevron-down"></i>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="{% url 'shop' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>

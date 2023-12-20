@@ -1,4 +1,13 @@
 {% load i18n %}
-<p>
-    <strong>{% trans 'Warning:' %}</strong> {% trans "You currently do not have any email address set up. You should really add an email address so you can receive notifications, reset your password, etc." %}
-</p>
+<div class="row text-center mt-5 email-text">
+    <div class="col-12">
+        <strong><span class="text-uppercase">{% trans 'Warning:' %}</span>
+        </strong> {% trans "You currently do not have any email address set up. You should really add an email address so you can receive notifications, reset your password, etc." %}
+        <p class="mt-2">If you beleive this to be a mistake, please contact support by clicking below</p>
+        <div class="row text-center">
+            <div class="col-12">
+                <a class="btn btn-outline-black" href="{% url 'support' %}" aria-label="Opens the support page">Support <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

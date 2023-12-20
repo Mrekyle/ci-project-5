@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "- Sign Out" %}{% endblock head_title %}
+{% block extra_title %}{% trans "- Sign Out" %}{% endblock extra_title %}
 
 {% block inner_content %}
 <div class="container">
@@ -25,8 +25,12 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a class="" href="{% url 'home' %}" aria-label="Send the user to the home page">Go Home</a>
-  <button class="" type="submit">{% trans 'Sign Out' %}</button>
+  <a class="mr-4 btn rounded-0 btn-outline-black p-2" href="{% url 'home' %}" aria-label="Send the user to the home page">
+  <i class="pl-2 fas fa-chevron-left"></i>  Go Home
+  </a>
+  <button class="btn btn-logout" type="submit">
+    {% trans 'Sign Out' %} <i class="fa-solid fa-arrow-right-from-bracket"></i>  
+  </button>
 </form>
 
 
@@ -35,7 +39,7 @@
 {% block padding %}
 <div class="container mb-5">
     <div class="row">
-        <div class="padding-container mb-5"></div>
+        <div class="auth-padding-container mb-5"></div>
     </div>
 </div>
 {% endblock %}
