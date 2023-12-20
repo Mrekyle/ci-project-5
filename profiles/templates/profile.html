@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col">
             <hr class="mb-2">
-                <h2 class="page-title">My Profile: USERNAME</h2>
+                <h2 class="page-title">My Profile: {{ user }}</h2>
             <hr class="mt-2">
         </div>
     </div>
@@ -41,8 +41,8 @@
             </div>
             <div class="row text-center mb-5">
                 <div class="col-7">
-                    <a href="#" aria-label="Opens the users previous orders page" 
-                    class="btn btn-outline-black w-100">Billing Information 
+                    <a href="{% url 'delivery-info' %}" aria-label="Opens the users previous orders page" 
+                    class="btn btn-outline-black w-100">Delivery Information 
                     <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
@@ -70,8 +70,7 @@
 
         </div>
         <div class="col-6">
-            ORDERS HISTORY LIST PAGINATED
-            ORDER NUM, DATE, PRICE
+            {{ orders }}
         </div>
     </div>
 </div>
