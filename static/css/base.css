@@ -75,6 +75,10 @@ footer {
     height: 6.7rem;
 }
 
+.email-padding {
+    height: 9rem;
+}
+
 .icon {
     color: black;
     font-size: 0.7rem;

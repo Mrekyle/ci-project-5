@@ -25,19 +25,17 @@
   </div>
 {% if confirmation %}
 
-{% user_display confirmation.email_address.user as user_display %}
-
-{% if can_confirm %}
-<p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an email address for user {{ user_display }}.{% endblocktrans %}</p>
-
-<form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
-{% csrf_token %}
-{{ form|crispy }}
-    <button type="submit">{% trans 'Confirm' %}</button>
-</form>
-{% else %}
-<p>{% blocktrans %}Unable to confirm {{ email }} because it is already confirmed by a different account.{% endblocktrans %}</p>
-{% endif %}
+    {% user_display confirmation.email_address.user as user_display %}
+    <div class="row text-center mt-4">
+        <div class="col-12">
+            <p>{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}"><strong>{{ email }}</strong></a> is an e-mail address for user <strong>{{ user_display }}</strong>.{% endblocktrans %}</p>
+        </div>
+    </div>
+    <form class="text-center mt-2" method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-outline-black" type="submit">Confirm Email <i class="fas fa-chevron-right"></i></button>
+    </form>
 
 {% else %}
 
@@ -56,7 +54,6 @@
     <div class="col-4"><a class="btn btn-outline-black" aria-label="Send the user to request a new password change link"  href="{% url 'account_change_password' %}"><i class="fas fa-chevron-left"></i> Reset your password</a></div>
     <div class="col-4"><a class="btn btn-outline-black" aria-label="Send the user back to the profile page" href="{% url 'profile' %}">My Profile <i class="fas fa-chevron-right"></i></a></div>
   </div>
-
 {% endif %}
 
 {% endblock inner_content %}
