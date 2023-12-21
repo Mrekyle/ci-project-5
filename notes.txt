@@ -1,111 +1,33 @@
 TO DO:
 
-Wireframes √
-Database Scheme √
-Fonts √
-Colors √
-Bootstrap √
-Font awesome √
-
-404 page √
-Finish/update Toasts - Update success toast √
-
-Page name in tab title √
-Meta tags
-Code blocks √
-
-Add extra meta tags to all pages  √
-Style auth buttons/Application buttons
-Allauth pages needs to be central √
-Finish styling allauth pages 
-
-Create Home app
-
-    Base page
-        main image and text
-        Add supplier images
-
-    Jobs Page √
-        Add content
-
-    Roadmap Page √
-        Add content and styling
-
-    Support page        
-        Contact form √
-            Build functionality
-
-Create Store app
-    rating √
-    Filtering options √
-    Add pagination 
-    Edit scroll to top button √
-
-    Products Detail Page √
-        Finish styling √
-        Finish quantity selection √
-        Finish add to bag functionality √
-
-    edit products nav to represent new categories on manual input
-
-Create Bag app
-    Items in basket √
-    Total cost √
-    Quantity of items √  
-        Edit Quantity √
-        Remove items √
-    Secure checkout
-    Checkout form √
-    Checkout order scrollable 
-    Stripe payments √
-    Loading animation √
-    Generate order number and order completion √
-
-    Style checkout success Page
-
-Create Profiles app
-    User:
-        Shipping Information
-        Billing Information
-        Favourites
-        Support
-        Previous orders
-            Show completed order - Slight edit to info on page (if statement)
-        Account Settings(password, email etc...)
-        Model
-    Store Owner:
-        Shop Information
-        Bio
-        Address
-        Current items in store
-        Item CRUD
-        Support
-        Orders
-        Beta Features(Earnings/expected earnings)
-        Account Settings
-        Model
-    Admin:
-        Beta Features(Support Chats, Show earnings)
-        Create supplier accounts
-        Check Orders
-        Order dispatch email
-
-Create DontGnochIt app 
-    Add page content
-    Images
-
-CRUD
-User Testimonials √
-Django Messages - Toasts √
+Meta tags on each page that need it 
+Add pagination
+Home page hero images
+Home page supplier images
+Build contact form functionality
+Add pagination to full order history and products pages
+Dissable favourites button in profiles
+Account settings drop down menu
+Add store owners button and dissable to admin admin_dashboard
+Item CRUD
+Set up Emails
+Add all orders to admin admin_dashboard
+Add revenue to admin_dashboard
+Add any other beta feature buttons to admin_dashboard from current phase
+Add images and content to dontgnochit
 Favicon
-Edit allauth templates to forward to own base.html √
-Add everything to Roadmap √
-Add hover state top return to top button on shop page √
-Add hover effect to item navigation in store page
 
-Social media page for the application(facebook)
+Create database of items 
 
 DEPLOYMENT:
+
+Set up sql 
+set up cloudinary and migrate static
+set up heroku and launch
+Remove unused Code
+Code comments
+config vars
+debug to false
 
 Add webhook handler to stripe dashboard into whsecret
 
@@ -118,18 +40,10 @@ Testing
     pep8 
     Write testing in readme
 
-Remove unused Code
-Put code into separate filed(js/css)
-Code comments
-config vars
-debug to false
 
 Business model for the app
-Django emails
 Facebook page 
 Keyword Research
 sitemap.xml
 robots.txt
-AWS Hosting/cloudinary
-Database migrations
 Readme

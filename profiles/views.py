@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.urls import reverse
 
+from django.contrib.auth.decorators import login_required
+
 from .models import UserProfile
 from .forms import UserForm
 from checkout.models import Order
@@ -9,6 +11,7 @@ from checkout.models import Order
 # Create your views here.
 
 
+@login_required
 def renderprofile(request):
     """
         Renders the profile page of the application
@@ -18,19 +21,22 @@ def renderprofile(request):
     """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    form = UserForm(instance=profile)
-    orders = profile.orders.all()
+
+    if request.method == 'POST':
+        orders = profile.orders.all()
+    else:
+        orders = profile.orders.all()
 
     template = 'profile.html'
     context = {
         'user': profile,
-        'form': form,
-        'order': orders,
+        'orders': orders,
     }
 
     return render(request, template, context)
 
 
+@login_required
 def renderdelivery(request):
     """
         Renders the users default delivery information
@@ -48,43 +54,46 @@ def renderdelivery(request):
             messages.success(
                 request, f"Delivery information successfully updated.")
             return redirect(reverse('profile'))
+        else:
+            messages.error(request, f'Information update has failed, please try again or \
+                           contact support for further assistance.')
 
     form = UserForm(instance=profile)
-    orders = profile.orders.all()
 
     template = 'delivery_information.html'
 
     context = {
         'user': profile,
         'form': form,
-        'order': orders,
         'on_delivery': True,
     }
 
     return render(request, template, context)
 
 
+@login_required
 def renderorderhistory(request, order_number):
     """
         Renders the individual orders history
     """
 
-    order = get_object_or_404(Order, order_number=order_number)
+    orders = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, f"This is a past confirmation for your order {order_number}. \
                  A confirmation email was sent of the date it was ordered.")
 
-    template = 'checkout/checkout_success.html'
+    template = 'checkout_success.html'
 
     context = {
-        'order': order,
+        'orders': orders,
         'from_profile': True
     }
 
     return render(request, template, context)
 
 
-def renderfullhistory(request):
+@login_required
+def renderfullhistory(request,):
     """
         Renders the users full order history in one place
     """
@@ -96,25 +105,28 @@ def renderfullhistory(request):
 
     context = {
         'user': profile,
-        'orders': orders,
+        'order': orders,
     }
 
     return render(request, template, context)
 
 
+@login_required
 def renderadmin(request):
     """
         Renders the admin dashboard 
     """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    orders = Order.all()
+    # orders = get_object_or_404(Order)
+
+    # orders = orders.all()
 
     template = 'admin_dashboard.html'
 
     context = {
         'user': profile,
-        'orders': orders,
+        # 'orders': orders,
     }
 
     return render(request, template, context)

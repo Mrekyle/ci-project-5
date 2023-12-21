@@ -29,17 +29,41 @@
     </div>
     <div class="row mt-3 text-center">
         <div class="col-12 mt-3">
-           <div class="table-responsive">
-            <table class="table table-lg">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-lg order-history">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Order Date</th>
+                            <th>Items</th>
+                            <th>Delivery Postcode</th>
+                            <th>Delivery Cost</th>
+                            <th>Order Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for orders in order %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'order_confirmation' orders.order_number %}" aria-label="Opens a confirmation page for the selected order" class="user-history" title="{{ order.order_number }}">{{ orders.order_number|truncatechars:7 }}</a>
+                                </td>
+                                <td>{{ orders.date}}</td>
+                                <td>
+                                    <ul class="list-unstyled">
+                                        {% for item in orders.newitem.all %}
+                                            <li class="small">
+                                                {{ item.product.name }} X {{ item.quantity }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                                <td>{{ orders.postcode }}</td>
+                                <td><strong>£{{ orders.delivery_cost }}</strong></td>
+                                <td><strong>£{{ orders.grand_total }}</strong></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
            </div>
         </div>
     </div>
@@ -48,6 +72,9 @@
     <div class="container mt-5">
         <a href="{% url 'profile' %}" aria-label="Send the user back to the profiles page" class="btn btn-outline-black"><i class="fas fa-chevron-left"></i> Back</a>
     </div>
+</div>
+<div class="row">
+    <div class="profile-padding"></div>
 </div>
 {% endblock %}
 

@@ -66,6 +66,11 @@ footer {
     background-color: black;
 }
 
+.order-history {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
 .git-link {
     color: white;
     font-size: 1.4rem;
@@ -73,6 +78,10 @@ footer {
 
 .profile-padding {
     height: 6.7rem;
+}
+
+.user-history:hover {
+    color: #1ed0eb;
 }
 
 .email-padding {
@@ -185,7 +194,7 @@ a.cat-badge > span.badge:hover {
 }
 
 .email-auth-padding-container {
-    height: 18rem;
+    height: 9rem;
 }
 
 .emailconfirm-auth-padding-container {

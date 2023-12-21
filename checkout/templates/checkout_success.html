@@ -185,7 +185,7 @@
     </div>
     <hr class="w-75">
     <div class="row text-center mb-4">
-        <div class="col-6 col-lg-6">
+        <div class="{% if from_profile %} col-4 col-lg-4 {% else %} col-6 col-lg-6 {% endif %}">
             <p>Missed something from your order?</p>
             <a href="{% url 'shop' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the main shopping page">
                 <span class="icon-bag">
@@ -194,10 +194,19 @@
                 <span class="text-uppercase">Keep Shopping</span>
             </a>
         </div>
-        {% if from_profile %}  
-        <div class="col-6 col-lg-6">
-            <p>Go Back</p>
-            <a href="{% url 'order-history' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the full order history page">
+        {% if from_profile %}
+        <div class="col-4 col-lg-4">
+            <p>My Profile</p>
+            <a href="{% url 'profile' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user to the their profile page">
+                <span class="text-uppercase">My Profile</span>
+                <span class="icon-bag">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col-4 col-lg-4">
+            <p>Full Order History</p>
+            <a href="{% url 'profile' %}" class="btn btn-outline-black rounded-0 my-2" aria-label="Send the user there full order history">
                 <span class="text-uppercase">Order History</span>
                 <span class="icon-bag">
                     <i class="fas fa-chevron-right"></i>
