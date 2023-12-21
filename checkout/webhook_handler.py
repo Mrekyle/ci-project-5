@@ -23,12 +23,18 @@ class StripeWH_Handler:
 
         custom_email = order.email
         subject = render_to_string(
-            'confirmation-emails/confirmation_email_subject.txt',
+            'checkout/confirmation-emails/confirmation_email_subject.txt',
             {'order': order},
         )
         body = render_to_string(
-            'confirmation-emails/confirmation_email_body.txt',
+            'checkout/confirmation-emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_CONFIRMATION_EMAIL}
+        )
+        send_mail(
+            subject,
+            body,
+            settings.DEFAULT_CONFIRMATION_EMAIL,
+            [custom_email]
         )
 
     def __init__(self, request):
@@ -44,7 +50,7 @@ class StripeWH_Handler:
             content=f'Unhandled Webhook Received: {event["type"]}',
             status=200)
 
-    def handle_payment_intent_succeeded(self, event):
+    def handle_payment_intent_succeeded(self, event, order):
         """
             Handle the payment intent succeeded. After the
             payment was successful 
@@ -80,6 +86,7 @@ class StripeWH_Handler:
                 profile.def_county = shipping_details.country
                 profile.def_country = shipping_details.country
                 profile.def_postcode = shipping_details.postcode
+                profile.save()
 
         order_exists = False
         attempt = 1
@@ -106,7 +113,7 @@ class StripeWH_Handler:
                 time.sleep(1)
 
             if order_exists:
-                self._send_confirmation_email(order)
+                self._send_email_confirm(order)
                 return HttpResponse(
                     content=f'Webhook {event["type"]} | SUCCESS: New order created in database', status=200
                 )
@@ -114,14 +121,15 @@ class StripeWH_Handler:
                 order = None
                 try:
                     order = Order.objects.create(
-                        full_name__iexact=shipping_details.name,
-                        email__iexact=billing_details.name,
-                        phone_number__iexact=shipping_details.phone,
-                        street_address1__iexact=shipping_details.address.line1,
-                        street_address2__iexact=shipping_details.address.line2,
-                        county__iexact=shipping_details.address.staticmethod,
-                        country__iexact=shipping_details.address.country,
-                        postcode__iexact=shipping_details.address.postal_code,
+                        full_name=shipping_details.name,
+                        user_profile=profile,
+                        email=billing_details.name,
+                        phone_number=shipping_details.phone,
+                        street_address1=shipping_details.address.line1,
+                        street_address2=shipping_details.address.line2,
+                        county=shipping_details.address.staticmethod,
+                        country=shipping_details.address.country,
+                        postcode=shipping_details.address.postal_code,
                         grand_total=grand_total,
                         stripe_pid=pid,
                         original_bag=bag,
@@ -142,6 +150,7 @@ class StripeWH_Handler:
                         content=f'Webhook: {event["type"]} | ERROR: {e}', status=500
                     )
 
+        self._send_email_confirm(order)
         return HttpResponse(
             content=f'Webhook Received: {event["type"]}',
             status=200)

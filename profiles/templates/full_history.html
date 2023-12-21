@@ -19,11 +19,12 @@
 {% endblock %}
 
 {% block content %}
+{% if from_admin %}
 <div class="container">
     <div class="row">
         <div class="col">
             <hr class="mb-2">
-                <h2 class="page-title">{{ user }}: Full Order History</h2>
+                <h2 class="page-title">Localitty Full Order History</h2>
             <hr class="mt-2">
         </div>
     </div>
@@ -42,7 +43,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for orders in paginate %}
+                        {% for orders in paginate_a %}
                             <tr>
                                 <td>
                                     <a href="{% url 'order_confirmation' orders.order_number %}" aria-label="Opens a confirmation page for the selected order" class="user-history" title="{{ order.order_number }}">{{ orders.order_number|truncatechars:7 }}</a>
@@ -100,5 +101,88 @@
 <div class="row">
     <div class="profile-padding"></div>
 </div>
+{% else %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr class="mb-2">
+                    <h2 class="page-title">{{ user }}: Full Order History</h2>
+                <hr class="mt-2">
+            </div>
+        </div>
+        <div class="row mt-3 text-center">
+            <div class="col-12 mt-3">
+                <div class="table-responsive">
+                    <table class="table table-lg order-history">
+                        <thead>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Order Date</th>
+                                <th>Items</th>
+                                <th>Delivery Postcode</th>
+                                <th>Delivery Cost</th>
+                                <th>Order Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for orders in paginate %}
+                                <tr>
+                                    <td>
+                                        <a href="{% url 'order_confirmation' orders.order_number %}" aria-label="Opens a confirmation page for the selected order" class="user-history" title="{{ order.order_number }}">{{ orders.order_number|truncatechars:7 }}</a>
+                                    </td>
+                                    <td>{{ orders.date}}</td>
+                                    <td>
+                                        <ul class="list-unstyled">
+                                            {% for item in orders.newitem.all %}
+                                                <li class="small">
+                                                    {{ item.product.name }} X {{ item.quantity }}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                    <td>{{ orders.postcode }}</td>
+                                    <td><strong>£{{ orders.delivery_cost }}</strong></td>
+                                    <td><strong>£{{ orders.grand_total }}</strong></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <hr class="w-75">
+    <div class="row text-center">
+        <div class="col-6">
+            {% if paginate.has_previous %}
+            <div class="col-12 ml-5">
+                <a href="?page=1" class="btn-paginate p-1">FIRST</a>
+                <a href="?page={{paginate.previous_page_number}}" class="btn-paginate p-1 ml-3"><i class="fas fa-chevron-left"></i>PREV</a>
+            </div>
+            {% endif %}
+        </div>
+        <div class="col-6 align-self-end">
+            {% if paginate.has_next %}
+            <div class="col-12 mr-5">
+                <a href="?page={{paginate.next_page_number}}" class="btn-paginate p-1 mr-3">NEXT <i class="fas fa-chevron-right"></i></a>
+                <a href="?page={{paginate.paginator.num_pages}}" class="btn-paginate p-1">LAST</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center mt-4">
+            <p class="text-muted">Current page: {{ paginate.number }} of {{ paginate.paginator.num_pages }}</p>
+        </div>
+    </div>
+    <div class="row mt-4 mb-5">
+        <div class="container mt-5">
+            <a href="{% url 'profile' %}" aria-label="Send the user back to the profiles page" class="btn btn-outline-black"><i class="fas fa-chevron-left"></i> Back</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="profile-padding"></div>
+    </div>
+{% endif %}
 {% endblock %}
 

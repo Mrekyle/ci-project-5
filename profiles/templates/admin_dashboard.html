@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block extra_title %}
-    - My Profile
+    - Admin Portal
 {% endblock %}
 
 {% block pageheader %}
@@ -23,40 +23,72 @@
     <div class="row">
         <div class="col">
             <hr class="mb-2">
-                <h2 class="page-title">Admin Dashboard</h2>
+                <h2 class="page-title">Admin Portal</h2>
             <hr class="mt-2">
         </div>
     </div>
 </div>
 <div class="container mt-4">
-    <div class="preview-container text-center row">
-        <div class="col-4">Total Orders</div>
-        <div class="col-4">Products</div>
-        <div class="col-4">Revenue</div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <div class="row text-center mb-5">
-                <div class="col-5">Orders</div>
-                <div class="col-5">Product Admin</div>
-            </div>
-            <div class="row text-center mb-5">
-                <div class="col-5">Beta features <small class="text-muted">(Beta)</small>Dissable buttons</div>
-                <div class="col-5">Button 2</div>
-            </div>
-            <div class="row text-center mb-5">
-                <div class="col-5">Buttons 1</div>
-                <div class="col-5">Buttons 2</div>
-            </div>
-            <div class="row text-center mb-5">
-                <div class="col-5">Account Password</div>
-                <div class="col-5">Account Email</div>
-            </div>
-
+    <div class="preview-container text-center row justify-content-around">
+        <div class="col-4 total-orders">
+            <a href="{% url 'order_history' %}" class="" aria-label="Opens the order history page">Orders
+                <p class="mt-2">{{ orders.count }}</p>
+            </a>
         </div>
-        <div class="col-6">
-            ORDERS HISTORY LIST PAGINATED
-            ORDER NUM, DATE, PRICE
+        <div class="col-4 total-products">
+            <a href="{% url 'product_managment' %}" class="" aria-label="Opens the product managment page">Products
+                <p class="mt-2">{{ product.count }}</p>
+            </a>
+        </div>
+        <div class="col-4 total-revenue">
+            <a href="" class="" aria-label="Does Nothing. Here for future development/linking into finance software">Revenue</a>
+            <p class="mt-2">£</p>
+        </div>
+    </div>
+    <hr class="w-75 mt-5">
+    <div class="row mt-5">
+        <div class="col-7">
+            <div class="row text-center mb-5">
+                <a href="{% url 'order_history' %}" class="col-5 btn btn-outline-black">All Orders <i class="fas fa-chevron-right"></i></a>
+                <a href="{% url 'product_managment' %}" class="col-5 btn btn-outline-black ml-3">Product Admin <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="row text-center mb-5">
+                <a href="" class="col-5 btn btn-outline-black" aria-disabled="true">Vendor Account <small class="text-muted">(Beta)</small> <i class="fas fa-chevron-right"></i></a>
+                <a href="" class="col-5 btn btn-outline-black ml-3" aria-disabled="true">Delivery Managment <small class="text-muted">(Beta)</small><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="row text-center mb-5">
+                <a href="" class="col-5 btn btn-outline-black" aria-disabled="true">Recipe Blog <small class="text-muted">(Beta)</small><i class="fas fa-chevron-right"></i></a>
+                <a href="" class="col-5 btn btn-outline-black ml-3" aria-disabled="true">Developer Blog <small class="text-muted">(Beta)</small> <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="row text-center mb-5">
+                <a href="{% url 'account_change_password' %}" aria-label="Opens the change password page" class="col-5 btn btn-outline-black">Change Password <i class="fas fa-chevron-right"></i></a>
+                <a href="{% url 'account_email' %}" class="col-5 btn btn-outline-black ml-3" aria-label="Opens the email settings page">Account E-mail <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+        <div class="col-5">
+            <h5>Orders:</h5>
+            <div class="table-responsive">
+                <table class="table table-sm order-history">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Date</th>
+                            <th>Order Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                            <tr>
+                                <td>
+                                    <a href="{% url 'order_confirmation' order.order_number %}" aria-label="Opens a confirmation page for the selected order" class="user-history" title="{{ orders.order_number }}">{{ order.order_number|truncatechars:7 }}</a>
+                                </td>
+                                <td>{{ order.date}}</td>
+                                <td><strong>£ {{ order.grand_total }}</strong></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

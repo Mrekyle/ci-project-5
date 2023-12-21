@@ -1,4 +1,8 @@
+/* IMPORTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,700&family=Roboto:wght@700&display=swap');
+
+/* BASE HTML CLASSES  */
 
 html {
     height: 100%;
@@ -12,126 +16,9 @@ body {
     font-size: 14px;
 }
 
-.text-black {
-    color: black !important;
-}
-
-.text-white {
-    color: white;
-}
-
-.nav-border {
-    border-bottom: 2px solid #dee2e6;
-}
-
-.t-bold {
-    font-weight: 900ß;
-}
-
-
 footer {
     font-size: 12px;
     background-color: #232f3e;
-}
-
-.mission {
-    font-size: 1.1rem;
-}
-
-.hr-w {
-    background-color: white;
-}
-
-.phase-list {
-    list-style-type: none;
-}
-
-.main-img-container {
-    height: 475px;
-    -webkit-clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
-    clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
-}
-
-
-.img-container {
-    height: 320px;
-}
-
-.size-14 {
-    font-size: 14px;
-}
-
-.footer-block {
-    height: 5px;
-    background-color: black;
-}
-
-.order-history {
-    max-height: 450px;
-    overflow-y: auto;
-}
-
-.git-link {
-    color: white;
-    font-size: 1.4rem;
-}
-
-.profile-padding {
-    height: 6.7rem;
-}
-
-.user-history:hover {
-    color: #1ed0eb;
-}
-
-.email-padding {
-    height: 9rem;
-}
-
-.icon {
-    color: black;
-    font-size: 0.7rem;
-}
-
-.checkout-icon {
-    color: black;
-    font-size: 0.7rem;
-}
-
-.preview-container {
-    height: 4.4rem;
-    max-width: 100%;
-    margin-bottom: 2rem;
-    background-color: #17a2b8;
-}
-
-.text-balance {
-    text-wrap: balance;
-}
-
-.checkout-icon:hover {
-    color: white;
-    font-size: 0.7rem;
-}
-
-.y-bg {
-    background: yellow;
-}
-
-.icon-loading {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-.icon-bag {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.6rem;
-    width: 1.6rem;
 }
 
 a {
@@ -149,28 +36,113 @@ a.cat-badge > span.badge:hover {
     color: #fff !important;
 }
 
-.t-btn {
-    width: 35px;
-    height: 35px;
-    padding: 4px;
+/* HELPER CLASSES */
+
+.text-black {
+    color: black !important;
 }
 
-.t-btn:hover {
-    background-color: #777777;
+.text-white {
+    color: white;
 }
 
-.icon-link {
+.t-bold {
+    font-weight: 900ß;
+}
+
+.hr-w {
+    background-color: white;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.icon {
     color: black;
+    font-size: 0.7rem;
 }
 
-.t-btn-cursor {
-    cursor: pointer;
+.checkout-icon {
+    color: black;
+    font-size: 0.7rem;
+}
+
+.user-history:hover {
+    color: #1ed0eb;
+}
+
+.support:hover {
+    color: #dc3545;
+}
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.text-white:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.email-text {
+    font-size: medium;
+}
+
+/* NAVIGATION */
+
+.nav-border {
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* FOOTER  */
+
+.git-link {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.footer-block {
+    height: 5px;
+    background-color: black;
 }
 
 .f-bg {
     background-color: #444544;
     color: white;
     font-size: 12px;
+}
+
+/* BASE/INDEX PAGE  */
+
+.mission {
+    font-size: 1.1rem;
+}
+
+.main-img-container {
+    height: 475px;
+    -webkit-clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+    clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+}
+
+.img-container {
+    height: 320px;
+}
+
+/* ROADMAP PAGE */
+
+.phase-list {
+    list-style-type: none;
+}
+
+/* PADDING CLASSES */
+
+.profile-padding {
+    height: 6.7rem;
+}
+
+.email-padding {
+    height: 9rem;
 }
 
 .padding-container {
@@ -181,16 +153,8 @@ a.cat-badge > span.badge:hover {
     height: 19.7rem;
 }
 
-.email-text {
-    font-size: medium;
-}
-
 .auth-padding-container {
     height: 14rem;
-}
-
-.support:hover {
-    color: #dc3545;
 }
 
 .email-auth-padding-container {
@@ -209,18 +173,21 @@ a.cat-badge > span.badge:hover {
     height: 17rem;
 }
 
+/* ORDERS */
+
+.order-history {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+/* STORE  */
+
 .product-edit {
     color: rgb(0, 219, 219);
 }
 
 .product-edit:hover {
     color: rgb(0, 156, 156);
-}
-
-
-.text-white:hover {
-    color: #fff !important;
-    text-decoration: none;
 }
 
 .card-img {
@@ -238,7 +205,57 @@ a.cat-badge > span.badge:hover {
     overflow: hidden;
 }
 
+/* ADMIN DASHBORAD */
+
+.preview-container {
+    height: 4.4rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.total-orders, .total-products, .total-revenue {
+    border: 1px solid black;
+    max-width: 12rem;
+    height: 5rem;
+    padding-top: 10px;
+}
+
+
+.product-hover:hover {
+    color: rgb(0, 219, 219);
+}
+/* CHECKOUT */
+
+.checkout-icon:hover {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.icon-loading {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.icon-bag {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.icon-link {
+    color: black;
+}
+
 /* BUTTON STYLING  */
+
+.t-btn-cursor {
+    cursor: pointer;
+}
 
 .btn-paginate {
     background: white;
@@ -320,7 +337,21 @@ a.cat-badge > span.badge:hover {
     font-size: medium;
 }
 
+.t-btn {
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+}
+
+.t-btn:hover {
+    background-color: #777777;
+}
+
 /* TOASTS */
+
+.y-bg {
+    background: yellow;
+}
 
 .custom-toast {
     overflow: visible;

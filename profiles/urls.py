@@ -11,4 +11,6 @@ urlpatterns = [
     path('order-history/', views.renderfullhistory, name='order_history'),
     path('order-confirmation/<order_number>',
          views.renderorderhistory, name='order_confirmation'),
+    path('product-managment/', views.renderproductmanagment,
+         name='product_managment'),
 ]

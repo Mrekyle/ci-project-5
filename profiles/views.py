@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserForm
 from checkout.models import Order
+from products.models import Product
 
 # Create your views here.
 
@@ -101,16 +102,24 @@ def renderfullhistory(request,):
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
+    admin_order = Order.objects.all()
+
     p = Paginator(orders, 7)
     page = request.GET.get('page')
 
+    p_a = Paginator(admin_order, 7)
+    page_a = request.GET.get('page')
+
     paginate = p.get_page(page)
+    paginate_a = p_a.get_page(page_a)
 
     template = 'full_history.html'
 
     context = {
         'user': profile,
         'paginate': paginate,
+        'paginate_a': paginate_a,
+        'from_admin': True
     }
 
     return render(request, template, context)
@@ -123,15 +132,39 @@ def renderadmin(request):
     """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    # orders = get_object_or_404(Order)
 
-    # orders = orders.all()
+    orders = Order.objects.all()
+    product = Product.objects.all()
 
     template = 'admin_dashboard.html'
 
     context = {
         'user': profile,
-        # 'orders': orders,
+        'orders': orders,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def renderproductmanagment(request):
+    """
+        Renders the product managment page
+    """
+
+    product = Product.objects.all()
+
+    p = Paginator(product, 20)
+    page = request.GET.get('page')
+
+    paginate = p.get_page(page)
+
+    template = 'product_managment.html'
+
+    context = {
+        'products': product,
+        'paginate': paginate,
     }
 
     return render(request, template, context)
