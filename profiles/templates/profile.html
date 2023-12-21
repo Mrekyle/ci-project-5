@@ -55,16 +55,31 @@
             </div>
             <div class="row text-center mb-5">
                 <div class="col-7">
-                    <a href="#" aria-label="Opens the users previous orders page" 
+                    <a href="{% url 'support' %}" aria-label="Opens the users previous orders page" 
                     class="btn btn-outline-black w-100">Support 
                     <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
             <div class="row text-center mb-5">
                 <div class="col-7">
-                    <a href="#" aria-label="Opens the users previous orders page" 
-                    class="btn btn-outline-black w-100">Account Management DropDown
-                    <i class="fas fa-chevron-down"></i></a>
+                    <nav class="navbar navbar-expand-lg navbar-light w-100">
+                        <button class="navbar-toggler btn btn-outline-black" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="main-nav">
+                            <ul class="navbar-nav w-auto mx-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-outline-black" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Account Managment <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu border-1" aria-labelledby="all-products-link">
+                                        <a href="{% url 'account_change_password' %}" class="dropdown-item">Change Password</a>
+                                        <a href="{% url 'account_email' %}" class="dropdown-item ">Change Email</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
 
