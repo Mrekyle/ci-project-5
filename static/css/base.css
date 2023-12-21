@@ -197,6 +197,10 @@ a.cat-badge > span.badge:hover {
     height: 9rem;
 }
 
+.jobs-padding-container {
+    height: 16rem;
+}
+
 .emailconfirm-auth-padding-container {
     height: 21.4rem;
 }
@@ -235,6 +239,20 @@ a.cat-badge > span.badge:hover {
 }
 
 /* BUTTON STYLING  */
+
+.btn-paginate {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+    padding: 3px 2px 3px 2px;
+}
+
+.btn-paginate:hover,
+.btn-paginate:active,
+.btn-paginate:focus {
+    background: #444544;
+    color: white !important;
+}
 
 .product-nav:hover {
     color: black !important;

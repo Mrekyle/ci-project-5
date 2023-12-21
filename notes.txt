@@ -1,13 +1,13 @@
 TO DO:
 
-Dissable favourites button in profiles
-Account settings drop down menu
 Item CRUD
 Build contact form functionality
 Add revenue to admin_dashboard
 Add all orders to admin admin_dashboard
 Add any other beta feature buttons to admin_dashboard from current phase
 Add pagination
+Organise css files
+Code Comments
 
 
 Meta tags on each page that need it 
@@ -27,7 +27,6 @@ Set up sql
 set up cloudinary and migrate static
 set up heroku and launch
 Remove unused Code
-Code comments
 config vars
 debug to false
 

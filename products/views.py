@@ -1,6 +1,8 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.core.paginator import Paginator
+
 from django.db.models.functions import Lower
 from .models import Product, Category
 
@@ -63,7 +65,13 @@ def rendershop(request):
 
     sorted = f'{sort}_{direction}'
 
+    p = Paginator(products, 12)
+    page = request.GET.get('page')
+
+    paginate = p.get_page(page)
+
     context = {
+        'paginate': paginate,
         'products': products,
         'user_search': query,
         'category_filter': categories,

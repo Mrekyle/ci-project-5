@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.urls import reverse
-
+from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
@@ -101,11 +101,16 @@ def renderfullhistory(request,):
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all()
 
+    p = Paginator(orders, 7)
+    page = request.GET.get('page')
+
+    paginate = p.get_page(page)
+
     template = 'full_history.html'
 
     context = {
         'user': profile,
-        'order': orders,
+        'paginate': paginate,
     }
 
     return render(request, template, context)
