@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_meta %}
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+{% endblock %}
+
+{% block extra_title %}
+    - Edit: {{ product.name }}
+{% endblock %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-left">Edit : {{ product.name }}</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+</div>
+   
+{% endblock %}
+
+{% block padding %}
+    <div class="container">
+        <div class="row">
+            <div class="padding-container"></div>
+        </div>
+    </div>
+{% endblock %}

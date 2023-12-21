@@ -14,6 +14,8 @@ Set up Emails - Confirmation email not sending
 Add images and content to dontgnochit
 Favicon
 
+Add add product button to product managment page
+
 Add stock tracking to the products model and crud functiuons
 
 Create database of items 
