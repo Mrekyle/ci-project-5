@@ -50,8 +50,8 @@
                                 <td>{{ product.category }}</td>
                                 <td><strong>£{{ product.price }}</strong></td>
                                 <td>Stock Level</td>
-                                <td><a href="" class="product-edit" aria-label="Allows the admin to edit the selected product">Edit</a></td>
-                                <td><a href="" class="text-danger" aria-label="Allows the admin to delete the selected product"><i class="fas fa-trash"></i> Delete</a></td>
+                                <td><a href="{% url 'edit_product' product.id %}" class="product-edit" aria-label="Allows the admin to edit the selected product">Edit</a></td>
+                                <td><a href="{% url 'delete_product' product.id %}" class="text-danger" aria-label="Allows the admin to delete the selected product"><i class="fas fa-trash"></i> Delete</a></td>
                             </tr>
                         {% endfor %}
                     </tbody>

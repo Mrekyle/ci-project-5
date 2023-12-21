@@ -28,6 +28,31 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-4" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                    {% if field.name != 'Image' %}
+                        {{ field| as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-black" href="{% url 'product_managment' %}" aria-label="Send the admin to the product managment page.">Cancel</a>
+                    <button class="btn btn-outline-black" type="submit">Confirm Edit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row mt-4 mb-5">
+    <div class="container mt-5">
+        <a href="{% url 'admin' %}" aria-label="Send the user back to the admin page" class="btn btn-outline-black"><i class="fas fa-chevron-left"></i> Back</a>
+    </div>
+</div>
    
 {% endblock %}
 

@@ -60,8 +60,8 @@
                     {% endif %}
                     {% if user.is_superuser %}
                         <small class="text-muted ml-3">
-                            <a class="product-edit" href="#" aria-label="Opens the edit page for admins">Edit</a> |
-                            <a class="text-danger" href="#" aria-label="Deletes the product from the store">Delete</a>
+                            <a class="product-edit" href="{% url 'edit_product' product.id %}" aria-label="Opens the edit page for admins">Edit</a> |
+                            <a class="text-danger" href="{% url 'delete_product' product.id %}" aria-label="Deletes the product from the store">Delete</a>
                         </small>
                     {% endif %}
                     <div class="description-container mt-2">
@@ -117,7 +117,6 @@
 
 {% block postloadjs %}
 {{ block.super }}
-    <!-- <script type="text/javascript" src="{% static 'js/productQuantity.js' %}"></script> -->
     {% include 'includes/product_quantity.html' %}
 {% endblock %}
 
