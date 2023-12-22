@@ -7,7 +7,6 @@ Pagination bug on orders history page
 Add images and content to dontgnochit
 Home page supplier images
 Set up Emails - Confirmation email not sending
-Add add product button to product managment page
 
 Favicon
 Meta tags on each page that need it 

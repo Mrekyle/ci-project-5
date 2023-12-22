@@ -86,7 +86,7 @@ def renderorderhistory(request, order_number):
     template = 'checkout_success.html'
 
     context = {
-        'orders': orders,
+        'order': orders,
         'from_profile': True
     }
 
@@ -100,14 +100,14 @@ def renderfullhistory(request,):
     """
 
     profile = get_object_or_404(UserProfile, user=request.user)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-date')
 
-    admin_order = Order.objects.all()
+    admin_order = Order.objects.all().order_by('-date')
 
-    p = Paginator(orders, 7)
+    p = Paginator(orders, 6)
     page = request.GET.get('page')
 
-    p_a = Paginator(admin_order, 7)
+    p_a = Paginator(admin_order, 12)
     page_a = request.GET.get('page')
 
     paginate = p.get_page(page)
@@ -133,7 +133,7 @@ def renderadmin(request):
 
     profile = get_object_or_404(UserProfile, user=request.user)
 
-    orders = Order.objects.all()
+    orders = Order.objects.all().order_by('date')
     product = Product.objects.all()
 
     template = 'admin_dashboard.html'
@@ -141,7 +141,7 @@ def renderadmin(request):
     context = {
         'user': profile,
         'orders': orders,
-        'product': product,
+        'products': product,
     }
 
     return render(request, template, context)
@@ -155,7 +155,7 @@ def renderproductmanagment(request):
 
     product = Product.objects.all()
 
-    p = Paginator(product, 20)
+    p = Paginator(product, 15)
     page = request.GET.get('page')
 
     paginate = p.get_page(page)

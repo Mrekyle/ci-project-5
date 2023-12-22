@@ -1,8 +1,9 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404, reverse
 from django.contrib import messages
 from django.db.models import Q
-from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
+
 
 from django.db.models.functions import Lower
 from .models import Product, Category
@@ -16,7 +17,7 @@ def rendershop(request):
         Renders the store of the application
     """
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('name').values()
     template = 'shop.html'
     query = None
     categories = None
@@ -73,8 +74,8 @@ def rendershop(request):
     paginate = p.get_page(page)
 
     context = {
-        'paginate': paginate,
         'products': products,
+        'paginate': paginate,
         'user_search': query,
         'category_filter': categories,
         'sorted': sorted,
