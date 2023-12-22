@@ -176,7 +176,7 @@ a.cat-badge > span.badge:hover {
 /* ORDERS */
 
 .order-history {
-    max-height: 450px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
@@ -213,16 +213,42 @@ a.cat-badge > span.badge:hover {
     margin-bottom: 2rem;
 }
 
-.total-orders, .total-products, .total-revenue {
-    border: 1px solid black;
+.total-orders, 
+.total-products, 
+.total-revenue {
+    color: white;
+    border-radius: 12px;
     max-width: 12rem;
     height: 5rem;
     padding-top: 10px;
 }
 
+.total-orders > a,
+.total-products > a,
+.total-revenue > a  {
+    text-decoration: underline;
+}
+
+.total-orders {
+    background-color: #6d81fe;
+    color: whitesmoke;
+}
+
+.total-products {
+    background-color: #6d81fe;
+}
+
+.total-revenue {
+    background-color: #6d81fe;
+}
 
 .product-hover:hover {
     color: rgb(0, 219, 219);
+}
+
+.a-order-history {
+    max-height: 250px;
+    overflow-y: auto;
 }
 /* CHECKOUT */
 
@@ -458,8 +484,13 @@ a.cat-badge > span.badge:hover {
     width: calc(250px * 14);
 }
 .supplier-slider .slide-img {
-    height: 100px;
-    width: 250px;
+    height: 80px;
+    width: 200px;
+}
+
+.slide-img {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 

@@ -29,19 +29,19 @@
                 <form class="mb-5">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                        <input name="message_name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <input name="message_email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Phone Number</label>
-                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="1234567890">
+                        <input name="message_number" type="tel" class="form-control" id="exampleFormControlInput1" placeholder="1234567890">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Reason for Contact</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select name="select_option" class="form-control" id="exampleFormControlSelect1">
                           <option>Help with your account</option>
                           <option>Help with an order</option>
                           <option>Missing Items</option>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Type your message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea name="message_body" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary rounded-0">Send message</button>
                 </form>

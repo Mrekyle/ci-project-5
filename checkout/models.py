@@ -54,7 +54,7 @@ class Order(models.Model):
             'newitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY:
             self.delivery_cost = self.order_total * \
-                settings.STANDARD_DELIVERY_CHARGE
+                settings.STANDARD_DELIVERY_CHARGE / 100
         else:
             self.delivery_cost = 0
 

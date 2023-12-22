@@ -50,7 +50,7 @@ class StripeWH_Handler:
             content=f'Unhandled Webhook Received: {event["type"]}',
             status=200)
 
-    def handle_payment_intent_succeeded(self, event, order):
+    def handle_payment_intent_succeeded(self, event):
         """
             Handle the payment intent succeeded. After the
             payment was successful 
@@ -95,7 +95,7 @@ class StripeWH_Handler:
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.name,
+                    email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
@@ -111,7 +111,6 @@ class StripeWH_Handler:
             except Order.DoesNotExist:
                 attempt += 1
                 time.sleep(1)
-
             if order_exists:
                 self._send_email_confirm(order)
                 return HttpResponse(
@@ -123,7 +122,7 @@ class StripeWH_Handler:
                     order = Order.objects.create(
                         full_name=shipping_details.name,
                         user_profile=profile,
-                        email=billing_details.name,
+                        email=billing_details.email,
                         phone_number=shipping_details.phone,
                         street_address1=shipping_details.address.line1,
                         street_address2=shipping_details.address.line2,

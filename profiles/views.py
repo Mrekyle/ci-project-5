@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.urls import reverse
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
+from django.db.models import Sum
 
 from .models import UserProfile
 from .forms import UserForm
@@ -20,6 +21,11 @@ def renderprofile(request):
         Giving the user quick access to account settings, 
         support, order history quick look and order history overview
     """
+
+    if not request.user.is_authenticated:
+        messages.error(request, f'Sorry, you have to be registered to view this page. \
+                       Please log in or make an account and try again.')
+        return redirect('account_login')
 
     profile = get_object_or_404(UserProfile, user=request.user)
 
@@ -45,6 +51,11 @@ def renderdelivery(request):
         Allowing them to update the default for use in
         a quicker smoother checkout
     """
+
+    if not request.user.is_authenticated:
+        messages.error(request, f'Sorry, you have to be registered to view this page. \
+                       Please log in or make an account and try again.')
+        return redirect('account_login')
 
     profile = get_object_or_404(UserProfile, user=request.user)
 
@@ -78,6 +89,11 @@ def renderorderhistory(request, order_number):
         Renders the individual orders history
     """
 
+    if not request.user.is_authenticated:
+        messages.error(request, f'Sorry, you have to be registered to view this page. \
+                       Please log in or make an account and try again.')
+        return redirect('account_login')
+
     orders = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, f"This is a past confirmation for your order {order_number}. \
@@ -98,6 +114,11 @@ def renderfullhistory(request,):
     """
         Renders the users full order history in one place
     """
+
+    if not request.user.is_superuser:
+        messages.error(
+            request, f'Sorry, you dont have access to view this page.')
+        return redirect('home')
 
     profile = get_object_or_404(UserProfile, user=request.user)
     orders = profile.orders.all().order_by('-date')
@@ -131,17 +152,26 @@ def renderadmin(request):
         Renders the admin dashboard 
     """
 
-    profile = get_object_or_404(UserProfile, user=request.user)
+    if not request.user.is_superuser:
+        messages.error(
+            request, f'Sorry, you dont have access to view this page.')
+        return redirect('home')
 
-    orders = Order.objects.all().order_by('date')
+    profile = get_object_or_404(UserProfile, user=request.user)
     product = Product.objects.all()
+    count = product.count()
+    orders = Order.objects.all().order_by('date')
+    total_grand_total = Order.objects.aggregate(
+        total_grand_total=Sum('grand_total'))
+    grand_total_sum = total_grand_total['total_grand_total']
 
     template = 'admin_dashboard.html'
 
     context = {
         'user': profile,
         'orders': orders,
-        'products': product,
+        'count': count,
+        'grand_total_sum': grand_total_sum
     }
 
     return render(request, template, context)
@@ -152,6 +182,11 @@ def renderproductmanagment(request):
     """
         Renders the product managment page
     """
+
+    if not request.user.is_superuser:
+        messages.error(
+            request, f'Sorry, you dont have access to view this page.')
+        return redirect('home')
 
     product = Product.objects.all()
 

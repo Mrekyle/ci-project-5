@@ -1,9 +1,6 @@
 TO DO:
 
 Build contact form functionality
-Add revenue to admin_dashboard
-Build product managment page - Stock Level
-Pagination bug on orders history page
 Add images and content to dontgnochit
 Home page supplier images
 Set up Emails - Confirmation email not sending

@@ -40,7 +40,6 @@
                             <th>Product</th>
                             <th>Category</th>
                             <th>Price</th>
-                            <th>Stock</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
@@ -51,8 +50,7 @@
                                 <td><a class="product-hover" href="{% url 'product_detail' product.id %}" aria-label="Opens the product detail view for the selected product">{{ product.name|truncatechars:35 }}</a></td>
                                 <td>{{ product.category }}</td>
                                 <td><strong>£{{ product.price }}</strong></td>
-                                <td>Stock Level</td>
-                                <td><a href="{% url 'edit_product' product.id %}" class="product-edit" aria-label="Allows the admin to edit the selected product">Edit</a></td>
+                                <td><a href="{% url 'edit_product' product.id %}" class="product-edit" aria-label="Allows the admin to edit the selected product"><i class="fas fa-pencil"></i> Edit</a></td>
                                 <td><a href="{% url 'delete_product' product.id %}" class="text-danger" aria-label="Allows the admin to delete the selected product"><i class="fas fa-trash"></i> Delete</a></td>
                             </tr>
                         {% endfor %}

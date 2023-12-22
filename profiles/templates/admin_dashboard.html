@@ -31,18 +31,18 @@
 <div class="container mt-4">
     <div class="preview-container text-center row justify-content-around">
         <div class="col-4 total-orders">
-            <a href="{% url 'order_history' %}" class="" aria-label="Opens the order history page">Orders
-                <p class="mt-2">{{ orders.count }}</p>
+            <a href="{% url 'order_history' %}" class="total-orders" aria-label="Opens the order history page">Orders
             </a>
+            <p class="mt-2"><strong>{{ orders.count }}</strong></p>
         </div>
         <div class="col-4 total-products">
-            <a href="{% url 'product_managment' %}" class="" aria-label="Opens the product managment page">Products
-                <p class="mt-2">{{ product.count }}</p>
+            <a href="{% url 'product_managment' %}" class="total-products" aria-label="Opens the product managment page">Products
             </a>
+            <p class="mt-2"><strong>{{ count }}</strong></p>
         </div>
         <div class="col-4 total-revenue">
-            <a href="" class="" aria-label="Does Nothing. Here for future development/linking into finance software">Revenue</a>
-            <p class="mt-2">£</p>
+            <a href="" class="total-revenue" aria-label="Does Nothing. Here for future development/linking into finance software">Store Revenue</a>
+            <p class="mt-2"><strong>£ {{ grand_total_sum|floatformat:2 }}</strong></p>
         </div>
     </div>
     <hr class="w-75 mt-5">
@@ -67,8 +67,8 @@
         </div>
         <div class="col-5">
             <h5>Orders:</h5>
-            <div class="table-responsive">
-                <table class="table table-sm order-history">
+            <div class="table-responsive a-order-history">
+                <table class="table table-sm">
                     <thead>
                         <tr>
                             <th>Order Number</th>

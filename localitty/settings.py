@@ -111,12 +111,17 @@ AUTHENTICATION_BACKENDS = (
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -173,7 +178,7 @@ WSGI_APPLICATION = 'localitty.wsgi.application'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_DELIVERY = 45
-STANDARD_DELIVERY_CHARGE = 10
+STANDARD_DELIVERY_CHARGE = 1
 
 # STRIPE
 
@@ -187,8 +192,21 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 # EMAIL BACKENDS
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
 
-DEFAULT_CONFIRMATION_EMAIL = 'orderconfirmation@localitty.com'
+
+# if 'DEVELOPMENT' in os.environ:
+#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#     DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
+# else:
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     EMAIL_USE_TLS = True
+#     EMAIL_PORT = 587
+#     EMAIL_HOST = 'smtp.google.com'
+#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+#     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
+
 
 # ACCOUNT VERIFICATION
 
