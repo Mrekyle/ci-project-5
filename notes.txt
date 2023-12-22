@@ -3,20 +3,18 @@ TO DO:
 Build contact form functionality
 Add revenue to admin_dashboard
 Build product managment page - Stock Level
-
-
-Meta tags on each page that need it 
-Home page hero images
+Pagination bug on orders history page
+Add images and content to dontgnochit
 Home page supplier images
 Set up Emails - Confirmation email not sending
-Add images and content to dontgnochit
-Favicon
-Pagination bug on orders history page
-
 Add add product button to product managment page
 
-Add stock tracking to the products model
+Favicon
+Meta tags on each page that need it 
+Home page hero images
 
+Add stock tracking to the products model
+wx
 Create database of items 
 
 DEPLOYMENT:

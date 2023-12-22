@@ -20,12 +20,14 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <hr class="mb-2">
+    <div class="row mb-4">
+            <div class="col-6">
                 <h2 class="page-title">Product Managment</h2>
-            <hr class="mt-2">
-        </div>
+            </div>
+            <div class="col-6">
+                <a href="{% url 'add_product' %}" aria-label="Send the user to the add new product page. To create a new product on the store." class="btn btn-outline-black offset-md-6">New Product<i class="fas fa-chevron-right"></i></a>
+            </div>
+        <hr class="mt-2">
     </div>
 </div>
 <div class="container">
