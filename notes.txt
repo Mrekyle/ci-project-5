@@ -1,12 +1,10 @@
 TO DO:
 
 Build contact form functionality
-Add images and content to dontgnochit
 Set up Emails - Confirmation email not sending
 
 Favicon
 Meta tags on each page that need it 
-Home page hero images
 
 Create database of items 
 Media querys
