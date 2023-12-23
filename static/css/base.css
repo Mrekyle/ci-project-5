@@ -120,9 +120,13 @@ a.cat-badge > span.badge:hover {
 }
 
 .main-img-container {
-    height: 475px;
-    -webkit-clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
-    clip-path: polygon(0 0, 0 100px, 100px 80px, 100px 0);
+    height: 500px;
+    margin-bottom: 3rem;
+}
+
+.img-main {
+    height: 470px;
+    width: 450px;
 }
 
 .img-container {
@@ -526,5 +530,65 @@ a.cat-badge > span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .main-text-right {
+        margin-top: 13rem;
+    }    
+
+    .mailing-list {
+        margin-top: 8rem;
+        margin-left: 6rem;
+        text-wrap: balance;
+    }
+    
+    .f-md-margin {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .padding-container {
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 532px) {
+
+    .mailing-list {
+        margin-top: 3rem;
+        margin-left: 4rem;
+    }
+
+    .sm-screen {
+        max-width: 20rem;
+        padding-right: 4rem;
+    }
+
+    .main-text-right {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .mailing-list {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .sm-screen {
+        max-width: 20rem;
+        padding-right: 4rem;
+    }
+
+    .main-text-right {
+        margin-top: 5rem;
+    }
+
+    .img-container {
+        margin-bottom: -3rem;
     }
 }
