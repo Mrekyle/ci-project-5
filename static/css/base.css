@@ -531,6 +531,10 @@ a.cat-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
+
+    .supplier-slider {
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -555,6 +559,42 @@ a.cat-badge > span.badge:hover {
     }
 }
 
+@media screen and (max-width: 770px) {
+
+    .sm-m-l {
+        margin-left: 8rem;
+    }
+
+    .total-orders, 
+    .total-products, 
+    .total-revenue {
+        max-width: 7rem;
+        height: 5rem;
+        padding-top: 4px;
+        padding-left: 4px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .admin-buttons {
+        margin-left: 2.5rem;
+    }
+
+    .review-card {
+        margin-bottom: 2rem;
+    }
+
+    .mission {
+        text-wrap: balance;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .sm-m {
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 532px) {
 
     .mailing-list {
@@ -570,6 +610,21 @@ a.cat-badge > span.badge:hover {
     .main-text-right {
         margin-top: 5rem;
     }
+
+    .sm-m-l {
+        margin-left: 7rem;
+    }
+
+    .order-history {
+        max-height: 400px;
+        max-width: 95%;
+        overflow-y: auto;
+    }
+
+    .header-container {
+        padding-top: 160px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -590,5 +645,9 @@ a.cat-badge > span.badge:hover {
 
     .img-container {
         margin-bottom: -3rem;
+    }
+
+    .header-container {
+        padding-top: 180px;
     }
 }

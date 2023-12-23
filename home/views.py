@@ -40,8 +40,6 @@ def rendersupport(request):
                         We will get back to you as soon as we can.')
         return render(request, template)
     else:
-        messages.error(request, f'Sorry, Your message didnt send \
-                       Please try again later or reach out another way.')
         return render(request, template)
 
 

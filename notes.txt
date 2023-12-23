@@ -1,11 +1,9 @@
 TO DO:
 
-Build contact form functionality
-Set up Emails - Confirmation email not sending
-
 Meta tags on each page that need it 
 
 Create database of items 
+
 Media querys
     Profile
     Admin dashboard
@@ -27,6 +25,7 @@ set up heroku and launch
 Remove unused Code
 config vars
 debug to false
+Edit settings.py file for cloudinary and email settings 
 
 Add webhook handler to stripe dashboard into whsecret
 
