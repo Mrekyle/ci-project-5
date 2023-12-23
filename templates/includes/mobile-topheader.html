@@ -1,19 +1,22 @@
-<li class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" href="{% url 'dontgnochit' %}" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-bookmark fa-lg"></i></div>
-            <p class="my-0">DontGnochIt</p>
-        </div>
-    </a>
-</li>
-<li class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" href="{% url 'shop' %}" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
-            <div><i class="fas fa-shop fa-lg"></i></div>
-            <p class="my-0">Shop</p>
-        </div>
-    </a>
-</li>
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'dontgnochit' %}" id="home-link">
+                Don't GnocchIt
+            </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'shop' %}" id="home-link">
+                Shop
+            </a>
+        </li>
+    </ul>
+</div>
 <li class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -44,10 +47,19 @@
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            <a href="" class="dropdown-item">My Profile</a>
+        {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'admin' %}" class="dropdown-item">Store Management</a>
+            <a href="{% url 'product_managment' %}" class="dropdown-item">Product Managment</a>
+            <a href="{% url 'add_product' %}" class="dropdown-item">Add New Product</a>
+            <a href="{% url 'order_history' %}" class="dropdown-item">Order History</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+        {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+        {% endif %}
     </div>
 </li>
 <li class="list-inline-item">

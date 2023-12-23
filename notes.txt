@@ -4,19 +4,6 @@ Meta tags on each page that need it
 
 Create database of items 
 
-Media querys
-    Profile
-    Admin dashboard
-    Store
-    checkout
-    Home page
-    Dontgnochitt √ 
-    Jobs
-    Roadmap
-    Support
-    checkout
-
-
 DEPLOYMENT:
 
 Set up sql 
