@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.conf import settings
+from django.contrib import messages
 
 # Create your views here.
 
@@ -21,7 +23,26 @@ def rendersupport(request):
 
     template = 'home/support.html'
 
-    return render(request, template)
+    if request.method == 'POST':
+        message_name = request.POST.get['message_name']
+        message_email = request.POST.get['message_email']
+        message_select = request.POST.get['select_option']
+        message_body = request.POST.get['message_body']
+
+        send_mail(
+            message_select,
+            message_body,
+            message_email,
+            ['settings.DEFAULT_FROM_EMAIL', 'settings.EMAIL_HOST_USER']
+        )
+
+        messages.success(request, f'Thank you {message_name} your message sent successfully. \
+                        We will get back to you as soon as we can.')
+        return render(request, template)
+    else:
+        messages.error(request, f'Sorry, Your message didnt send \
+                       Please try again later or reach out another way.')
+        return render(request, template)
 
 
 def renderjobs(request):

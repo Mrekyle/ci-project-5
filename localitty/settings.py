@@ -161,6 +161,8 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# STORAGE OPTIONS
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
@@ -169,6 +171,38 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+# if 'DEVELOPMENT':
+#     STATIC_URL = '/static/'
+#     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+#     MEDIA_URL = '/media/'
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#     LOGIN_URL = '/accounts/login/'
+#     LOGIN_REDIRECT_URL = '/'
+
+#     STATICFILES_DIRS = [
+#         os.path.join(BASE_DIR, "static"),
+#     ]
+# else:
+#     STATIC_URL = '/static/'
+#     STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#     MEDIA_URL = '/media/'
+#     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+#     CLOUDINARY = {
+
+#         'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
+#         'API_KEY': os.environ.get('API_KEY'),
+#         'API_SECRET': os.environ.get('API_SECRET'),
+#     }
 
 WSGI_APPLICATION = 'localitty.wsgi.application'
 
@@ -199,13 +233,14 @@ DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
 #     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 #     DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
 # else:
-#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     EMAIL_USE_TLS = True
-#     EMAIL_PORT = 587
 #     EMAIL_HOST = 'smtp.google.com'
 #     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 #     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
+#     EMAIL_PORT = 587
+#     EMAIL_USE_TLS = True
+#     EMAIL_USE_SSL = True
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
 # ACCOUNT VERIFICATION

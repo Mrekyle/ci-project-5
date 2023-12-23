@@ -3,16 +3,26 @@ TO DO:
 Build contact form functionality
 Set up Emails - Confirmation email not sending
 
-Favicon
 Meta tags on each page that need it 
 
 Create database of items 
 Media querys
+    Profile
+    Admin dashboard
+    Store
+    checkout
+    Home page
+    Dontgnochitt √ 
+    Jobs
+    Roadmap
+    Support
+    checkout
+
 
 DEPLOYMENT:
 
 Set up sql 
-set up cloudinary and migrate static
+set up cloudinary and migrate static - Added to env.py and settings 
 set up heroku and launch
 Remove unused Code
 config vars
