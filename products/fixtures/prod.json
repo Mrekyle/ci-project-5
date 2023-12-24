@@ -9,6 +9,7 @@
         "price": 9.95,
         "category": 1,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425685/txcjjgf0atpwmhfsx4bx.jpg",
         "image": "whole-chicken.jpeg"
       }
     },
@@ -22,6 +23,7 @@
         "price": 9.50,
         "category": 1,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/xer1kxi9u2b2sg1ekyun.jpg",
         "image": "chicken-legs.jpeg"
       }
     },
@@ -35,6 +37,7 @@
         "price": 8.50,
         "category": 1,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/sgunszgmhdxzj5mtadmv.jpg",
         "image": "chicken-thigh.jpeg"
       }
     },
@@ -48,6 +51,7 @@
         "price": 10.50,
         "category": 1,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/lptsgafoiyu5h0hvxuja.jpg",
         "image": "chicken-breast.jpeg"
       }
     },
@@ -61,6 +65,7 @@
         "price": 75.99,
         "category": 2,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/oilkya4ktj8doo8nvmhb.jpg",
         "image": "rolled-beef.jpeg"
       }
     },
@@ -74,6 +79,7 @@
         "price": 37.50,
         "category": 2,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/eomuoxnpmryp6sb4xtmy.jpg",
         "image": "rolled-sirloin.jpeg"
       }
     },
@@ -87,6 +93,7 @@
         "price": 62.50,
         "category": 2,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/ywxn0mnw4dpkgkiy6ak5.jpg",
         "image": "beef-fillet.jpeg"
       }
     },
@@ -100,6 +107,7 @@
         "price": 7.00,
         "category": 2,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425651/vsyzzrevm5pk0xuccc2u.jpg",
         "image": "burgers-four.jpeg"
       }
     },
@@ -113,6 +121,7 @@
         "price": 13.75,
         "category": 2,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425683/qu6j03uqvcdtfui3ajgc.jpg",
         "image": "t-bone-steak.jpeg"
       }
     },
@@ -126,6 +135,7 @@
         "price": 11.50,
         "category": 2,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425680/cl1n1sgilhylsr7qgqkw.jpg",
         "image": "sirloin-steak-2.jpeg"
       }
     },
@@ -139,6 +149,7 @@
         "price": 15.30,
         "category": 2,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425664/nuncyuq6ebanhggtxde5.jpg",
         "image": "fillet-steak-2.jpeg"
       }
     },
@@ -152,6 +163,7 @@
         "price": 13.70,
         "category": 2,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/vdvcn71u8qaxkfkv80zh.jpg",
         "image": "ribeye-steak-2.jpeg"
       }
     },
@@ -165,6 +177,7 @@
         "price": 9.90,
         "category": 2,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425650/jvlhwqfajobmlwu9vz1i.jpg",
         "image": "beef-mince.jpeg"
       }
     },
@@ -178,6 +191,7 @@
         "price": 15.80,
         "category": 2,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425679/r9ld9wm3v6pyrbzoavdy.jpg",
         "image": "rump-steak-2.jpeg"
       }
     },
@@ -191,6 +205,7 @@
         "price": 37.50,
         "category": 3,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425669/fvux6xncxzhkhjwuzphd.jpg",
         "image": "loin-rolled.jpeg"
       }
     },
@@ -204,6 +219,7 @@
         "price": 28.50,
         "category": 3,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/x2zhupaleb9e42uxgx03.jpg",
         "image": "pork-shoulder.jpeg"
       }
     },
@@ -217,6 +233,7 @@
         "price": 30.00,
         "category": 3,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/zihqobj2oispplxtqsy5.jpg",
         "image": "pork-rib.jpeg"
       }
     },
@@ -230,6 +247,7 @@
         "price": 13.95,
         "category": 3,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/ukxl2zkc7ceyspgpmmau.jpg",
         "image": "pork-chop.jpeg"
       }
     },
@@ -243,6 +261,7 @@
         "price": 6.50,
         "category": 3,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425672/mh7k6c5daivx1nsdhwbf.jpg",
         "image": "old-english-sausage.jpeg"
       }
     },
@@ -256,6 +275,7 @@
         "price": 12.99,
         "category": 3,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/jcprshnvx92y6wlsehoc.jpg",
         "image": "maple-bacon.jpeg"
       }
     },
@@ -269,6 +289,7 @@
         "price": 11.75,
         "category": 3,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/jcprshnvx92y6wlsehoc.jpg",
         "image": "streaky-bacon.jpeg"
       }
     },
@@ -277,11 +298,12 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003270936",
-        "name": "back Bacon",
+        "name": "Back Bacon",
         "description": "Sliced Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
         "price": 10.95,
         "category": 4,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425680/kmmy24pkggbahgsbgkzm.jpg",
         "image": "sliced-bacon.jpeg"
       }
     },
@@ -295,6 +317,7 @@
         "price": 17.00,
         "category": 4,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/hu7c04atlr50t4jjmzcb.jpg",
         "image": "lamb-rack.jpeg"
       }
     },
@@ -308,6 +331,7 @@
         "price": 18,
         "category": 4,
         "rating": 3.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425656/vidqombusg3t9sjkdbtf.jpg",
         "image": "diced-lamb.jpeg"
       }
     },
@@ -321,6 +345,7 @@
         "price": 9.65,
         "category": 4,
         "rating": 3.3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/c0e8fx3ysch4umtba7od.jpg",
         "image": "lamb-mince.jpeg"
       }
     },
@@ -334,6 +359,7 @@
         "price": 13.75,
         "category": 4,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/xtb75i2djm3akh5qtman.jpg",
         "image": "lamp-rumps.jpeg"
       }
     },
@@ -347,6 +373,7 @@
         "price": 38.95,
         "category": 5,
         "rating": 4.3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/kyiynwdgtkczylwv9ckr.jpg",
         "image": "cod.jpeg"
       }
     },
@@ -360,6 +387,7 @@
         "price": 10.95,
         "category": 5,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425676/vhxrfqdjclfaqqxc0ibz.jpg",
         "image": "rainbow-trout"
       }
     },
@@ -373,6 +401,7 @@
         "price": 26.50,
         "category": 5,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425656/gc3qfxnzbsu2fubz71cm.jpg",
         "image": "DP0422201517022488M.jpg"
       }
     },
@@ -386,6 +415,7 @@
         "price": 10.95,
         "category": 5,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425666/uwcjvtvc2lef8cd3naso.jpg",
         "image": "haddock-portions.jpeg"
       }
     },
@@ -399,6 +429,7 @@
         "price": 69.99,
         "category": 5,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425680/o7llgwqpglgryr3dmuny.jpg",
         "image": "salmon-portions.jpeg"
       }
     },
@@ -412,6 +443,7 @@
         "price": 52.99,
         "category": 5,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425683/fqymitrsaxsgzgcqxj23.jpg",
         "image": "tuna-loin.jpeg"
       }
     },
@@ -425,6 +457,7 @@
         "price": 14.99,
         "category": 5,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425654/n0fjgvodizjgurksocbo.jpg",
         "image": "crab.jpeg"
       }
     },
@@ -438,6 +471,7 @@
         "price": 23.30,
         "category": 5,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425654/zm1q2cvgdfa35ky6a5i7.jpg",
         "image": "crab-meat.jpeg"
       }
     },
@@ -451,6 +485,7 @@
         "price": 32.90,
         "category": 5,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/cw6pnwajhz4oinilpqel.jpg",
         "image": "king-scallops-6.jpeg"
       }
     },
@@ -464,6 +499,7 @@
         "price": 3.25,
         "category": 5,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425672/j53osfhkhrvs3o363isb.jpg",
         "image": "oysters.jpeg"
       }
     },
@@ -477,6 +513,7 @@
         "price": 8.99,
         "category": 5,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/mikjtfcceggnegkzztjp.jpg",
         "image": "king-prawns"
       }
     },
@@ -490,6 +527,7 @@
         "price": 12.40,
         "category": 5,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/tmg13zfpdxf3h5wuk5m2.jpg",
         "image": "king-prawns-prepared.jpeg"
       }
     },
@@ -503,6 +541,7 @@
         "price": 7.90,
         "category": 5,
         "rating": 3.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425671/wonbcsyyl6ndu2unsdpx.jpg",
         "image": "mussels.jpeg"
       }
     },
@@ -516,6 +555,7 @@
         "price": 11.45,
         "category": 5,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/yiwzooatnq0skmrodily.jpg",
         "image": "smoked-salmon-250.jpeg"
       }
     },
@@ -529,6 +569,7 @@
         "price": 19.80,
         "category": 5,
         "rating": 3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/pzbmebvxlsyydskol6su.jpg",
         "image": "smoked-salmon-500.jpeg"
       }
     },
@@ -542,6 +583,7 @@
         "price": 9.50,
         "category": 5,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/pqum9ihqkyzynbyjykwh.jpg",
         "image": "cod-portions.jpeg"
       }
     },
@@ -555,6 +597,7 @@
         "price": 0.85,
         "category": 6,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425672/glkan4xgluu2fq4eicnn.webp",
         "image": "brown-onion.jpeg"
       }
     },
@@ -568,6 +611,7 @@
         "price": 0.85,
         "category": 6,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425677/piejvoux0utu53nhs5sd.webp",
         "image": "red-onion.jpeg"
       }
     },
@@ -576,11 +620,12 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5004230059",
-        "name": "Sweede",
-        "description": "Individual Sweede",
+        "name": "Swede",
+        "description": "Individual Swede",
         "price": 2.10,
         "category": 6,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425682/v6obpksakqshrbgp7hpn.webp",
         "image": "sweede.jpeg"
       }
     },
@@ -594,6 +639,7 @@
         "price": 2.00,
         "category": 6,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425665/mwylhcfqf0pyjmjzzh25.webp",
         "image": "garlic-bulb.jpeg"
       }
     },
@@ -607,6 +653,7 @@
         "price": 4.30,
         "category": 6,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/sg8jzqivxekehblpzxpp.jpg",
         "image": "parsnip.jpeg"
       }
     },
@@ -620,6 +667,7 @@
         "price": 3.99,
         "category": 6,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425676/owastqtrxbtx8sjztzuf.jpg",
         "image": "potato.jpeg"
       }
     },
@@ -633,6 +681,7 @@
         "price": 5.99,
         "category": 6,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425677/tnhyyzhkfcquygaggp33.jpg",
         "image": "red-potato.jpeg"
       }
     },
@@ -646,6 +695,7 @@
         "price": 8.90,
         "category": 6,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425666/npozxij5chio3vw5argt.jpg",
         "image": "heritage-carrot.jpeg"
       }
     },
@@ -659,6 +709,7 @@
         "price": 3.50,
         "category": 6,
         "rating": 3.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/wfc5mqs5nvjtaz95xxoh.jpg",
         "image": "baking-potato.jpeg"
       }
     },
@@ -672,6 +723,7 @@
         "price": 5.90,
         "category": 6,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425682/njbgbslxcdui6x3vlug3.jpg",
         "image": "sweet-potato.jpeg"
       }
     },
@@ -685,6 +737,7 @@
         "price": 0.95,
         "category": 8,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425650/jgfx7bz76waslto0aqyg.webp",
         "image": "broccoli.jpeg"
       }
     },
@@ -698,6 +751,7 @@
         "price": 1.20,
         "category": 8,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425655/bzafnl4fhbtpc7yenkei.webp",
         "image": "cucumber.jpeg"
       }
     },
@@ -711,6 +765,7 @@
         "price": 1.75,
         "category": 8,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/fz637wjcltmdh0q25prf.webp",
         "image": "leeks.jpeg"
       }
     },
@@ -724,6 +779,7 @@
         "price": 1.80,
         "category": 8,
         "rating": 3.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425679/ekpojnjfpyhki6vhtgnk.webp",
         "image": "runner-beans.jpeg"
       }
     },
@@ -737,6 +793,7 @@
         "price": 1.45,
         "category": 8,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425654/kpw0gmoma6fkifxmewuj.avif",
         "image": "courgette.jpeg"
       }
     },
@@ -750,6 +807,7 @@
         "price": 1.75,
         "category": 8,
         "rating": 3.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425665/rfarmegerp6ghwrdo1sg.webp",
         "image": "green-beans.jpeg"
       }
     },
@@ -763,6 +821,7 @@
         "price": 4.95,
         "category": 8,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425650/fhtdgpdfvzpcl7kbbjie.webp",
         "image": "brussel-sprouts.jpeg"
       }
     },
@@ -776,6 +835,7 @@
         "price": 5.60,
         "category": 8,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/aiyxbqdhtflhvkr2iydb.jpg",
         "image": "asparagus.jpeg"
       }
     },
@@ -789,6 +849,7 @@
         "price": 1.55,
         "category": 8,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425682/vx3nuebfveosrtrhcvkt.webp",
         "image": "tenderstem.jpeg"
       }
     },
@@ -802,6 +863,7 @@
         "price": 2.20,
         "category": 8,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425670/jch3nlzgu1etkexoed5f.webp",
         "image": "mix-leaf.jpeg"
       }
     },
@@ -815,6 +877,7 @@
         "price": 1.30,
         "category": 8,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425669/swqg3oxatus3ihk3v9yd.webp",
         "image": "lettuce.jpeg"
       }
     },
@@ -828,6 +891,7 @@
         "price": 2.45,
         "category": 8,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/oo34n7co1f8dm1eivrql.webp",
         "image": "celery.jpeg"
       }
     },
@@ -841,6 +905,7 @@
         "price": 3.00,
         "category": 8,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/rin7m5nzlrzxp5g3rwqm.jpg",
         "image": "peas.jpeg"
       }
     },
@@ -854,6 +919,7 @@
         "price": 4.20,
         "category": 8,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425651/bvyuodpocvyeyciistlt.jpg",
         "image": "cabbage.jpeg"
       }
     },
@@ -867,6 +933,7 @@
         "price": 2.40,
         "category": 8,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425667/oqzru36gaty5dvd0fy5h.jpg",
         "image": "kale.jpeg"
       }
     },
@@ -880,6 +947,7 @@
         "price": 0.95,
         "category": 9,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/ftbmojqwfwcapl832br2.webp",
         "image": "parsley.jpeg"
       }
     },
@@ -893,6 +961,7 @@
         "price": 0.95,
         "category": 9,
         "rating": 4.3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/wjjh84j3cnjlm0ajymqh.avif",
         "image": "coriander.jpeg"
       }
     },
@@ -906,7 +975,8 @@
         "price": 0.95,
         "category": 9,
         "rating": 4.2,
-        "image": "0thyme.jpeg"
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425683/qwpmiglj2etmag4dymca.jpg",
+        "image": "thyme.jpeg"
       }
     },
     {
@@ -919,6 +989,7 @@
         "price": 0.95,
         "category": 9,
         "rating": 4.3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425670/rrt4gkdqh9k4nwn6oha2.jpg",
         "image": "mint.jpeg"
       }
     },
@@ -932,6 +1003,7 @@
         "price": 0.95,
         "category": 9,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/tlizh6mzbtpzyulw3m2j.jpg",
         "image": "rosemary.jpeg"
       }
     },
@@ -945,6 +1017,7 @@
         "price": 1.20,
         "category": 7,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425684/t4chr6c22qrbmnrlakn7.webp",
         "image": "ypepper.jpeg"
       }
     },
@@ -958,6 +1031,7 @@
         "price": 1.20,
         "category": 7,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425679/rexnc3thmryykpairlcz.webp",
         "image": "rpepper.jpeg"
       }
     },
@@ -971,21 +1045,8 @@
         "price": 1.20,
         "category": 7,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425665/yks8hdkkx1h8zz7yqxly.webp",
         "image": "gpepper.jpeg"
-      }
-    },
-    {
-      "pk": 76,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5005700140",
-        "name": "Vanilla Star Embellished Skinny Jeans - Girls 7-16 and Plus",
-        "description": "The eye-catching embellishment on the back pocket of these classic skinny jeans takes casual style to the next level. 5-pocket styling zip fly with button closure back pocket embellishments ramie/cotton/polyester/spandex washable imported",
-        "price": 50.99,
-        "category": 7,
-        "rating": 5,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0831201520432399C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0831201520432399C.jpg"
       }
     },
     {
@@ -998,6 +1059,7 @@
         "price": 2.40,
         "category": 7,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425684/vhcbaf70kqbgfeiptrtb.webp",
         "image": "vine-tomato.jpeg"
       }
     },
@@ -1011,6 +1073,7 @@
         "price": 2.99,
         "category": 7,
         "rating": 4.6,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703427836/n7l7cfpcbujzc1fzbdsw.webp",
         "image": "button-mushroom.jpeg"
       }
     },
@@ -1024,6 +1087,7 @@
         "price": 3.99,
         "category": 7,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425663/n84cgheoig0xj55nrbno.webp",
         "image": "field-mushroom.jpeg"
       }
     },
@@ -1037,6 +1101,7 @@
         "price": 1.40,
         "category": 7,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425665/jnxfpoq2qfq05f0zcg9v.webp",
         "image": "green-chilli.jpeg"
       }
     },
@@ -1050,6 +1115,7 @@
         "price": 2.40,
         "category": 7,
         "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425651/wwxbvdai0rmnorae1e5e.webp",
         "image": "butternut.jpeg"
       }
     },
@@ -1063,6 +1129,7 @@
         "price": 1.40,
         "category": 7,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425677/haljw74ufdaieuz2jzod.webp",
         "image": "red-chilli.jpeg"
       }
     },
@@ -1076,6 +1143,7 @@
         "price": 2.80,
         "category": 7,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425650/e0nfn93lxnfvnhhyizob.webp",
         "image": "big-vine-tomato.jpeg"
       }
     },
@@ -1089,6 +1157,7 @@
         "price": 1.80,
         "category": 7,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/hfwyniyebnboqilb1prw.webp",
         "image": "cherry-tomato.jpeg"
       }
     },
@@ -1102,6 +1171,7 @@
         "price": 5.60,
         "category": 7,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425651/sjy08jyskvilfo4y2dau.webp",
         "image": "cauliflower.jpeg"
       }
     },
@@ -1115,6 +1185,7 @@
         "price": 5.95,
         "category": 7,
         "rating": 4.1,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425666/ezz6ealjo5lzkl1o5abw.jpg",
         "image": "heritage-tomato.jpeg"
       }
     },
@@ -1128,6 +1199,7 @@
         "price": 2.20,
         "category": 7,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425682/xzxgwrpnezknaoxgudpe.webp",
         "image": "sweet-corn.jpeg"
       }
     },
@@ -1141,6 +1213,7 @@
         "price": 1.80,
         "category": 7,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/gaeebwkq1z0xha9jitof.jpg",
         "image": "corn-cob.jpeg"
       }
     },
@@ -1154,6 +1227,7 @@
         "price": 3.99,
         "category": 9,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/zzndf4uj0yerojysuwdd.jpg",
         "image": "paprika.jpeg"
       }
     },
@@ -1167,7 +1241,8 @@
         "price": 3.99,
         "category": 9,
         "rating": 4.4,
-        "image": "mixed-herbs.jpeg"
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425670/yfvyzonjgmwsligrz9qk.jpg",
+        "image": "media/mixed-herbs.jpeg"
       }
     },
     {
@@ -1180,6 +1255,7 @@
         "price": 5.99,
         "category": 9,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425680/kygzrkbjmvebpunldrq1.jpg",
         "image": "sea-salt.jpeg"
       }
     },
@@ -1193,6 +1269,7 @@
         "price": 3.99,
         "category": 9,
         "rating": 4.3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425650/wkeyyohfc9nnfliwgy78.jpg",
         "image": "black-pepper.jpeg"
       }
     },
@@ -1206,6 +1283,7 @@
         "price": 3.99,
         "category": 9,
         "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/cgfvb2vc2vhdfqtonury.jpg",
         "image": "chilli-powder.jpeg"
       }
     },
@@ -1219,6 +1297,7 @@
         "price": 4.99,
         "category": 9,
         "rating": 3.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425655/flqhbjbtfmggwbvht9nh.jpg",
         "image": "crushed-chilli.jpeg"
       }
     },
@@ -1232,6 +1311,7 @@
         "price": 3.99,
         "category": 9,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/zgrw9cnql3iqo7aorrud.jpg",
         "image": "oregano.jpeg"
       }
     },
@@ -1245,6 +1325,7 @@
         "price": 3.99,
         "category": 9,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425672/stowcfad36pekml7cbq6.jpg",
         "image": "basil.jpeg"
       }
     },
@@ -1258,6 +1339,7 @@
         "price": 6.99,
         "category": 9,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425655/sor77hloielb4rueadm1.jpg",
         "image": "curry-powder.jpeg"
       }
     },
@@ -1271,6 +1353,7 @@
         "price": 5.99,
         "category": 9,
         "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425683/a3xw56dm6zynev6aor1c.jpg",
         "image": "tumeric.jpeg"
       }
     },
@@ -1284,6 +1367,7 @@
         "price": 8.99,
         "category": 10,
         "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/pxcunjytipigrhsuvntb.webp",
         "image": "plant-mince.jpeg"
       }
     },
@@ -1297,6 +1381,7 @@
         "price": 5.50,
         "category": 10,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/zpwnqmxatdruggp15a60.png",
         "image": "plant-burgers.jpeg"
       }
     },
@@ -1310,6 +1395,7 @@
         "price": 7.99,
         "category": 10,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425674/c3t9vjvjvuj6n1xpiwah.webp",
         "image": "plant-chicken.jpeg"
       }
     },
@@ -1323,6 +1409,7 @@
         "price": 7.99,
         "category": 10,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425676/ow0zunq2zjj9z72djgtz.png",
         "image": "plant-sausage.jpeg"
       }
     },
@@ -1336,21 +1423,8 @@
         "price": 7.99,
         "category": 10,
         "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425674/wcfvinfdh5apdi0cht5v.webp",
         "image": "plant-chorizo.jpeg"
-      }
-    },
-    {
-      "pk": 104,
-      "model": "products.product",
-      "fields": {
-        "sku": "pp5006160127",
-        "name": "Gloria Vanderbilt Amanda Jeans - Plus",
-        "description": "You'll love the flattering look and comfortable fit of our classic five-pocket jeans from Gloria Vanderbilt. mid rise straight leg 30\" inseam white, cherry blossom: cotton/spandex antiqua ticking stripe: cotton/polyester/spandex washable imported",
-        "price": 52.99,
-        "category": 6,
-        "rating": 5,
-        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1230201520420777C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-        "image": "DP1230201520420777C.jpg"
       }
     },
     {
@@ -1363,6 +1437,7 @@
         "price": 5.99,
         "category": 12,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425671/akx5cyvdxz4vloriqzbg.jpg",
         "image": "oggs.jpeg"
       }
     },
@@ -1376,6 +1451,7 @@
         "price": 3.99,
         "category": 12,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425667/mrufnnhys1bt6vwbr7xx.jpg",
         "image": "kerrymaid-vegan-block.jpeg"
       }
     },
@@ -1389,6 +1465,7 @@
         "price": 1.99,
         "category": 12,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425674/pbvlmtfiyhqpfaiy25ye.jpg",
         "image": "plant-butter.jpeg"
       }
     },
@@ -1402,6 +1479,7 @@
         "price": 4.99,
         "category": 4,
         "rating": 3.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425671/r8jbcyyhga1squeevvh5.jpg",
         "image": "oat-milk.jpeg"
       }
     },
@@ -1415,6 +1493,7 @@
         "price": 4.99,
         "category": 12,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/mzvy5b3gy9zhgy7g2fw8.jpg",
         "image": "almond-milk.jpeg"
       }
     },
@@ -1428,6 +1507,7 @@
         "price": 8.99,
         "category": 13,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425666/qopkkvhvzbjiqpejknyl.jpg",
         "image": "green-lentil.jpeg"
       }
     },
@@ -1441,6 +1521,7 @@
         "price": 8.99,
         "category": 13,
         "rating": 1,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425677/mbrs8jhripm3dc3nkn1v.jpg",
         "image": "red-lentil.jpeg"
       }
     },
@@ -1454,6 +1535,7 @@
         "price": 10.99,
         "category": 13,
         "rating": 3,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425676/knygnqe5oez1larukr7u.jpg",
         "image": "quiona.jpeg"
       }
     },
@@ -1467,6 +1549,7 @@
         "price": 12.99,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425654/u8ejql1kkqzwspp0d6rl.jpg",
         "image": "cous-cous.jpeg"
       }
     },
@@ -1480,6 +1563,7 @@
         "price": 4.99,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/gvhb5qj60qt2jvkbknqz.jpg",
         "image": "spaghetti.jpeg"
       }
     },
@@ -1493,6 +1577,7 @@
         "price": 8.99,
         "category": 13,
         "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/eymw3fi4gvrx5ibfh456.png",
         "image": "pappardelle.jpeg"
       }
     },
@@ -1506,6 +1591,7 @@
         "price": 6.50,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/kxvbq2phtkggiawcxrqx.jpg",
         "image": "lasagne-sheet.jpeg"
       }
     },
@@ -1519,6 +1605,7 @@
         "price": 5.99,
         "category": 13,
         "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/bebvn28szuckmpna4vq9.jpg",
         "image": "rigatoni.jpeg"
       }
     },
@@ -1532,6 +1619,7 @@
         "price": 4.99,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425674/dwj6rxnukywutyznxk42.jpg",
         "image": "penne.jpeg"
       }
     },
@@ -1545,6 +1633,7 @@
         "price": 4.99,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425664/jnhc0flkpdmswnmr4qrm.jpg",
         "image": "fusilli.jpeg"
       }
     },
@@ -1558,7 +1647,315 @@
         "price": 6.99,
         "category": 13,
         "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425665/wpenawpz0gj6yst7mnxv.jpg",
         "image": "gnocchi.jpeg"
+      }
+    },
+    {
+      "pk": 121,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005280104",
+        "name": "Mesculin (Mix Green Leaf)",
+        "description": "Mix Green Leaf Lettuce",
+        "price": 2.20,
+        "category": 14,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425670/jch3nlzgu1etkexoed5f.webp",
+        "image": "mix-leaf.jpeg"
+      }
+    },
+    {
+      "pk": 122,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005310360",
+        "name": "Iceberg Lettuce",
+        "description": "Individual iceberg lettuce",
+        "price": 1.30,
+        "category": 14,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425669/swqg3oxatus3ihk3v9yd.webp",
+        "image": "lettuce.jpeg"
+      }
+    },
+    {
+      "pk": 123,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005330595",
+        "name": "Celery",
+        "description": "Individual Celery Head",
+        "price": 2.45,
+        "category": 14,
+        "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/oo34n7co1f8dm1eivrql.webp",
+        "image": "celery.jpeg"
+      }
+    },
+    {
+      "pk": 124,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005330596",
+        "name": "Garden Peas",
+        "description": "Fresh Garden peas. Weight: 1KG",
+        "price": 3.00,
+        "category": 14,
+        "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425673/rin7m5nzlrzxp5g3rwqm.jpg",
+        "image": "peas.jpeg"
+      }
+    },
+    {
+      "pk": 125,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005430914",
+        "name": "Whole Green Cabbage",
+        "description": "Individual Whole Cabbage",
+        "price": 4.20,
+        "category": 14,
+        "rating": 4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425651/bvyuodpocvyeyciistlt.jpg",
+        "image": "cabbage.jpeg"
+      }
+    },
+    {
+      "pk": 126,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005430944",
+        "name": "Kale",
+        "description": "Fresh Picked Kale. Weight: 1KG",
+        "price": 2.40,
+        "category": 14,
+        "rating": 4.5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425667/oqzru36gaty5dvd0fy5h.jpg",
+        "image": "kale.jpeg"
+      }
+    },
+    {
+      "pk": 127,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005510265",
+        "name": "Parsley",
+        "description": "Parsley Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 14,
+        "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/ftbmojqwfwcapl832br2.webp",
+        "image": "parsley.jpeg"
+      }
+    },
+    {
+      "pk": 128,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003050248",
+        "name": "Pork Shoulder",
+        "description": "Pork Shoulder Boned and Rolled. Expertly trimmed, boned and rolled by our expert butchers. Weight: 3KG. Perfect for roasting. We carefully prepare and debone the joint whilst leaving the rind on to ensure crackling successes.",
+        "price": 28.50,
+        "category": 15,
+        "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/x2zhupaleb9e42uxgx03.jpg",
+        "image": "pork-shoulder.jpeg"
+      }
+    },
+    {
+      "pk": 129,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003070787",
+        "name": "Pork Rib - French Trimmed",
+        "description": "Pork Loin Boned and Rolled. Expertly trimmed and prepared by our expert butchers. 5 Bone Rack. Gloucester Old Spot French Trimmed Rack of Pork, ideal for the perfect family roast. A rack of pork from the rib area with a delicious eye of meat and a good layer of fat for delicious crackling.",
+        "price": 30.00,
+        "category": 15,
+        "rating": 4.4,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/zihqobj2oispplxtqsy5.jpg",
+        "image": "pork-rib.jpeg"
+      }
+    },
+    {
+      "pk": 130,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090182",
+        "name": "Pork Chops - Pack of four",
+        "description": "Pork Chops - Pack of four. Each pork chop is expertly trimmed and prepared by our expert butchers. Weight: 150g Per Chop. A British favourite of delicious pork cut into chops by our butchers, Pork Chops are an amazing cut. Perfect for quick mid-week meals or marinating as a barbecue dish. These have a deep impressive flavour because of the outdoor reared pork we use.",
+        "price": 13.95,
+        "category": 15,
+        "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425675/ukxl2zkc7ceyspgpmmau.jpg",
+        "image": "pork-chop.jpeg"
+      }
+    },
+    {
+      "pk": 131,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090186",
+        "name": "Old English Sausages - Pack of six",
+        "description": "Old English Sausages. Each sausage is lovingly handcrafted by our team of expert butchers and chefs. Hand made with our outdoor reared Gloucester Old Spot pork and Old English seasoning, these sausages are freshly made on site by our own butchers.",
+        "price": 6.50,
+        "category": 15,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425672/mh7k6c5daivx1nsdhwbf.jpg",
+        "image": "old-english-sausage.jpeg"
+      }
+    },
+    {
+      "pk": 132,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003161326",
+        "name": "Maple Cured Bacon",
+        "description": "Maple Syrup Cured Bacon. Sliced Maple Back Bacon produced using our Gloucester Old Spot Pork, this Maple Syrup Cured Back Bacon is soaked for two weeks in finest canadian maple syrup, giving it that tasty maple flavour.",
+        "price": 12.99,
+        "category": 15,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/jcprshnvx92y6wlsehoc.jpg",
+        "image": "maple-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 134,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003230723",
+        "name": "Steaky Back Bacon",
+        "description": "Steaky Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
+        "price": 11.75,
+        "category": 15,
+        "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425681/jcprshnvx92y6wlsehoc.jpg",
+        "image": "streaky-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 135,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003270936",
+        "name": "back Bacon",
+        "description": "Sliced Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
+        "price": 10.95,
+        "category": 15,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425680/kmmy24pkggbahgsbgkzm.jpg",
+        "image": "sliced-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 136,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003360384",
+        "name": "Lamb Rack",
+        "description": "Lamb Rack with 4 bones. Simple, impressive and delicious.  Great for roasting, the rack is the lambs most premium cut – lean, tender and packed with flavour.",
+        "price": 17.00,
+        "category": 15,
+        "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425668/hu7c04atlr50t4jjmzcb.jpg",
+        "image": "lamb-rack.jpeg"
+      }
+    },{
+      "pk": 137,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Suffolk Free Range Chicken",
+        "description": "Beautiful free range chicken from the heart of suffolk. Ranging in sizes of: 1.4kg, 1.8kg, 2.2kg. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 9.95,
+        "category": 16,
+        "rating": 4.8,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425685/txcjjgf0atpwmhfsx4bx.jpg",
+        "image": "whole-chicken.jpeg"
+      }
+    },
+    {
+      "pk": 128,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Whole Chicken Legs - Pack of two",
+        "description": "Beautiful free range chicken legs from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 9.50,
+        "category": 16,
+        "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/xer1kxi9u2b2sg1ekyun.jpg",
+        "image": "chicken-legs.jpeg"
+      }
+    },
+    {
+      "pk": 139,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001730010",
+        "name": "Chicken Thigh - Pack of five",
+        "description": "Beautiful free range chicken thighs from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 8.50,
+        "category": 16,
+        "rating": 4.7,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425653/sgunszgmhdxzj5mtadmv.jpg",
+        "image": "chicken-thigh.jpeg"
+      }
+    },
+    {
+      "pk": 140,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001890157",
+        "name": "Chicken Breast - Pack of 5",
+        "description": "Beautiful free range chicken breasts from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 10.50,
+        "category": 16,
+        "rating": 4.2,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425652/lptsgafoiyu5h0hvxuja.jpg",
+        "image": "chicken-breast.jpeg"
+      }
+    },
+    {
+      "pk": 141,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002111605",
+        "name": "Rolled Beef Rib",
+        "description": "Rolled Beef Rib . Expertly trimmed and rolled by our expert butchers. Weight: 2KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 75.99,
+        "category": 16,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/oilkya4ktj8doo8nvmhb.jpg",
+        "image": "rolled-beef.jpeg"
+      }
+    },
+    {
+      "pk": 142,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002260206",
+        "name": "Rolled Beef Sirloin",
+        "description": "Rolled Beef Sirloin . Expertly trimmed and rolled by our expert butchers. Weight: 1KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 37.50,
+        "category": 16,
+        "rating": 5,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425678/eomuoxnpmryp6sb4xtmy.jpg",
+        "image": "rolled-sirloin.jpeg"
+      }
+    },
+    {
+      "pk": 143,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002440521",
+        "name": "Whole Beef Fillet",
+        "description": "Whole Beef Fillet . Expertly trimmed and rolled by our expert butchers. Weight: 1KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 62.50,
+        "category": 16,
+        "rating": 4.9,
+        "image_url": "https://res.cloudinary.com/dcjikvzf6/image/upload/v1703425649/ywxn0mnw4dpkgkiy6ak5.jpg",
+        "image": "beef-fillet.jpeg"
       }
     }
 ]

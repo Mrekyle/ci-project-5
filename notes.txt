@@ -2,15 +2,13 @@ TO DO:
 
 Meta tags on each page that need it 
 
+Add pop ip for deletion of product
+
 DEPLOYMENT:
 
-set up cloudinary and migrate static - Added to env.py and settings 
-set up heroku and launch
+Set up aws
 Remove unused Code
 debug to false
-Edit settings.py file for cloudinary and email settings 
-
-Add webhook handler to stripe dashboard into whsecret
 
 Testing
     Automated?
