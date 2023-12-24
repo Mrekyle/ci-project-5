@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'crispy_forms',
     'storages',
+    'cloudinary',
 
     # APPS
 
@@ -108,8 +110,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+# DATABASE OPTIONS
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -176,19 +177,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-# if 'DEVELOPMENT':
+# if 'CLOUD_NAME' in os.environ:
 #     STATIC_URL = '/static/'
 #     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 #     MEDIA_URL = '/media/'
 #     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-#     LOGIN_URL = '/accounts/login/'
-#     LOGIN_REDIRECT_URL = '/'
-
-#     STATICFILES_DIRS = [
-#         os.path.join(BASE_DIR, "static"),
-#     ]
 # else:
 #     STATIC_URL = '/static/'
 #     STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
@@ -204,6 +198,7 @@ STATICFILES_DIRS = [
 #         'API_SECRET': os.environ.get('API_SECRET'),
 #     }
 
+
 WSGI_APPLICATION = 'localitty.wsgi.application'
 
 # Default primary key field type
@@ -211,10 +206,11 @@ WSGI_APPLICATION = 'localitty.wsgi.application'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-FREE_DELIVERY = 45
-STANDARD_DELIVERY_CHARGE = 1
 
 # STRIPE
+
+FREE_DELIVERY = 45
+STANDARD_DELIVERY_CHARGE = 1
 
 STRIPE_CURRENCY = 'gbp'
 

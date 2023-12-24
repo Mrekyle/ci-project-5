@@ -2,15 +2,11 @@ TO DO:
 
 Meta tags on each page that need it 
 
-Create database of items 
-
 DEPLOYMENT:
 
-Set up sql 
 set up cloudinary and migrate static - Added to env.py and settings 
 set up heroku and launch
 Remove unused Code
-config vars
 debug to false
 Edit settings.py file for cloudinary and email settings 
 
@@ -37,3 +33,4 @@ Images
 Pexels 
 FedFedFed
 Local suppleirs name 
+Food images. Google, thefruitandveg man, meatless farms, blackwells, the cornish fish monger
