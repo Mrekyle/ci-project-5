@@ -164,39 +164,39 @@ SITE_ID = 1
 
 # STORAGE OPTIONS
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+# LOGIN_URL = '/accounts/login/'
+# LOGIN_REDIRECT_URL = '/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+# ]
 
-# if 'CLOUD_NAME' in os.environ:
-#     STATIC_URL = '/static/'
-#     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+if 'CLOUD_NAME' in os.environ:
+    STATIC_URL = '/static/'
+    STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
-#     MEDIA_URL = '/media/'
-#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# else:
-#     STATIC_URL = '/static/'
-#     STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_URL = '/media/'
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-#     MEDIA_URL = '/media/'
-#     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    CLOUDINARY = {
 
-#     CLOUDINARY = {
+        'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
+        'API_KEY': os.environ.get('API_KEY'),
+        'API_SECRET': os.environ.get('API_SECRET'),
+    }
+else:
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-#         'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
-#         'API_KEY': os.environ.get('API_KEY'),
-#         'API_SECRET': os.environ.get('API_SECRET'),
-#     }
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 WSGI_APPLICATION = 'localitty.wsgi.application'
@@ -221,22 +221,22 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 # EMAIL BACKENDS
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
 
 
-# if 'DEVELOPMENT' in os.environ:
-#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#     DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
-# else:
-#     EMAIL_HOST = 'smtp.google.com'
-#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
-#     EMAIL_PORT = 587
-#     EMAIL_USE_TLS = True
-#     EMAIL_USE_SSL = True
-#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
+else:
+    EMAIL_HOST = 'smtp.google.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_USE_SSL = True
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
 # ACCOUNT VERIFICATION

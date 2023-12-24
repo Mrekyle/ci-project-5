@@ -1,0 +1,1564 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "Suffolk Free Range Chicken",
+        "description": "Beautiful free range chicken from the heart of suffolk. Ranging in sizes of: 1.4kg, 1.8kg, 2.2kg. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 9.95,
+        "category": 1,
+        "rating": 4.8,
+        "image": "whole-chicken.jpeg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001600425",
+        "name": "Whole Chicken Legs - Pack of two",
+        "description": "Beautiful free range chicken legs from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 9.50,
+        "category": 1,
+        "rating": 4.7,
+        "image": "chicken-legs.jpeg"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001730010",
+        "name": "Chicken Thigh - Pack of five",
+        "description": "Beautiful free range chicken thighs from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 8.50,
+        "category": 1,
+        "rating": 4.7,
+        "image": "chicken-thigh.jpeg"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001890157",
+        "name": "Chicken Breast - Pack of 5",
+        "description": "Beautiful free range chicken breasts from the heart of suffolk. Always raised in smaller flock sizes by farmers who are passionate about their animals welfare and life before coming to your table.",
+        "price": 10.50,
+        "category": 1,
+        "rating": 4.2,
+        "image": "chicken-breast.jpeg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002111605",
+        "name": "Rolled Beef Rib",
+        "description": "Rolled Beef Rib . Expertly trimmed and rolled by our expert butchers. Weight: 2KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 75.99,
+        "category": 2,
+        "rating": 5,
+        "image": "rolled-beef.jpeg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002260206",
+        "name": "Rolled Beef Sirloin",
+        "description": "Rolled Beef Sirloin . Expertly trimmed and rolled by our expert butchers. Weight: 1KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 37.50,
+        "category": 2,
+        "rating": 5,
+        "image": "rolled-sirloin.jpeg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002440521",
+        "name": "Whole Beef Fillet",
+        "description": "Whole Beef Fillet . Expertly trimmed and rolled by our expert butchers. Weight: 1KG. A large joint of meat with a deliciously meaty flavour and strong marbling. The bone is removed and the joint is rolled and tied for easy carving.",
+        "price": 62.50,
+        "category": 2,
+        "rating": 4.9,
+        "image": "beef-fillet.jpeg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002601115",
+        "name": "Beef Burgers - Pack of Four",
+        "description": "Beef Burgers expertly hand crafted and seasoned to perfection by our by butchers. Grill them on the bbq for your ultimate summer family get together, or on a cold winters night for that delicious comfort food need.",
+        "price": 7.00,
+        "category": 2,
+        "rating": 4.2,
+        "image": "burgers-four.jpeg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002690715",
+        "name": "T-Bone Steak",
+        "description": "T-Bone steak. Expertly trimmed and cut by our expert butchers. Weight: 450g-500g per steak. A prime sharing steak, cut through and left on the bone, both sirloin and fillet with maximum flavour. Dry-aged for a minimum of 21 days..",
+        "price": 13.75,
+        "category": 2,
+        "rating": 4.7,
+        "image": "t-bone-steak.jpeg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002701115",
+        "name": "Sirloin Steak - Pack of two",
+        "description": "Sirloin Steak . Expertly trimmed and cut by our expert butchers. Weight: 170g pack of two. A prime sharing steak, cut through and left on the bone, both sirloin and fillet with maximum flavour. Dry-aged for a minimum of 21 days..",
+        "price": 11.50,
+        "category": 2,
+        "rating": 4.4,
+        "image": "sirloin-steak-2.jpeg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002761055",
+        "name": "Fillet Steaks - Pack of two",
+        "description": "Beef Fillet Steaks . Expertly trimmed and cut by our expert butchers. Weight: 170g pack of two. A prime sharing steak, cut through and left on the bone, both sirloin and fillet with maximum flavour. Dry-aged for a minimum of 21 days..",
+        "price": 15.30,
+        "category": 2,
+        "rating": 4.9,
+        "image": "fillet-steak-2.jpeg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002820069",
+        "name": "Ribeye Steaks - Pack of two",
+        "description": "Ribeye Steaks. Expertly trimmed and cut by our expert butchers. Weight: 170g pack of two. A prime sharing steak, cut through and left on the bone, both sirloin and fillet with maximum flavour. Dry-aged for a minimum of 21 days..",
+        "price": 13.70,
+        "category": 2,
+        "rating": 4.6,
+        "image": "ribeye-steak-2.jpeg"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002820147",
+        "name": "Beef Mince - 2kg",
+        "description": "Beef Mince. Expertly trimmed and cut and ground by our expert butchers. Weight: 2KG. Versatile with a great ratio of fat to meat providing a deep flavoursome taste upon cooking. Combining both sirloin fillet and rump for maximum flavour. Dry-aged for a minimum of 21 days..",
+        "price": 9.90,
+        "category": 2,
+        "rating": 4.2,
+        "image": "beef-mince.jpeg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002910572",
+        "name": "Rump Steaks - Pack of two",
+        "description": "Rump Steaks. Expertly trimmed and cut by our expert butchers. Weight: 170g pack of two. A prime sharing steak, cut through and left on the bone. Dry-aged for a minimum of 21 days..",
+        "price": 15.80,
+        "category": 2,
+        "rating": 4.7,
+        "image": "rump-steak-2.jpeg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5002990740",
+        "name": "Pork Loin Boned and Rolled",
+        "description": "Pork Loin Boned and Rolled. Expertly trimmed, boned and rolled by our expert butchers. Weight: 3KG. Perfect for roasting. We cut a piece of pork loin and debone it whilst leaving the rind on to ensure crackling successes.",
+        "price": 37.50,
+        "category": 3,
+        "rating": 4.8,
+        "image": "loin-rolled.jpeg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003050248",
+        "name": "Pork Shoulder",
+        "description": "Pork Shoulder Boned and Rolled. Expertly trimmed, boned and rolled by our expert butchers. Weight: 3KG. Perfect for roasting. We carefully prepare and debone the joint whilst leaving the rind on to ensure crackling successes.",
+        "price": 28.50,
+        "category": 3,
+        "rating": 4.4,
+        "image": "pork-shoulder.jpeg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003070787",
+        "name": "Pork Rib - French Trimmed",
+        "description": "Pork Loin Boned and Rolled. Expertly trimmed and prepared by our expert butchers. 5 Bone Rack. Gloucester Old Spot French Trimmed Rack of Pork, ideal for the perfect family roast. A rack of pork from the rib area with a delicious eye of meat and a good layer of fat for delicious crackling.",
+        "price": 30.00,
+        "category": 3,
+        "rating": 4.4,
+        "image": "pork-rib.jpeg"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090182",
+        "name": "Pork Chops - Pack of four",
+        "description": "Pork Chops - Pack of four. Each pork chop is expertly trimmed and prepared by our expert butchers. Weight: 150g Per Chop. A British favourite of delicious pork cut into chops by our butchers, Pork Chops are an amazing cut. Perfect for quick mid-week meals or marinating as a barbecue dish. These have a deep impressive flavour because of the outdoor reared pork we use.",
+        "price": 13.95,
+        "category": 3,
+        "rating": 4.8,
+        "image": "pork-chop.jpeg"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003090186",
+        "name": "Old English Sausages - Pack of six",
+        "description": "Old English Sausages. Each sausage is lovingly handcrafted by our team of expert butchers and chefs. Hand made with our outdoor reared Gloucester Old Spot pork and Old English seasoning, these sausages are freshly made on site by our own butchers.",
+        "price": 6.50,
+        "category": 3,
+        "rating": 5,
+        "image": "old-english-sausage.jpeg"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003161326",
+        "name": "Maple Cured Bacon",
+        "description": "Maple Syrup Cured Bacon. Sliced Maple Back Bacon produced using our Gloucester Old Spot Pork, this Maple Syrup Cured Back Bacon is soaked for two weeks in finest canadian maple syrup, giving it that tasty maple flavour.",
+        "price": 12.99,
+        "category": 3,
+        "rating": 5,
+        "image": "maple-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003230723",
+        "name": "Steaky Back Bacon",
+        "description": "Steaky Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
+        "price": 11.75,
+        "category": 3,
+        "rating": 4.7,
+        "image": "streaky-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003270936",
+        "name": "back Bacon",
+        "description": "Sliced Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
+        "price": 10.95,
+        "category": 4,
+        "rating": 5,
+        "image": "sliced-bacon.jpeg"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003360384",
+        "name": "Lamb Rack",
+        "description": "Lamb Rack with 4 bones. Simple, impressive and delicious.  Great for roasting, the rack is the lambs most premium cut – lean, tender and packed with flavour.",
+        "price": 17.00,
+        "category": 4,
+        "rating": 4.8,
+        "image": "lamb-rack.jpeg"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003440111",
+        "name": "Diced Lamb",
+        "description": "Diced Lamb. Expertly prepared by our team of butchers. Weight: 1KG. Grass-fed British diced lamb. Perfect for stews and pies.",
+        "price": 18,
+        "category": 4,
+        "rating": 3.8,
+        "image": "diced-lamb.jpeg"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003540313",
+        "name": "Lamb Mince ",
+        "description": "Minced Lamb. Expertly prepared by our team of butchers. Weight: 1KG. Grass-fed British diced lamb. Perfect for stews and pies.",
+        "price": 9.65,
+        "category": 4,
+        "rating": 3.3,
+        "image": "lamb-mince.jpeg"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003560513",
+        "name": "Lamb Rumps - Pack of two",
+        "description": "Lamb Rumps. Expertly prepared by our team of butchers. Weight: 170-180g Pack of two. Grass-fed British diced lamb. Perfect for stews and pies.",
+        "price": 13.75,
+        "category": 4,
+        "rating": 4.4,
+        "image": "lamp-rumps.jpeg"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003560948",
+        "name": "Cod Side",
+        "description": "Whole cod side. The classic go-to for fish and chips, cod is a big coldwater fish, prized for their dense, yet flaky flesh.",
+        "price": 38.95,
+        "category": 5,
+        "rating": 4.3,
+        "image": "cod.jpeg"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003570628",
+        "name": "Rainbow Trout",
+        "description": "Rainbow Trout. Perfect for roasting whole, stuffing or turning into a papiot",
+        "price": 10.95,
+        "category": 5,
+        "rating": 4.6,
+        "image": "rainbow-trout"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003620308",
+        "name": "Dover Sole",
+        "description": "Whole dover sole. Perfect for cooking whole and impressing your friends and family, or flitting and poaching in a creamy herb sauce",
+        "price": 26.50,
+        "category": 5,
+        "rating": 4.6,
+        "image": "DP0422201517022488M.jpg"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003690115",
+        "name": "Haddock Portions",
+        "description": "Individual Haddock Portions. Weight: 160-180G. Perfect for pan frying, grilling or baking. ",
+        "price": 10.95,
+        "category": 5,
+        "rating": 5,
+        "image": "haddock-portions.jpeg"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003690116",
+        "name": "Salmon Portions",
+        "description": "Individual Salmon Portions. Weight: 160-180G. Perfect for pan frying with some lemon butter. Baking, poaching or grilling.",
+        "price": 69.99,
+        "category": 5,
+        "rating": 4,
+        "image": "salmon-portions.jpeg"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003780391",
+        "name": "Tuna Loin",
+        "description": "Tuna Loin, grade AAA. Weight: 1KG. Perfect for pan frying",
+        "price": 52.99,
+        "category": 5,
+        "rating": 4.8,
+        "image": "tuna-loin.jpeg"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003790542",
+        "name": "Whole Crab",
+        "description": "Whole Crab. Perfect for poaching and picking apart with family and friends.",
+        "price": 14.99,
+        "category": 5,
+        "rating": 4.5,
+        "image": "crab.jpeg"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003831225",
+        "name": "Handpicked Crab Meat",
+        "description": "Handpicked Crab Meat. Weight: 500G. Perfectly cooked cornish crabs, handpicked by our expert team to save you the hassle.",
+        "price": 23.30,
+        "category": 5,
+        "rating": 4.5,
+        "image": "crab-meat.jpeg"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003861402",
+        "name": "King Scallops X 6",
+        "description": "King Scallops X 6. Hand picked from the depths of the sea floor.", 
+        "price": 32.90,
+        "category": 5,
+        "rating": 4.7,
+        "image": "king-scallops-6.jpeg"
+      }
+    },
+    {
+      "pk": 36,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003910638",
+        "name": "Oysters",
+        "description": "Individual Oysters. Hand picked from the banks of West Mersea island.",
+        "price": 3.25,
+        "category": 5,
+        "rating": 4.6,
+        "image": "oysters.jpeg"
+      }
+    },
+    {
+      "pk": 37,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003950574",
+        "name": "King Prawns",
+        "description": "King Prawns. Weight: 1KG Box. Perfect for garnishing that prawn cocktail. Or to throw on the BBQ.",
+        "price": 8.99,
+        "category": 5,
+        "rating": 4,
+        "image": "king-prawns"
+      }
+    },
+    {
+      "pk": 38,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003950576",
+        "name": "King Prawns - Prepared",
+        "description": "King Prawns - Prepared. Weight: 1KG Box. Perfect for garnishing that prawn cocktail. Or to throw on the BBQ.",
+        "price": 12.40,
+        "category": 5,
+        "rating": 4.5,
+        "image": "king-prawns-prepared.jpeg"
+      }
+    },
+    {
+      "pk": 39,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003960062",
+        "name": "Fresh Mussels",
+        "description": "Fresh Mussels. Weight: 1KG. Perfect for that cold winter night, Sourced from down the road as our oysters. We recommend cooking in a creamy cider sauce.",
+        "price": 7.90,
+        "category": 5,
+        "rating": 3.8,
+        "image": "mussels.jpeg"
+      }
+    },
+    {
+      "pk": 40,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003960682",
+        "name": "Smoked Salmon - 250G",
+        "description": "Smoked Salmon - 250g. Fresh smoked salmon.",
+        "price": 11.45,
+        "category": 5,
+        "rating": 5,
+        "image": "smoked-salmon-250.jpeg"
+      }
+    },
+    {
+      "pk": 41,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003960775",
+        "name": "Smoked Salmon - 500G",
+        "description": "Smoked Salmon - 500g. Fresh smoked salmon.",
+        "price": 19.80,
+        "category": 5,
+        "rating": 3,
+        "image": "smoked-salmon-500.jpeg"
+      }
+    },
+    {
+      "pk": 42,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003990736",
+        "name": "Cod Portions",
+        "description": "Individual Cod Portions. Weight: 160-180G. Perfect for pan frying with some lemon butter. Baking, poaching or grilling.",
+        "price": 9.50,
+        "category": 5,
+        "rating": 4.7,
+        "image": "cod-portions.jpeg"
+      }
+    },
+    {
+      "pk": 43,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003990746",
+        "name": "Brown Onion",
+        "description": "Individual Brown Onion",
+        "price": 0.85,
+        "category": 6,
+        "rating": 4,
+        "image": "brown-onion.jpeg"
+      }
+    },
+    {
+      "pk": 44,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004111503",
+        "name": "Red Onion",
+        "description": "Individual Red Onion",
+        "price": 0.85,
+        "category": 6,
+        "rating": 4.9,
+        "image": "red-onion.jpeg"
+      }
+    },
+    {
+      "pk": 45,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004230059",
+        "name": "Sweede",
+        "description": "Individual Sweede",
+        "price": 2.10,
+        "category": 6,
+        "rating": 4.6,
+        "image": "sweede.jpeg"
+      }
+    },
+    {
+      "pk": 46,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004310089",
+        "name": "Garlic Bulb",
+        "description": "Individual Garlic Bulb",
+        "price": 2.00,
+        "category": 6,
+        "rating": 4.5,
+        "image": "garlic-bulb.jpeg"
+      }
+    },
+    {
+      "pk": 47,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004610254",
+        "name": "Parsnip",
+        "description": "Parsnip 1KG",
+        "price": 4.30,
+        "category": 6,
+        "rating": 5,
+        "image": "parsnip.jpeg"
+      }
+    },
+    {
+      "pk": 48,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004650050",
+        "name": "White Potato",
+        "description": "White Potato. Weight: 2.5KG",
+        "price": 3.99,
+        "category": 6,
+        "rating": 4,
+        "image": "potato.jpeg"
+      }
+    },
+    {
+      "pk": 49,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004821375",
+        "name": "Red Potato",
+        "description": "Red Potato. Weight: 2.5kg",
+        "price": 5.99,
+        "category": 6,
+        "rating": 4,
+        "image": "red-potato.jpeg"
+      }
+    },
+    {
+      "pk": 50,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004900522",
+        "name": "Heritage Carrots",
+        "description": "Heritage Carrots. Weight: 2KG",
+        "price": 8.90,
+        "category": 6,
+        "rating": 4.6,
+        "image": "heritage-carrot.jpeg"
+      }
+    },
+    {
+      "pk": 51,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004910158",
+        "name": "Baking Potato",
+        "description": "Baking Potato. Weight: 1KG",
+        "price": 3.50,
+        "category": 6,
+        "rating": 3.8,
+        "image": "baking-potato.jpeg"
+      }
+    },
+    {
+      "pk": 52,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004910477",
+        "name": "Sweet Potato",
+        "description": "Sweet Potato's. Weight: 2KG",
+        "price": 5.90,
+        "category": 6,
+        "rating": 5,
+        "image": "sweet-potato.jpeg"
+      }
+    },
+    {
+      "pk": 53,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004940703",
+        "name": "Broccoli",
+        "description": "Single Head Of Broccoli",
+        "price": 0.95,
+        "category": 8,
+        "rating": 4.7,
+        "image": "broccoli.jpeg"
+      }
+    },
+    {
+      "pk": 54,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004991006",
+        "name": "Cucumber",
+        "description": "Individual Cucumber",
+        "price": 1.20,
+        "category": 8,
+        "rating": 5,
+        "image": "cucumber.jpeg"
+      }
+    },
+    {
+      "pk": 55,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5004991162",
+        "name": "Leek",
+        "description": "Individual Leeks",
+        "price": 1.75,
+        "category": 8,
+        "rating": 4.5,
+        "image": "leeks.jpeg"
+      }
+    },
+    {
+      "pk": 56,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005000046",
+        "name": "Runner Beans",
+        "description": "Runner Beans. Weight: 1KG",
+        "price": 1.80,
+        "category": 8,
+        "rating": 3.9,
+        "image": "runner-beans.jpeg"
+      }
+    },
+    {
+      "pk": 57,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005070254",
+        "name": "Courgette",
+        "description": "Individual Courgette's",
+        "price": 1.45,
+        "category": 8,
+        "rating": 4.7,
+        "image": "courgette.jpeg"
+      }
+    },
+    {
+      "pk": 58,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005071145",
+        "name": "Green Beans",
+        "description": "Green Beans. Weight: 1KG",
+        "price": 1.75,
+        "category": 8,
+        "rating": 3.8,
+        "image": "green-beans.jpeg"
+      }
+    },
+    {
+      "pk": 59,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005140282",
+        "name": "Brussel Sprouts",
+        "description": "Brussel Sprouts. Weight: 1KG",
+        "price": 4.95,
+        "category": 8,
+        "rating": 4,
+        "image": "brussel-sprouts.jpeg"
+      }
+    },
+    {
+      "pk": 60,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005200166",
+        "name": "Asparagus",
+        "description": "Asparagus Bunch",
+        "price": 5.60,
+        "category": 8,
+        "rating": 4.4,
+        "image": "asparagus.jpeg"
+      }
+    },
+    {
+      "pk": 61,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005210241",
+        "name": "Tenderstem Broccoli",
+        "description": "Tenderstem Broccoli. Weight: 250G",
+        "price": 1.55,
+        "category": 8,
+        "rating": 4.5,
+        "image": "tenderstem.jpeg"
+      }
+    },
+    {
+      "pk": 62,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005280104",
+        "name": "Mesculin (Mix Green Leaf)",
+        "description": "Mix Green Leaf Lettuce",
+        "price": 2.20,
+        "category": 8,
+        "rating": 5,
+        "image": "mix-leaf.jpeg"
+      }
+    },
+    {
+      "pk": 63,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005310360",
+        "name": "Iceberg Lettuce",
+        "description": "Individual iceberg lettuce",
+        "price": 1.30,
+        "category": 8,
+        "rating": 5,
+        "image": "lettuce.jpeg"
+      }
+    },
+    {
+      "pk": 64,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005330595",
+        "name": "Celery",
+        "description": "Individual Celery Head",
+        "price": 2.45,
+        "category": 8,
+        "rating": 4.9,
+        "image": "celery.jpeg"
+      }
+    },
+    {
+      "pk": 65,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005330596",
+        "name": "Garden Peas",
+        "description": "Fresh Garden peas. Weight: 1KG",
+        "price": 3.00,
+        "category": 8,
+        "rating": 4,
+        "image": "peas.jpeg"
+      }
+    },
+    {
+      "pk": 66,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005430914",
+        "name": "Whole Green Cabbage",
+        "description": "Individual Whole Cabbage",
+        "price": 4.20,
+        "category": 8,
+        "rating": 4,
+        "image": "cabbage.jpeg"
+      }
+    },
+    {
+      "pk": 67,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005430944",
+        "name": "Kale",
+        "description": "Fresh Picked Kale. Weight: 1KG",
+        "price": 2.40,
+        "category": 8,
+        "rating": 4.5,
+        "image": "kale.jpeg"
+      }
+    },
+    {
+      "pk": 68,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005510265",
+        "name": "Parsley",
+        "description": "Parsley Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 9,
+        "rating": 4.7,
+        "image": "parsley.jpeg"
+      }
+    },
+    {
+      "pk": 69,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005520201",
+        "name": "Coriander",
+        "description": "Coriander Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 9,
+        "rating": 4.3,
+        "image": "coriander.jpeg"
+      }
+    },
+    {
+      "pk": 70,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005520205",
+        "name": "Thyme",
+        "description": "Thyme Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 9,
+        "rating": 4.2,
+        "image": "0thyme.jpeg"
+      }
+    },
+    {
+      "pk": 71,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005630545",
+        "name": "Mint",
+        "description": "Mint Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 9,
+        "rating": 4.3,
+        "image": "mint.jpeg"
+      }
+    },
+    {
+      "pk": 72,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005630605",
+        "name": "Rosemary",
+        "description": "Rosemary Bunch. Weight: 100G",
+        "price": 0.95,
+        "category": 9,
+        "rating": 4.6,
+        "image": "rosemary.jpeg"
+      }
+    },
+    {
+      "pk": 73,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005630637",
+        "name": "Yellow Bell Pepper",
+        "description": "Individual Yellow Bell Pepper",
+        "price": 1.20,
+        "category": 7,
+        "rating": 4.7,
+        "image": "ypepper.jpeg"
+      }
+    },
+    {
+      "pk": 74,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005630638",
+        "name": "Red Bell Pepper",
+        "description": "Individual Red Bell Pepper",
+        "price": 1.20,
+        "category": 7,
+        "rating": 4.2,
+        "image": "rpepper.jpeg"
+      }
+    },
+    {
+      "pk": 75,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005650677",
+        "name": "Green Bell Pepper",
+        "description": "Individual Green Bell Pepper",
+        "price": 1.20,
+        "category": 7,
+        "rating": 4.4,
+        "image": "gpepper.jpeg"
+      }
+    },
+    {
+      "pk": 76,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005700140",
+        "name": "Vanilla Star Embellished Skinny Jeans - Girls 7-16 and Plus",
+        "description": "The eye-catching embellishment on the back pocket of these classic skinny jeans takes casual style to the next level. 5-pocket styling zip fly with button closure back pocket embellishments ramie/cotton/polyester/spandex washable imported",
+        "price": 50.99,
+        "category": 7,
+        "rating": 5,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0831201520432399C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0831201520432399C.jpg"
+      }
+    },
+    {
+      "pk": 77,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005740430",
+        "name": "Vine Cherry Tomato ",
+        "description": "Vine Cherry Tomato. Weight: 250G",
+        "price": 2.40,
+        "category": 7,
+        "rating": 4.7,
+        "image": "vine-tomato.jpeg"
+      }
+    },
+    {
+      "pk": 78,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005740561",
+        "name": "Button Mushrooms",
+        "description": "Button Mushrooms. Weight: 250G",
+        "price": 2.99,
+        "category": 7,
+        "rating": 4.6,
+        "image": "button-mushroom.jpeg"
+      }
+    },
+    {
+      "pk": 79,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005740634",
+        "name": "Field Mushroom",
+        "description": "Field Mushroom's. Weight: 250G",
+        "price": 3.99,
+        "category": 7,
+        "rating": 4.5,
+        "image": "field-mushroom.jpeg"
+      }
+    },
+    {
+      "pk": 80,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005760088",
+        "name": "Green Chilli's",
+        "description": "Green Chilli's. Weight: 100G",
+        "price": 1.40,
+        "category": 7,
+        "rating": 5,
+        "image": "green-chilli.jpeg"
+      }
+    },
+    {
+      "pk": 81,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005810108",
+        "name": "Butternut Squash",
+        "description": "Individual Butternut Squash",
+        "price": 2.40,
+        "category": 7,
+        "rating": 4.7,
+        "image": "butternut.jpeg"
+      }
+    },
+    {
+      "pk": 82,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005820197",
+        "name": "Red Chilli's",
+        "description": "Red Chilli's. Weight: 100G",
+        "price": 1.40,
+        "category": 7,
+        "rating": 4.9,
+        "image": "red-chilli.jpeg"
+      }
+    },
+    {
+      "pk": 83,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005840598",
+        "name": "Large Vine Tomato",
+        "description": "Vine tomato. Weight: 250G",
+        "price": 2.80,
+        "category": 7,
+        "rating": 5,
+        "image": "big-vine-tomato.jpeg"
+      }
+    },
+    {
+      "pk": 84,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005840776",
+        "name": "Chery Tomato",
+        "description": "Cherry Tomato Punnet",
+        "price": 1.80,
+        "category": 7,
+        "rating": 5,
+        "image": "cherry-tomato.jpeg"
+      }
+    },
+    {
+      "pk": 85,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005850180",
+        "name": "Cauliflower",
+        "description": "Individual Cauliflower Head",
+        "price": 5.60,
+        "category": 7,
+        "rating": 4.2,
+        "image": "cauliflower.jpeg"
+      }
+    },
+    {
+      "pk": 86,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005851218",
+        "name": "Heritage Tomato's",
+        "description": "Heritage Tomato. Weight: 250G",
+        "price": 5.95,
+        "category": 7,
+        "rating": 4.1,
+        "image": "heritage-tomato.jpeg"
+      }
+    },
+    {
+      "pk": 87,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005860175",
+        "name": "Fresh Corn",
+        "description": "Fresh Corn. Weight: 1KG",
+        "price": 2.20,
+        "category": 7,
+        "rating": 4.8,
+        "image": "sweet-corn.jpeg"
+      }
+    },
+    {
+      "pk": 88,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005860263",
+        "name": "Whole Corn Cobs",
+        "description": "Individual Corn Cobs",
+        "price": 1.80,
+        "category": 7,
+        "rating": 4,
+        "image": "corn-cob.jpeg"
+      }
+    },
+    {
+      "pk": 89,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005870183",
+        "name": "Paprika",
+        "description": "Paprika Powder. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 5,
+        "image": "paprika.jpeg"
+      }
+    },
+    {
+      "pk": 90,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005870599",
+        "name": "Dried Mixed Herbs",
+        "description": "Dried Mixed Herbs. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 4.4,
+        "image": "mixed-herbs.jpeg"
+      }
+    },
+    {
+      "pk": 91,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005870638",
+        "name": "Maldon Sea Salt",
+        "description": "Maldon Sea Salt. Weight: 250G",
+        "price": 5.99,
+        "category": 9,
+        "rating": 4.4,
+        "image": "sea-salt.jpeg"
+      }
+    },
+    {
+      "pk": 92,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005910565",
+        "name": "Cracked Black Pepper",
+        "description": "Cracked Black Pepper. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 4.3,
+        "image": "black-pepper.jpeg"
+      }
+    },
+    {
+      "pk": 93,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005930313",
+        "name": "Chilli Powder",
+        "description": "Chilli Powder. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 4.9,
+        "image": "chilli-powder.jpeg"
+      }
+    },
+    {
+      "pk": 94,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005940242",
+        "name": "Crushed Chilli",
+        "description": "Crushed Chilli Flakes. Weight: 250G",
+        "price": 4.99,
+        "category": 9,
+        "rating": 3.7,
+        "image": "crushed-chilli.jpeg"
+      }
+    },
+    {
+      "pk": 95,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005940299",
+        "name": "Dried Oregano",
+        "description": "Dried Oregano. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 5,
+        "image": "oregano.jpeg"
+      }
+    },
+    {
+      "pk": 96,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005941612",
+        "name": "Dried Basil",
+        "description": "Dried Basil. Weight: 250G",
+        "price": 3.99,
+        "category": 9,
+        "rating": 5,
+        "image": "basil.jpeg"
+      }
+    },
+    {
+      "pk": 97,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005980058",
+        "name": "Curry Powder",
+        "description": "Curry Powder. Weight: 250G",
+        "price": 6.99,
+        "category": 9,
+        "rating": 5,
+        "image": "curry-powder.jpeg"
+      }
+    },
+    {
+      "pk": 98,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5005980146",
+        "name": "Tumeric Powder",
+        "description": "Tumeric Powder. Weight: 250G",
+        "price": 5.99,
+        "category": 9,
+        "rating": 4.5,
+        "image": "tumeric.jpeg"
+      }
+    },
+    {
+      "pk": 99,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006070077",
+        "name": "Plant Based Mince",
+        "description": "Plant Based Mince Meat. Weight: 300G",
+        "price": 8.99,
+        "category": 10,
+        "rating": 4.4,
+        "image": "plant-mince.jpeg"
+      }
+    },
+    {
+      "pk": 100,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006081758",
+        "name": "Plant Based Burgers",
+        "description": "Plant Based Burgers",
+        "price": 5.50,
+        "category": 10,
+        "rating": 4.8,
+        "image": "plant-burgers.jpeg"
+      }
+    },
+    {
+      "pk": 101,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006082011",
+        "name": "Plant Based Chicken",
+        "description": "Plant Based Chicken. Four breasts",
+        "price": 7.99,
+        "category": 10,
+        "rating": 5,
+        "image": "plant-chicken.jpeg"
+      }
+    },
+    {
+      "pk": 102,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006150186",
+        "name": "Plant Based Sausages",
+        "description": "Plant Based Sausages. Six Sausages",
+        "price": 7.99,
+        "category": 10,
+        "rating": 4,
+        "image": "plant-sausage.jpeg"
+      }
+    },
+    {
+      "pk": 103,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006153172",
+        "name": "Plant Based Chorizo",
+        "description": "Plant Based Chorizo Sausage. Six Sausages",
+        "price": 7.99,
+        "category": 10,
+        "rating": 4.2,
+        "image": "plant-chorizo.jpeg"
+      }
+    },
+    {
+      "pk": 104,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006160127",
+        "name": "Gloria Vanderbilt Amanda Jeans - Plus",
+        "description": "You'll love the flattering look and comfortable fit of our classic five-pocket jeans from Gloria Vanderbilt. mid rise straight leg 30\" inseam white, cherry blossom: cotton/spandex antiqua ticking stripe: cotton/polyester/spandex washable imported",
+        "price": 52.99,
+        "category": 6,
+        "rating": 5,
+        "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1230201520420777C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+        "image": "DP1230201520420777C.jpg"
+      }
+    },
+    {
+      "pk": 105,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006160833",
+        "name": "Ogg's (Egg Replacement)",
+        "description": "Ogg's Egg Replacement",
+        "price": 5.99,
+        "category": 12,
+        "rating": 4.8,
+        "image": "oggs.jpeg"
+      }
+    },
+    {
+      "pk": 106,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006170128",
+        "name": "Vegan Bakers Block",
+        "description": "Kerrymaid Vegan Bakers Block. Weight: 250G",
+        "price": 3.99,
+        "category": 12,
+        "rating": 4,
+        "image": "kerrymaid-vegan-block.jpeg"
+      }
+    },
+    {
+      "pk": 107,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006170131",
+        "name": "Plant Based Butter",
+        "description": "Plant Based butter substitute",
+        "price": 1.99,
+        "category": 12,
+        "rating": 5,
+        "image": "plant-butter.jpeg"
+      }
+    },
+    {
+      "pk": 108,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006170357",
+        "name": "Oat Milk",
+        "description": "Oat Milk. 1 Litre",
+        "price": 4.99,
+        "category": 4,
+        "rating": 3.7,
+        "image": "oat-milk.jpeg"
+      }
+    },
+    {
+      "pk": 109,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006200155",
+        "name": "Almond Milk",
+        "description": "Almond Milk. 1 Litre",
+        "price": 4.99,
+        "category": 12,
+        "rating": 5,
+        "image": "almond-milk.jpeg"
+      }
+    },
+    {
+      "pk": 110,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006200658",
+        "name": "Green Lentils",
+        "description": "Green Lentils. Weight: 1KG",
+        "price": 8.99,
+        "category": 13,
+        "rating": 4.8,
+        "image": "green-lentil.jpeg"
+      }
+    },
+    {
+      "pk": 111,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006241766",
+        "name": "Red Lentils",
+        "description": "Red Lentils. Weight: 1KG",
+        "price": 8.99,
+        "category": 13,
+        "rating": 1,
+        "image": "red-lentil.jpeg"
+      }
+    },
+    {
+      "pk": 112,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006242155",
+        "name": "Quinoa",
+        "description": "Quinoa. Weight: 1KG",
+        "price": 10.99,
+        "category": 13,
+        "rating": 3,
+        "image": "quiona.jpeg"
+      }
+    },
+    {
+      "pk": 113,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006242904",
+        "name": "Cous Cous",
+        "description": "Cous Cous. Weight: 1KG",
+        "price": 12.99,
+        "category": 13,
+        "rating": 5,
+        "image": "cous-cous.jpeg"
+      }
+    },
+    {
+      "pk": 114,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006242905",
+        "name": "Fresh Spaghetti",
+        "description": "Fresh Spaghetti Pasta. Weight: 250G",
+        "price": 4.99,
+        "category": 13,
+        "rating": 5,
+        "image": "spaghetti.jpeg"
+      }
+    },
+    {
+      "pk": 115,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006243106",
+        "name": "Fresh Pappardelle",
+        "description": "Fresh Pappardelle Pasta. Weight: 250G",
+        "price": 8.99,
+        "category": 13,
+        "rating": 4,
+        "image": "pappardelle.jpeg"
+      }
+    },
+    {
+      "pk": 116,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006243276",
+        "name": "Fresh Lasagna Sheets",
+        "description": "Fresh Lasagne Sheets. Weight: 500G",
+        "price": 6.50,
+        "category": 13,
+        "rating": 5,
+        "image": "lasagne-sheet.jpeg"
+      }
+    },
+    {
+      "pk": 117,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006280064",
+        "name": "Fresh Rigatoni Pasta",
+        "description": "Fresh Rigatoni Pasta. Weight: 250G",
+        "price": 5.99,
+        "category": 13,
+        "rating": 4.8,
+        "image": "rigatoni.jpeg"
+      }
+    },
+    {
+      "pk": 118,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006280190",
+        "name": "Fresh Penne Pasta",
+        "description": "Fresh Penne Pasta. Weight: 250G",
+        "price": 4.99,
+        "category": 13,
+        "rating": 5,
+        "image": "penne.jpeg"
+      }
+    },
+    {
+      "pk": 119,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006291997",
+        "name": "Fresh Fusilli Pasta",
+        "description": "Fresh Fusilli Pasta. Weight: 250G",
+        "price": 4.99,
+        "category": 13,
+        "rating": 5,
+        "image": "fusilli.jpeg"
+      }
+    },
+    {
+      "pk": 120,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5006310072",
+        "name": "Fresh Gnocchi",
+        "description": "Fresh Gnocchi. Weight: 500G",
+        "price": 6.99,
+        "category": 13,
+        "rating": 5,
+        "image": "gnocchi.jpeg"
+      }
+    }
+]
