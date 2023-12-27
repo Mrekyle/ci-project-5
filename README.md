@@ -1,6 +1,6 @@
-# myRecipe
+# Localitty
 
-Link to live myRecipe project: [myRecipe - CI Project Four - Full Stack Frameworks](https://ci-myrecipe-921534e8b4ab.herokuapp.com/)
+Link to live myRecipe project: [Localitty - CI Project Five - Eccommerce Specialization](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
 
 ## Table of Contents 
 1. The Project
@@ -12,7 +12,7 @@ Link to live myRecipe project: [myRecipe - CI Project Four - Full Stack Framewor
     - Future Development
 3. Technology used
 4. Testing
-    - Manuel
+    - Manual
 5. Bugs
 6. Project Deployment
 7. Sources
@@ -105,34 +105,24 @@ During the development of the app multiple different types of technology was use
 
 - HTML - Was used to create the basic web page for the project
 - CSS - Was used to style the web page and the different elements that make up the application
-- JS - Was used to create a few simple functions for ease of use. Such as changing the date in the footer and sending emails on the contact form
+- JS - Was used to create a few simple functions for ease of use. Such as changing the date in the footer.
 - Python - Used during the development of the back end of the application for everything that communicates with different servers and databases
 - Django - Was used as the base development framework. Allowing the use of template and and back end driven development. 
-- MDN - A bootstrap library. Allowing the use of different components and defined classes throughout the application to speed up development. (Upon review, I would choose to use the base Bootstrap library.)
-- Cloudinary - Used for the hosting of the images that are uploaded to the application for the recipes
-- ElephantSQL - Was used for the hosting of the database that contains all the recipes on the application
+- Bootstrap - Was used to speed up development time due to the vast array of helper classes and systems they have in place. And with the various free templates and code snippets they offer to their users.
+- AWS - Used to hose the static files for the application (Media files and Static Files)
+- ElephantSQL - Was used for the hosting of the database that contains all the products on the application
 - Github - Was used for source control of the project allowing progress of the application to be tracked and stored in one place
 - Gitpod - Was used as an IDE. Allowing for the development of the application anywhere anytime
 - Heroku - Was used to host the application on the internet for all to use and see
 
 ## App Testing
 
-During the development of the Project it has been subjected to different testing methods to ensure that all points are hit. No errors are found in the code as well as manual testing of the app to ensure everything works as intended. There was also testing involved to ensure that the application would be responsive and work on all screen sizes and device types. To allow for the best accessability possible. The image for this can be found at the top of the document.
+During the development of the Project it has been subjected to different testing methods to ensure that all points are hit. No errors are found in the code as well as manual testing of the app to ensure everything works as intended. There was also testing involved to ensure that the application would be responsive and work on all screen sizes and device types by using the built in google chrome developer tools. To allow for the best accessability possible. The image for this can be found at the top of the document.
 
 
 | Test | Intended Result | Result |
 |------|-----------------|--------|
-| Navigation | All pages are correctly linked together with the correct navigation | Passed |
-| User Registration | Users can register to the application to create an account | Passed |
-| User Logout | User can successfully logout of their account | Passed |
-| User Login | User can successfully login into their account | Passed |
-| Contact Form | Users(registered and not) can submit the contact form to the admins. Showing a success message on successful submission | passed|
-| Contact form Clear and Message | Contact form clears itself on submission and a success message is displayed back to the user | Passed |
-| Access restricted | Users who are not logged into their account cannot access certain information | Passed |
-| View Recipes | User can view all recipes posted to the application | Passed |
-| View Own Recipes | User can see all of their own recipes they have posted in one single place | Passed |
-| Edit Recipe | User can edit any of their own recipes. With the updates being displayed and posted to the database immediately | Passed |
-| Delete Recipe | User can delete any of their own recipes. With a warning page being displayed. Any action taking immediate effect | Passed |
+| | |
 
 ## Bugs
 
@@ -141,27 +131,21 @@ During the development of the application there were many different bugs along t
 
 | Bug | Fix |
 |-----|-----|
-| Summernote displaying html code syntax on the page when rendering the recipe | Fixed by adding the 'safe' argument onto the template |
-| Footer styling issue on the user login page | Fixed by removing extra closing 'div' tags causing the issue |
-| Recipe creation form not submitting recipe | Fixed by converting the form from html to native django and python, by using the forms module |
-| No reverse match for home page | Fixed by removing the .slug prefix on the page navigation once removing the slug from the model |
-| Multiple pages receiving multiple arguments when one is required | Fixed by adding 'as_view()' to the urls when the views were converted |
-| Users image not uploading to the application when submitting the 'Create a Recipe form' | Fixed by adding the 'enctype' to the form element |
-
+| | |
 
 ## Project Deployment
 
-Heroku was used to deploy the application live to the internet. The live Application can be found [Here](https://ci-myrecipe-921534e8b4ab.herokuapp.com/)
+Heroku was used to deploy the application live to the internet. The live Application can be found [Here](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
 
 If you are wanting to take a look at the code and potentially add on your own features to the project you can do so by cloning or forking the repo. By doing this it will allow you to locally develop and add your own features to the app.
 
 <details>
-<summary>Clone</summary>
+<summary>Clone and Forking</summary>
 <br>
 
 By clicking the clone repo button. You are able to then clone the repo as it is. By clicking the fork button you are able to take the code and add it to your own account where you can develop and push new and improved features to the main application. 
 
-<img alt="Clone the repo" height="300px" src="./static/media/fork-clonerepo.png">
+<img alt="Clone the repo" height="300px" src="">
 
 </details>
 
