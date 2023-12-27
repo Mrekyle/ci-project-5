@@ -111,6 +111,11 @@ Future features that are in development are
 
 </details>
 
+## Business Plan
+
+
+
+
 ## Technology Used
 
 During the development of the app multiple different types of technology was used and utilized to build the final application. 
@@ -152,48 +157,40 @@ During the development of the Project it has been subjected to different testing
 <br>
 <details>
 <summary>Lighthouse</summary>
+<br>
+Although only one image is shown of a lighthouse score. The average score across the site is 75 to 80 of total performance
 
-<img alt="Clone the repo" height="300px" src="">
+<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/lighthouse.png">
 
 </details>
 <br>
 
-<details>
-<summary>W3C</summary>
-
-<img alt="Clone the repo" height="300px" src="">
-
-</details>
-<br>
 
 <details>
 <summary>Css Testing</summary>
+<br>
+Despite there being errors in the validation. I believe this is due to the validation service not being updated for newer versions of css.
 
-<img alt="Clone the repo" height="300px" src="">
+<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/css-validate.png">
 
 </details>
 <br>
 
 <details>
-<summary>JsLinter</summary>
-
-<img alt="Clone the repo" height="300px" src="">
-
-</details>
+<summary>Javascript Testing</summary>
 <br>
-
-<details>
-<summary>Lighthouse</summary>
-
-<img alt="Clone the repo" height="300px" src="">
+Despite there being warnings on the JS testing. This is due to missing semi colons and JSON syntax not being recognized. Not causing any code breaking bugs.
+<br>
+<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/js-testing.png">
 
 </details>
 <br>
 
 <details>
 <summary>Pep8</summary>
+<br>
 
-<img alt="Clone the repo" height="300px" src="">
+As far as I am aware there is no real pep8 validation service that I have been able to fine. All the testing I have done for this is in the built in problems tab in VsCode/Gitpd. Not throwing any problems apart from unknown words that I have chosen for class names. Or names through out the project.
 
 </details>
 <br>

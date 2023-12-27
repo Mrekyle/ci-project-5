@@ -21,4 +21,3 @@ $('#sort-selector').change(function() {
     }
 })
 
-console.log('Hello World')
