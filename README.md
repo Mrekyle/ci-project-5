@@ -31,39 +31,34 @@ With the ever growing need to find a simple recipe to cook for you and your fami
 ### Initial Design (Wireframes)
 
 During the initial design phase of the project, wire frames were created to give a visual design idea and an end goal to work towards. With thought and care taken to make the design of the application as responsive and user friendly as possible for all device types. 
-Whilst the wire frames may not be accurate to the device screen size. The designs has been adjusted to work and function correctly on all device types.
+Whilst the wire frames may not be accurate to the final deployed project. The application has been adjusted to work and function correctly on all device types. The wireframes were designed to give a core design to the store.
 
 <details>
 <summary>Page Designs</summary>
 <br>
 
-### Home Page
+### Home, Shop and User dashboard
 
-<img alt="Home Page" height="350px" src="./static/media/home.png">
+The design was intended to be simple and intuitive for the user. To allow them to use the store as intended. Keeping it clean and simple at the same time as giving the user all the information they would need on that page.
 
-###  Pricing and Contact page
+<img alt="Home Page, Shop Page and User Dashboard" height="350px" src="">
 
-<img alt="Pricing and Contact Page" height="350px" src="./static/media/pricing-contact.png">
+###  Support, Dont GnocchIt and Admin Dashboard
 
-### User Login and User Home Page
+<img alt="Pricing and Contact Page" height="350px" src="">
 
-<img alt="User login and user home page" height="350px" src="./static/media/login-userhome.png">
+Despite there being other pages on the application that are not included in the initial wireframe design. They all followed the core theme of the application and store. This allowed less going back and forth designing new pages in wireframe's, meaning the development of certain features and pages could commence straight away.
 
-### User registration and payment wall
+</details>
 
-<img alt="User registration and payment" height="350px" src="./static/media/signup-payment.png">
+<details>
+<summary>Database Diagram</summary>
 
-### User Logout and User Account Page
+With the design of the database being a crucial part of the applications core design it was important to get it right. 
 
-<img alt="User logout and user account" height="350px" src="./static/media/logout-account.png">
+Although not all designs are implemented into the live application is leaving room for future development with the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
 
-### Recipe and CRUD Pages
-
-<img alt="Recipe and CRUD Pages" height="350px" src="./static/media/recipe-crud.png">
-
-### Database Design 
-
-<img alt="Recipe database design" height="350px" src="./static/media/databasedesign.png">
+<img alt="Recipe database design" height="350px" src="">
 
 </details>
 
