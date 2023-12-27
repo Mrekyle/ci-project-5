@@ -20,3 +20,5 @@ $('#sort-selector').change(function() {
         window.location.replace(currentUrl)
     }
 })
+
+console.log('Hello World')

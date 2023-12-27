@@ -1838,7 +1838,7 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003270936",
-        "name": "back Bacon",
+        "name": "Back Bacon",
         "description": "Sliced Back Bacon. Our bacon is all produced from our own pork and is traditionally dry cured. Amazing quality product with a deep full flavour.",
         "price": 10.95,
         "category": 15,
