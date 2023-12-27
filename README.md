@@ -1,21 +1,24 @@
 # Localitty
 
-Link to live myRecipe project: [Localitty - CI Project Five - Eccommerce Specialization](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
+Link to live Localitty project: [Localitty - CI Project Five - Eccommerce Specialization](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
 
 ## Table of Contents 
 1. The Project
     - Project Goals
     - Initial Design
-    - Manual Testing
 2. Features
     - Implemented
     - Future Development
-3. Technology used
-4. Testing
+3. Business Plan
+    - The plan
+    - Media Page
+    - Keyword Research
+4. Technology used
+5. Testing
     - Manual
-5. Bugs
-6. Project Deployment
-7. Sources
+6. Bugs
+7. Project Deployment
+8. Sources
     - Code
     - Colors
     - Images
@@ -26,7 +29,13 @@ Link to live myRecipe project: [Localitty - CI Project Five - Eccommerce Special
 
 ### Project Goals
 
-With the ever growing need to find a simple recipe to cook for you and your family. The idea of myRecipe was created with the intention of creating an application where you can create and view your own or others recipes. With the intention of future development to build tools to allow chefs and restaurants the same ability and have everything in one place.
+With the ever growing problems that arise in day to day life, people are turning towards wanting a fresh and local supplier for food. Instead of using the large chain supermarkets. Meaning people are becoming more conscious of how there food is grown and where it comes from. This opens the market for local suppliers.
+
+But there has been no platforms for them to sell on, unless its at there store in person. This has inspired a centralized store for all things local. With local suppliers coming together to sell there goods. Localitty was born to fill this gap. 
+
+Allowing users of the store to know that the goods they are purchasing are local to them, helping them to support local and eat fresh produce. 
+
+With region expansion planned and product expansion planned. Localittys aim is to incorporate into every day life to supply local products to local people.
 
 ### Initial Design (Wireframes)
 
@@ -41,56 +50,64 @@ Whilst the wire frames may not be accurate to the final deployed project. The ap
 
 The design was intended to be simple and intuitive for the user. To allow them to use the store as intended. Keeping it clean and simple at the same time as giving the user all the information they would need on that page.
 
-<img alt="Home Page, Shop Page and User Dashboard" height="350px" src="">
+<img alt="Home Page, Shop Page and User Dashboard" height="250px" width="400px" src="../ci-project-5/media/readme/home-shop-user.png">
 
 ###  Support, Dont GnocchIt and Admin Dashboard
 
-<img alt="Pricing and Contact Page" height="350px" src="">
+<img alt="Support Page, Dont Gnocchit and Admin Dashboard" height="250px" width="400px" src="../ci-project-5/media/readme/support-dontgnocchit-admin.png">
 
 Despite there being other pages on the application that are not included in the initial wireframe design. They all followed the core theme of the application and store. This allowed less going back and forth designing new pages in wireframe's, meaning the development of certain features and pages could commence straight away.
 
 </details>
 
+
 <details>
 <summary>Database Diagram</summary>
-
+<br>
 With the design of the database being a crucial part of the applications core design it was important to get it right. 
 
 Although not all designs are implemented into the live application is leaving room for future development with the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
 
-<img alt="Recipe database design" height="350px" src="">
+<img alt="Recipe database design" height="250px" width="400px" src="../ci-project-5/media/readme/locality-database.png">
 
 </details>
 
-<details>
-<summary>Features</summary>
-<br>
+## Future Development
 
 ### Implemented
 
 The basic features that are currently implemented into the application are
 
-- User contact form 
-- User registration and authentication
-- User recipe creation
-- User recipe edit/delete
-- Recipe browsing 
+<details>
+
+- User Contact form
+- User account creation
+- User store functionality(add items to bag, checkout securely, receive order confirmation email)
+- User to save information to their account
+- User to see previous order history
+- User to sign up for mailing list
+
+- Admin CRUD (create, update and delete products)
+- Admin Full Order history
+- Admin total revenue, products and order count
+
+</details>
 
 ### Future Development
 
 Future features that are in development are
 
-- Restaurant Recipe creation 
-- Allergen and calorie counting
-- Menu Creation
-- Recipe/Menu Costing 
-- User Support Chats
-- Instant Messages between users
-- User Profiles
+<details>
+
 - Dark Mode
-- Restaurant Stock Take
-- Shopping lists
-- Order Reports (Based of menu created by chefs)
+- Recipe/Developer Blogs
+- Order History Filtering
+- Vendor Accounts
+- User product reviews and ratings
+- Custom delivery schedule 
+- Order dispatch emails
+- Live Support Chats and messaging
+- Locality Mobile App
 
 </details>
 
@@ -117,7 +134,69 @@ During the development of the Project it has been subjected to different testing
 
 | Test | Intended Result | Result |
 |------|-----------------|--------|
-| | |
+| Account Creation | Allows the user to create an account and confirm their email address | Passed |
+| Change Password | Allows the user to change their password | Passed |
+| Add items to bag | Allow the user to add items from the store to the bag | Passed |
+| Bag items edit | Allow the user to change item quantity and remove items from the shopping bag | Passed |
+| Checkout | Allow the user to checkout securely checkout and process the order | Passed |
+| Save info | Allow the user to save default shipping information to their profile | Passed |
+| Previous Orders | Allow the user to view previous order history on their account | Passed
+| Support | Allow the user to send a support contact form request | Passed |
+| Admin Order History | Allow the store admins to view all order history | Passed |
+| Admin product create | Allow the store admins to create products on the store | Passed |
+| Admin product edit | Allow the store admins to edit current products on the store | passed |
+| Admin product delete | Allow the store admins to delete current products on the store | Passed |
+| Total Revenue | Allow the store admins to view the total store revenue | Passed |
+
+
+<br>
+<details>
+<summary>Lighthouse</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
+
+<details>
+<summary>W3C</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
+
+<details>
+<summary>Css Testing</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
+
+<details>
+<summary>JsLinter</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
+
+<details>
+<summary>Lighthouse</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
+
+<details>
+<summary>Pep8</summary>
+
+<img alt="Clone the repo" height="300px" src="">
+
+</details>
+<br>
 
 ## Bugs
 
@@ -126,7 +205,15 @@ During the development of the application there were many different bugs along t
 
 | Bug | Fix |
 |-----|-----|
-| | |
+| Profiles Modules not being found | Fixed by re ordering the urls in the main application files |
+| Product filtering selection not displaying on the selection box. But filtering products | Unfixed |
+| Product Quantity selection not working. Page refreshing on button click | Small typos in the JS file |
+| Orders not being saved to the database. But being sent to stripe | Connected to other small bugs. But fixed by fixing a typo with the UUID generation |
+| Checkout success page not loading | Error in the name of the checkout success page file name |
+| Pagination errors. Cant paginate an un ordered list | Fixed by adding the order_by() method onto the selector |
+| Confirmation emails not being sent during development | Due to stripes webhook handlers not working in development on a local host. But working when deployed |
+| Delivery costs not calculating correctly | Fixed by changing the percentage to be divided by |
+| Product category not displaying on product card in store page | Unfixed 
 
 ## Project Deployment
 
@@ -140,7 +227,7 @@ If you are wanting to take a look at the code and potentially add on your own fe
 
 By clicking the clone repo button. You are able to then clone the repo as it is. By clicking the fork button you are able to take the code and add it to your own account where you can develop and push new and improved features to the main application. 
 
-<img alt="Clone the repo" height="300px" src="">
+<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/forking.png">
 
 </details>
 
@@ -159,7 +246,7 @@ The colors that were chosen for the project were picked because they were all si
 <details>
 <summary>Color Palette</summary>
 
-<img alt="Color Palette for the application" height="300px" src="">
+<img alt="Color Palette for the application" height="150px" src="../ci-project-5/media/readme/locality-colors.png">
 
 </details>
 

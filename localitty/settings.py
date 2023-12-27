@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -195,7 +195,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STRIPE
 
 FREE_DELIVERY = 45
-STANDARD_DELIVERY_CHARGE = 1
+STANDARD_DELIVERY_CHARGE = 30
 
 STRIPE_CURRENCY = 'gbp'
 
