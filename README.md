@@ -12,7 +12,6 @@ Link to live Localitty project: [Localitty - CI Project Five - Eccommerce Specia
 3. Business Plan
     - The plan
     - Media Page
-    - Keyword Research
 4. Technology used
 5. Testing
     - Manual
@@ -113,8 +112,52 @@ Future features that are in development are
 
 ## Business Plan
 
+Locality's ultimate goal is to connect local farmers and producers of goods to the local people in a certain area. Allowing for the sustainable production of goods.
 
+Promoting sustainable living, supporting locals and to have the best produce available to the customer. Locality's vision is to become the go to online retailer for local farmers/growers/producers to sell there goods to the local people.
 
+As a company it is a priority for us to be a sustainable and environmentally friendly as possible. Due to the nature of making deliveries and using certain packaging. This has become a high priority for us. We can achieve this by:
+
+- Packaging: Use eco-friendly packaging materials and encourage customers to recycle.
+- Reducing Food Waste: Implement strategies to minimize food waste, such as donation programs and responsible inventory management.
+- Deliveries: By using electric vans/Hybrid vans to make our deliveries
+
+### Target Market:
+
+- Locals in the Essex area who value fresh, locally sourced products.
+- Health-conscious consumers seeking organic and sustainably produced goods.
+- Busy individuals who prefer the convenience of online shopping without compromising product quality.
+
+### Products and Services:
+
+- Offer a wide and diverse variety of produce for locals
+- Eventually offer subscription boxes and curated bundles to cater to specific preferences and dietary needs.
+
+### Marketing:
+
+- Digital Marketing: Utilize social media, SEO, and online advertising to reach and engage the target audience.
+- Partnerships: Collaborate with local food bloggers and community organizations.
+- Customer Loyalty Programs: Reward loyal customers with discounts, exclusive deals, and eventually referral programs.
+
+### Operation Plan
+
+- Relationships: Develop strong relationships with local farmers and producers. Also engaging in the local community with events to help promote eating/buying local.
+- Inventory Management: Implement a robust inventory system to ensure freshness and minimize waste.
+- Order Fulfillment: Building a team of local drivers to deliver our service in time frame we require to keep the customers happy. Ensuring they go the extra mile to assist customers when delivering our product.
+
+As this is an ever growing business there is no set time line. Due to everything that can change on a weekly basis with the nature of the service that is offered. 
+
+But by rolling our in phases we are able to cut the chance of things going wrong drastically. Starting by launching our core products in Essex. Having them become established as a service and getting everything right. Before eventually expanding to different regions and areas, forming new relationships with farmers/artisans/bakers/producers around the country.
+
+## Media Page
+
+An online presence for a new business is a crucial part of the launch of a new company. As this promotes to a wide audience of people in a targeted area. 
+<br>
+<details>
+<summary>Media Page</summary>
+<br>
+<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/locality-media.png">
+</details>
 
 ## Technology Used
 
