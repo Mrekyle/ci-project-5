@@ -178,7 +178,7 @@ if 'USE_AWS' in os.environ:
 
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
-    DEFAULTFILE_STORAGE = 'custom_storages.MediaStorage'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
@@ -206,21 +206,17 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 # EMAIL BACKENDS
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
-
-
-# if 'DEVELOPMENT' in os.environ:
-#     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-#     DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
-# else:
-#     EMAIL_HOST = 'smtp.google.com'
-#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
-#     EMAIL_PORT = 587
-#     EMAIL_USE_TLS = True
-#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_CONFIRMATION_EMAIL = 'localitty@example.com'
+else:
+    EMAIL_HOST = 'smtp.google.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
 # ACCOUNT VERIFICATION
