@@ -67,7 +67,7 @@ With the design of the database being a crucial part of the applications core de
 
 Although not all designs are implemented into the live application is leaving room for future development with the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
 
-<img alt="Recipe database design" height="250px" width="400px" src="../ci-project-5/media/readme/locality-database.png">
+<img alt="Localitty database design" height="250px" width="400px" src="../ci-project-5/media/readme/locality-database.png">
 
 </details>
 
@@ -139,7 +139,7 @@ As a company it is a priority for us to be a sustainable and environmentally fri
 - Partnerships: Collaborate with local food bloggers and community organizations.
 - Customer Loyalty Programs: Reward loyal customers with discounts, exclusive deals, and eventually referral programs.
 
-### Operation Plan
+### Operation Plan: 
 
 - Relationships: Develop strong relationships with local farmers and producers. Also engaging in the local community with events to help promote eating/buying local.
 - Inventory Management: Implement a robust inventory system to ensure freshness and minimize waste.
@@ -253,7 +253,8 @@ During the development of the application there were many different bugs along t
 | Pagination errors. Cant paginate an un ordered list | Fixed by adding the order_by() method onto the selector |
 | Confirmation emails not being sent during development | Due to stripes webhook handlers not working in development on a local host. But working when deployed |
 | Delivery costs not calculating correctly | Fixed by changing the percentage to be divided by |
-| Product category not displaying on product card in store page | Unfixed 
+| Product category not displaying on product card in store page | Unfixed |
+| Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts |
 
 ## Project Deployment
 

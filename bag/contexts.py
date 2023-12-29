@@ -38,7 +38,8 @@ def bag_contents(request):
         Calculating the delivery charges
     """
     if total_cost < settings.FREE_DELIVERY:
-        delivery = total_cost * Decimal(settings.STANDARD_DELIVERY_CHARGE)
+        delivery = total_cost * \
+            Decimal(settings.STANDARD_DELIVERY_CHARGE / 100)
         free_delivery = settings.FREE_DELIVERY - total_cost
     else:
         delivery = 0
