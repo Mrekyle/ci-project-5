@@ -209,6 +209,11 @@ a.cat-badge > span.badge:hover {
     overflow: hidden;
 }
 
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* ADMIN DASHBORAD */
 
 .preview-container {
@@ -612,12 +617,9 @@ a.cat-badge > span.badge:hover {
     .total-orders, 
     .total-products, 
     .total-revenue {
-        max-width: 7rem;
+        max-width: 6rem;
         height: 5rem;
         padding-top: 4px;
-        padding-left: 4px;
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
     .admin-buttons {
@@ -688,10 +690,24 @@ a.cat-badge > span.badge:hover {
     }
 
     .img-container {
-        margin-bottom: -3rem;
+        margin-bottom: -7rem;
+        height: 295px;
     }
 
     .header-container {
-        padding-top: 180px;
+        padding-top: 85px;
+    }
+
+    .review-card {
+        max-width: 90%
+    }
+
+    .img-main {
+        max-width: 100%;
+        max-height: 295px;
+    }
+
+    .main-img-container {
+        max-height: 285px;
     }
 }
