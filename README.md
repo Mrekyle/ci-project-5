@@ -49,11 +49,11 @@ Whilst the wire frames may not be accurate to the final deployed project. The ap
 
 The design was intended to be simple and intuitive for the user. To allow them to use the store as intended. Keeping it clean and simple at the same time as giving the user all the information they would need on that page.
 
-<img alt="Home Page, Shop Page and User Dashboard" height="250px" width="400px" src="../ci-project-5/media/readme/home-shop-user.png">
+<img alt="Home Page, Shop Page and User Dashboard" height="250px" width="400px" src="static/media/readme/home-shop-user.png">
 
 ###  Support, Dont GnocchIt and Admin Dashboard
 
-<img alt="Support Page, Dont Gnocchit and Admin Dashboard" height="250px" width="400px" src="../ci-project-5/media/readme/support-dontgnocchit-admin.png">
+<img alt="Support Page, Dont Gnocchit and Admin Dashboard" height="250px" width="400px" src="static/media/readme/support-dontgnocchit-admin.png">
 
 Despite there being other pages on the application that are not included in the initial wireframe design. They all followed the core theme of the application and store. This allowed less going back and forth designing new pages in wireframe's, meaning the development of certain features and pages could commence straight away.
 
@@ -67,7 +67,7 @@ With the design of the database being a crucial part of the applications core de
 
 Although not all designs are implemented into the live application is leaving room for future development with the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
 
-<img alt="Localitty database design" height="250px" width="400px" src="../ci-project-5/media/readme/locality-database.png">
+<img alt="Localitty database design" height="250px" width="400px" src="static/media/readme/locality-database.png">
 
 </details>
 
@@ -156,7 +156,7 @@ An online presence for a new business is a crucial part of the launch of a new c
 <details>
 <summary>Media Page</summary>
 <br>
-<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/locality-media.png">
+<img alt="Clone the repo" height="300px" src="static/media/readme/locality-media.png">
 </details>
 
 ## Technology Used
@@ -203,7 +203,7 @@ During the development of the Project it has been subjected to different testing
 <br>
 Although only one image is shown of a lighthouse score. The average score across the site is 75 to 80 of total performance
 
-<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/lighthouse.png">
+<img alt="Clone the repo" height="300px" src="static/media/readme/lighthouse.png">
 
 </details>
 <br>
@@ -214,7 +214,7 @@ Although only one image is shown of a lighthouse score. The average score across
 <br>
 Despite there being errors in the validation. I believe this is due to the validation service not being updated for newer versions of css.
 
-<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/css-validate.png">
+<img alt="Clone the repo" height="300px" src="static/media/readme/css-validate.png">
 
 </details>
 <br>
@@ -224,7 +224,7 @@ Despite there being errors in the validation. I believe this is due to the valid
 <br>
 Despite there being warnings on the JS testing. This is due to missing semi colons and JSON syntax not being recognized. Not causing any code breaking bugs.
 <br>
-<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/js-testing.png">
+<img alt="Clone the repo" height="300px" src="static/media/readme/js-testing.png">
 
 </details>
 <br>
@@ -258,7 +258,9 @@ During the development of the application there were many different bugs along t
 
 ## Project Deployment
 
-Heroku was used to deploy the application live to the internet. The live Application can be found [Here](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
+Heroku was used to deploy the application live to the internet. The live Application can be found here.
+<br><br>
+[Localitty](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
 
 If you are wanting to take a look at the code and potentially add on your own features to the project you can do so by cloning or forking the repo. By doing this it will allow you to locally develop and add your own features to the app.
 
@@ -268,7 +270,7 @@ If you are wanting to take a look at the code and potentially add on your own fe
 
 By clicking the clone repo button. You are able to then clone the repo as it is. By clicking the fork button you are able to take the code and add it to your own account where you can develop and push new and improved features to the main application. 
 
-<img alt="Clone the repo" height="300px" src="../ci-project-5/media/readme/forking.png">
+<img alt="Clone the repo" height="300px" src="static/media/readme/forking.png">
 
 </details>
 
@@ -287,11 +289,9 @@ The colors that were chosen for the project were picked because they were all si
 <details>
 <summary>Color Palette</summary>
 
-<img alt="Color Palette for the application" height="150px" src="../ci-project-5/media/readme/locality-colors.png">
+<img alt="Color Palette for the application" height="150px" src="static/media/readme/locality-colors.png">
 
 </details>
-
-
 
 ### Images
 
