@@ -31,7 +31,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 if 'DEVELOPMENT' in os.environ:
     DEBUG = True
     ALLOWED_HOSTS = [os.environ.get('LOCAL_HOST')]
-
 else:
     DEBUG = False
     ALLOWED_HOSTS = [os.environ.get('TRUSTED_HOST')]
