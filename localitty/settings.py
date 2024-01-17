@@ -29,8 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
-ALLOWED_HOSTS = '*'
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'localitty.urls'
@@ -205,21 +206,34 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 # EMAIL BACKENDS
 
-EMAIL_HOST = 'smtp.google.com'
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+# if 'DEVELOPMENT' not in os.environ:
+#     EMAIL_HOST = 'smtp.google.com'
+#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+#     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
+#     EMAIL_PORT = 587
+#     EMAIL_USE_TLS = True
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+# else:
+#     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#     DEFAULT_FROM_EMAIL = 'support@localitty.com'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'support@localitty.com'
+# EMAIL_FILE_PATH = '/checkout/templates/checkout/confirmation-emails'
 
 # ACCOUNT VERIFICATION
+
+LOGIN_REDIRECT_URL = '/'
+# ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = True
+ACCOUNT_LOGOUT_REDIRECT_URL = "/"
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 
 ACCOUNT_EMAIL_REQUIRED = 'True'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+ACCOUNT_LOGOUT_ON_PASSWORD_CHANGE = True
 
 ACCOUNT_USERNAME_MIN_LENGTH = 4

@@ -16,18 +16,18 @@ class StripeWH_Handler:
         Stripe webhook handler
     """
 
-    def _send_email_confirm(self, order):
+    def _send_email_confirmation(self, order):
         """
             Handles the sending of a confirmation email to the user
         """
 
         custom_email = order.email
         subject = render_to_string(
-            'checkout/confirmation-emails/confirmation_email_subject.txt',
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order},
         )
         body = render_to_string(
-            'checkout/confirmation-emails/confirmation_email_body.txt',
+            'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_CONFIRMATION_EMAIL}
         )
         send_mail(
@@ -112,7 +112,7 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
             if order_exists:
-                self._send_email_confirm(order)
+                self._send_email_confirmation(order)
                 return HttpResponse(
                     content=f'Webhook {event["type"]} | SUCCESS: New order created in database', status=200
                 )
@@ -149,7 +149,7 @@ class StripeWH_Handler:
                         content=f'Webhook: {event["type"]} | ERROR: {e}', status=500
                     )
 
-        self._send_email_confirm(order)
+        self._send_email_confirmation(order)
         return HttpResponse(
             content=f'Webhook Received: {event["type"]}',
             status=200)
