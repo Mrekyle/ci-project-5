@@ -1,7 +1,7 @@
 fix emails 
-heroku deployment steps in readme
 extra testing
 check for broken links
 navigation on site 
 validation tools
 expand models - favorites/comments 
+Fix contact email 

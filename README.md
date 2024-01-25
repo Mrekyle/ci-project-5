@@ -184,16 +184,27 @@ During the development of the Project it has been subjected to different testing
 |------|-----------------|--------|
 | Account Creation | Allows the user to create an account and confirm their email address | Passed |
 | Change Password | Allows the user to change their password | Passed |
+| Email Verification | Allows the user to verify their email address | Passed |
+| Change Email | Allows the user to change or update their email | Passed |
+| Item rating | Allow the user to select a rating on the item | |
+| Item Comments | Allows users to comment on the item to tell other users about the item | |
+| Item Favorites | Allows the user to 'favorite' an item for quick access later on | | 
+| Select Quantity | Allows the user to adjust quantity of items to add to the bag | Passed |
 | Add items to bag | Allow the user to add items from the store to the bag | Passed |
 | Bag items edit | Allow the user to change item quantity and remove items from the shopping bag | Passed |
+| Secure Checkout | Allows the user to add their billing information securely into the app | Passed
 | Checkout | Allow the user to checkout securely checkout and process the order | Passed |
+| Order Creation | Order is created inside of the database | Passed |
+| Order Confirmation | Displays the order confirmation to the user with the correct order number | Passed |
+| Order History | Allow the user to see their previous order history | Passed |
+| Order Confirmation Email | Sends the order confirmation emails to the user (Including all items in order) | Passed |
 | Save info | Allow the user to save default shipping information to their profile | Passed |
-| Previous Orders | Allow the user to view previous order history on their account | Passed
 | Support | Allow the user to send a support contact form request | Passed |
 | Admin Order History | Allow the store admins to view all order history | Passed |
 | Admin product create | Allow the store admins to create products on the store | Passed |
 | Admin product edit | Allow the store admins to edit current products on the store | passed |
 | Admin product delete | Allow the store admins to delete current products on the store | Passed |
+| Total Store Items | Allows the Admin to see the total number of items in the store | Passed |
 | Total Revenue | Allow the store admins to view the total store revenue | Passed |
 
 
@@ -261,6 +272,44 @@ During the development of the application there were many different bugs along t
 Heroku was used to deploy the application live to the internet. The live Application can be found here.
 <br><br>
 [Localitty](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
+
+<details>
+<summary>Elephant SQL Deployment</summary>
+
+The database behind Localitty was done by utilizing the free tier of SQL from ElephantSQL. By following the below steps you can see how the database was created and in the following Heroku deployment steps. You can see how they are linked together to work with each other. 
+
+### Step One
+
+<img alt="Create the Database" height="300px" src="static/media/readme/sql-1.png">
+
+### Step Two 
+
+<img alt="Fill Out the information" height="300px" src="static/media/readme/sql-2.png">
+
+</details>
+
+<details>
+<summary>Heroku Deployment</summary>
+
+Heroku is used as a way for developers and companies to deploy and manage their websites with ease. Allowing the easy connection of things such as databases and media storage. 
+
+### Step One
+
+<img alt="Create The App" height="300px" src="static/media/readme/heroku-1.png">
+
+### Step Two 
+
+<img alt="Add Config Variables" height="300px" src="static/media/readme/heroku-2.png">
+
+With the use of Config Variables, it is telling the web server where certain locations of things such as databases, media storages, email services etc.. Giving the required information for that service to be used.
+
+### Step Three 
+
+<img alt="Link to the Github Repo" height="300px" src="static/media/readme/heroku-3.png">
+
+Linking the Heroku app to the Github repo allows for smoother and automatic deployments. Directly from pushing an update to github, the Heroku Service will automatically build a new version and deploy with web app.
+
+</details>
 
 If you are wanting to take a look at the code and potentially add on your own features to the project you can do so by cloning or forking the repo. By doing this it will allow you to locally develop and add your own features to the app.
 
