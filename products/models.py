@@ -20,7 +20,7 @@ class Category(models.Model):
         return self.friendly_name
 
     class Meta:
-        verbose_name_plural = 'Category'
+        verbose_name_plural = 'Product Category'
 
 
 class Product(models.Model):

@@ -1,7 +1,18 @@
 fix emails 
-extra testing
-check for broken links
-navigation on site 
 validation tools
-expand models - favorites/comments 
+expand models - favorites 
 Fix contact email 
+
+
+style jobs page with job posting
+Style job posting form page
+add job edit/delete functionality
+Set placeholders on the jobs forms
+Add job posting form functionality
+
+add favorites to users model
+
+create favorites model
+    item id
+    date added
+    user

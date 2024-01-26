@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}
+    - Jobs Post Creation
+{% endblock %}
+
+{% block pageheader %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75 mb-2">
+                <h2 class="page-title text-center">Job Posting</h2>
+            <hr class="w-75 mt-2">
+        </div>
+    </div>
+</div>
+<div class="container mb-5">
+    <div class="row mb-5 justify-content-center">
+        <div class="col-12 mb-5 mt-5">
+            <form method="POST" action="{% url 'jobs' %}" class="form mb-4 w-75" enctype="multipart/form-data">
+                {% csrf_token %}
+                <fieldset class="rounded px-4 mb-2">
+                    <legend class="fieldset-label small text-black px-1 w-auto">Job Details:</legend>
+                    {{ form.job_name | as_crispy_field }}
+                    {{ form.job_category | as_crispy_field }}
+                    {{ form.job_salary | as_crispy_field }}
+                    {{ form.job_start | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded px-4 mb-2">
+                    <legend class="fieldset-label small text-black px-1 w-auto">Job Description:</legend>
+                    {{ form.job_desc | as_crispy_field }}
+                </fieldset>
+                <div class="text-right mr-4">
+                    <a class="btn btn-outline-black" href="{% url 'product_managment' %}" aria-label="Send the admin to the store management page."><i class="fas fa-chevron-left"></i> Back</a>
+                    <button class="btn btn-outline-black" type="submit">Create Job Posting</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

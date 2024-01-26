@@ -1,7 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse, redirect
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+
+
+from .models import JobPost
+from .forms import Create_Job_Post
 
 # Create your views here.
 
@@ -48,9 +53,47 @@ def renderjobs(request):
         Renders the jobs page of the application
     """
 
+    model = JobPost
     template = 'home/jobs.html'
 
-    return render(request, template)
+    context = {
+        'job_post': model
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def renderjobpost(request):
+    """
+        Renders the jobs page of the application
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, f'Sorry you dont have access to this page. \
+                       If you believe it is a mistake, please contact us.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = Create_Job_Post(request.POST)
+        if request.method == 'POST':
+            job = form.save()
+            messages.success(request, f'Job {job.name} successfully posted.')
+            return redirect(reverse('jobs'))
+        else:
+            messages.error(
+                request, f'Oops, something went wrong. Please try again')
+    else:
+        form = Create_Job_Post()
+
+    form = Create_Job_Post()
+    template = 'home/job_post.html'
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
 
 def renderroadmap(request):
