@@ -38,6 +38,7 @@ def renderprofile(request):
     context = {
         'user': profile,
         'orders': orders,
+        'not_on_profile': True
     }
 
     return render(request, template, context)

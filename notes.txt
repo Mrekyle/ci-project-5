@@ -1,18 +1,15 @@
 fix emails 
 validation tools
-expand models - favorites 
 Fix contact email 
 
-
 style jobs page with job posting
-Style job posting form page
-add job edit/delete functionality
+fix edit page form
+fix form not passing error
 Set placeholders on the jobs forms
 Add job posting form functionality
 
 add favorites to users model
-
-create favorites model
-    item id
-    date added
-    user
+    create favorites model
+        item id
+        date added
+        user

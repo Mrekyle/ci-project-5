@@ -8,12 +8,12 @@ class JobPost(models.Model):
         Contains the model for a job posting on the application
     """
 
-    date_created = models.DateField(auto_now_add=True, null=False, blank=False)
-    job_name = models.CharField(max_length=60, blank=False, null=True)
+    date_created = models.DateField(auto_now_add=True, null=True, blank=True)
+    job_name = models.CharField(max_length=60, blank=True, null=True)
     job_category = models.ForeignKey(
         'JobCategory', null=True, blank=True, on_delete=models.SET_NULL)
     job_desc = models.TextField()
-    job_start = models.DateField(blank=False, null=True)
+    job_start = models.DateField(blank=True, null=True)
     job_salary = models.DecimalField(max_digits=10, decimal_places=2)
 
     class Meta():
