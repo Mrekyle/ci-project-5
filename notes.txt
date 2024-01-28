@@ -8,8 +8,6 @@ fix form not passing error
 Set placeholders on the jobs forms
 Add job posting form functionality
 
-add favorites to users model
-    create favorites model
-        item id
-        date added
-        user
+Add text to favorites page to check if there is any in there
+
+Edit settings to fix static 

@@ -101,6 +101,7 @@
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
                             <input type="submit" class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-1" value="Add to Bag">
+                            <a class="btn btn-outline-red rounded mt-2 ml-5" href="{% url 'favorites_add' product.id %}" rel="opener" aria-label="Adds item to user favorites"><i class="fa-regular fa-heart"></i> Add To Favorites</a>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </form> 

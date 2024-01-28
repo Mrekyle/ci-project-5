@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponseRedirect
 from django.contrib import messages
 from django.urls import reverse
 from django.core.paginator import Paginator
@@ -189,7 +189,7 @@ def renderproductmanagment(request):
             request, f'Sorry, you dont have access to view this page.')
         return redirect('home')
 
-    product = Product.objects.all()
+    product = Product.objects.all().order_by('name')
 
     p = Paginator(product, 15)
     page = request.GET.get('page')
@@ -201,6 +201,46 @@ def renderproductmanagment(request):
     context = {
         'products': product,
         'paginate': paginate,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def renderfavorites_add(request, id):
+    """
+        Renders the user favorite items in one page
+    """
+
+    favorites = get_object_or_404(Product, id=id)
+
+    if favorites.favorites.filter(id=request.user.id).exists():
+        favorites.favorites.remove(request.user)
+    else:
+        favorites.favorites.add(request.user)
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
+
+@login_required
+def renderfavorites_list(request):
+    """
+        Renders the users favorite items
+    """
+
+    # favorites = Product.objects.all().order_by('name')
+
+    # p = Paginator(favorites, 12)
+    # page = request.GET.get('page')
+    # paginate = p.get_page(page)
+
+    fav = Product.objects.filter(favorites=request.user)
+
+    template = 'favorites.html'
+
+    context = {
+        # 'paginate': paginate,
+        # 'favorites': favorites
+        'fav': fav,
     }
 
     return render(request, template, context)

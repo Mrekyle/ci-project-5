@@ -13,4 +13,6 @@ urlpatterns = [
          views.renderorderhistory, name='order_confirmation'),
     path('product-managment/', views.renderproductmanagment,
          name='product_managment'),
+    path('favorites_add/<int:id>', views.renderfavorites_add, name='favorites_add'),
+    path('favorites_list/', views.renderfavorites_list, name='favorites_list')
 ]

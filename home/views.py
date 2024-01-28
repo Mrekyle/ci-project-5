@@ -109,7 +109,7 @@ def renderjobmanagment(request):
             request, f'Sorry, you dont have access to view this page.')
         return redirect('home')
 
-    model = JobPost.objects.all()
+    model = JobPost.objects.all().order_by('')
 
     p = Paginator(model, 6)
     page = request.GET.get('page')

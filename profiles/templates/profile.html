@@ -43,14 +43,14 @@
             </div>
             <div class="row text-center mb-5">
                 <div class="col-7">
-                    <a href="#" aria-label="Opens the users previous orders page" 
+                    <a href="{% url 'favorites_list' %}" aria-label="Opens the users favorites page" 
                     class="btn btn-outline-black w-100" aria-disabled="true">Favorites <small class="text-muted">(Beta)</small> 
                     <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
             <div class="row text-center mb-5">
                 <div class="col-7">
-                    <a href="{% url 'support' %}" aria-label="Opens the users previous orders page" 
+                    <a href="{% url 'support' %}" aria-label="Opens the support page" 
                     class="btn btn-outline-black w-100">Support 
                     <i class="fas fa-chevron-right"></i></a>
                 </div>

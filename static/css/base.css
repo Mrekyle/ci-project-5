@@ -314,6 +314,20 @@ a.cat-badge > span.badge:hover {
     background: #6c757db4;
 }
 
+.btn-outline-red {
+    background: white;
+    color: rgb(0, 0, 0) !important;
+    border: 1.5px solid rgb(0, 0, 0);
+}
+
+.btn-outline-red:hover,
+.btn-outline-red:active,
+.btn-outline-red:focus {
+    background: #666666;
+    color: white !important;
+    border: 1.5px solid rgba(255, 79, 79, 0.806)
+}
+
 .btn-outline-black {
     background: white;
     color: black !important;

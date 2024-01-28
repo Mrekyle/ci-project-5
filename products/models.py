@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -37,6 +38,9 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, blank=True, null=True)
     image = models.ImageField(blank=True, null=True)
+    favorites = models.ManyToManyField(
+        User, related_name='favorite', default=None, blank=True)
+    objects = models.Manager
 
     class Meta:
         verbose_name_plural = 'Products'
