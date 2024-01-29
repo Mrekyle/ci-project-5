@@ -18,20 +18,18 @@
     <div class="row">
         <div class="col">
             <hr class="mb-2">
-                <h2 class="page-title">My Favorite Items <i class="fa-regular fa-heart"></i></h2>
+                <h2 class="page-title">My Favorite Items <i class="fa-regular fa-heart"></i>{{ total }}</h2>
             <hr class="mt-2 ">
         </div>
     </div>
 </div>
-<div class="row mt-4 mb-4"></div>
+<div class="row mt-4"></div>
 <div class="container">
     <div class="row">
-        {% for product in fav %}
-            {% if fav.count >= 1 %}
-                <div class="col-12">
-                    <h2>There are no items on your wish list at the moment. Please head to the store to add some</h2>
-                </div>
-            {% else %}
+        <div class="col-12 text-center mb-1">
+            <h4>View items to your wish list for quick access later.</h4>
+        </div>
+        {% for product in paginate %}
                 <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 mt-4 mb-4">
                     <div class="card h-100 border-0 shadow rounded">
                         <div class="card-img">
@@ -76,7 +74,6 @@
                         </div>
                     </div>
                 </div>
-            {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -105,7 +102,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="profile-padding"></div>
+    <div class="jobs-padding-container"></div>
 </div>
 {% endblock %}
 

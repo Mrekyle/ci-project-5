@@ -216,8 +216,12 @@ def renderfavorites_add(request, id):
 
     if favorites.favorites.filter(id=request.user.id).exists():
         favorites.favorites.remove(request.user)
+        messages.success(
+            request, f'Successfully removed {favorites.name} from favorites list')
     else:
         favorites.favorites.add(request.user)
+        messages.success(
+            request, f'Successfully added {favorites.name} to your favorites list')
     return HttpResponseRedirect(request.META['HTTP_REFERER'])
 
 
@@ -227,19 +231,16 @@ def renderfavorites_list(request):
         Renders the users favorite items
     """
 
-    # favorites = Product.objects.all().order_by('name')
+    fav = Product.objects.filter(favorites=request.user).all().order_by('name')
 
-    # p = Paginator(favorites, 12)
-    # page = request.GET.get('page')
-    # paginate = p.get_page(page)
-
-    fav = Product.objects.filter(favorites=request.user)
+    p = Paginator(fav, 12)
+    page = request.GET.get('page')
+    paginate = p.get_page(page)
 
     template = 'favorites.html'
 
     context = {
-        # 'paginate': paginate,
-        # 'favorites': favorites
+        'paginate': paginate,
         'fav': fav,
     }
 

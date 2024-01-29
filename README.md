@@ -192,6 +192,16 @@ During the development of the Project it has been subjected to different testing
 | Select Quantity | Allows the user to adjust quantity of items to add to the bag | Passed |
 | Add items to bag | Allow the user to add items from the store to the bag | Passed |
 | Bag items edit | Allow the user to change item quantity and remove items from the shopping bag | Passed |
+| Add items to favorites | Allow the user to create a favorite items list | Passed |
+| Remove items from favorites | Allow the user to remove items from a favorites list | Passed |
+| Add items to basket message | Display a message when an item is added to the basket | Passed |
+| Remove items from basket message | Display a message when an item is adjusted or removed from basket | Passed |
+| Order confirmation message | Display a message once an order has been completed | Passed |
+| Display message for errors | Display a message if a user cannot access a certain page of the application | Passed |
+| Product Add Message | Display a message when a product is added to the store | Passed |
+| Product Edit Message | Display a message when a product is being edited | Passed |
+| Delete Product Message | Display a message when a product has been deleted | Passed |
+| Error 404 Page | Display an Error 404 page if there is an error on the application | Passed |
 | Secure Checkout | Allows the user to add their billing information securely into the app | Passed
 | Checkout | Allow the user to checkout securely checkout and process the order | Passed |
 | Order Creation | Order is created inside of the database | Passed |
