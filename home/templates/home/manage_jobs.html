@@ -46,7 +46,7 @@
                                 <td><a class="product-hover" href="" aria-label="Opens the job post">{{ jobs.job_name }}</a></td>
                                 <td>{{ jobs.job_category }}</td>
                                 <td><strong>£ {{ jobs.job_salary }}</strong></td>
-                                <td>{{ jobs.job_start }}</td>
+                                <td></td>
                                 <td><a href="{% url 'edit_job' jobs.id %}" class="product-edit" aria-label="Allows the admin to edit the selected job"><i class="fas fa-pencil"></i> Edit</a></td>
                                 <td><a href="{% url 'delete_job' jobs.id %}" class="text-danger" aria-label="Allows the admin to delete the selected job"><i class="fas fa-trash"></i> Delete</a></td>
                             </tr>

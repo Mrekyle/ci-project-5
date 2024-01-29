@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_title %}
-    - Edit: JOB NAME
+    - Edit: {{ job.job_name }}
 {% endblock %}
 
 {% block pageheader %}
@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col">
             <hr class="w-75 mb-2">
-                <h2 class="page-title text-left">Edit Job : </h2>
+                <h2 class="page-title text-left">Edit Job: {{ job.job_name }}</h2>
             <hr class="w-75 mt-2">
         </div>
     </div>
@@ -29,10 +29,6 @@
             <form method="POST" action="{% url 'edit_job' job.id %}" class="form mb-4" enctype="multipart/form-data">
                 {% csrf_token %}
                 
-                
-                {% for field in form %}
-                    {{ field | as_crispy_field }}
-                {% endfor %}
                 <div class="text-right">
                     <a class="btn btn-outline-black" href="{% url 'job_managment' %}" aria-label="Send the admin to the jobs managment page.">Cancel</a>
                     <button class="btn btn-outline-black" type="submit">Confirm Edit</button>

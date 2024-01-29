@@ -23,7 +23,7 @@
         </div>
     </div>
 </div>
-{% for job in jobs %}
+{% for job in paginate %}
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12">
@@ -46,7 +46,6 @@
             </div>
         </div>
 {% endfor %}
-{{ job.job_name }}
 {% endblock %}
 
 {% block padding %}

@@ -1,13 +1,18 @@
-fix emails 
+Fix emails 
 validation tools
 Fix contact email 
 
-style jobs page with job posting
-fix edit page form
-fix form not passing error
-Set placeholders on the jobs forms
-Add job posting form functionality
-
-Add text to favorites page to check if there is any in there
+Add comparison in html for jobs post and favorites number 
 
 Edit settings to fix static 
+
+Check static files working on deployed version
+
+Form on edit jobs page
+Style form
+Placeholders on jobs Form
+Form functionality
+
+Style jobs page
+
+Comparison in html to display other message for favorites and jobs

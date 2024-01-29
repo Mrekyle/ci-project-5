@@ -56,11 +56,17 @@ def renderjobs(request):
         Renders the jobs page of the application
     """
 
-    model = get_object_or_404(JobPost)
+    model = JobPost.objects.all().order_by('job_name')
+
+    p = Paginator(model, 6)
+    page = request.GET.get('page')
+    paginate = p.get_page(page)
+
     template = 'home/jobs.html'
 
     context = {
-        'job': model
+        'job': model,
+        'paginate': paginate,
     }
 
     return render(request, template, context)
@@ -104,12 +110,13 @@ def renderjobmanagment(request):
         Renders the jobs managment page of the application
     """
 
+    model = JobPost.objects.all().order_by('job_name')
+    form = CreateJobPost()
+
     if not request.user.is_superuser:
         messages.error(
             request, f'Sorry, you dont have access to view this page.')
         return redirect('home')
-
-    model = JobPost.objects.all().order_by('')
 
     p = Paginator(model, 6)
     page = request.GET.get('page')
@@ -120,6 +127,7 @@ def renderjobmanagment(request):
     context = {
         'jobs': model,
         'paginate': paginate,
+        'form': form,
     }
 
     return render(request, template, context)
@@ -139,7 +147,7 @@ def renderjobsedit(request, job_id):
     job = get_object_or_404(JobPost, pk=job_id)
 
     if request.method == 'POST':
-        form = CreateJobPost(request.POST, request.FILES)
+        form = CreateJobPost(request.POST, instance=job)
         if form.is_valid():
             form.save()
             messages.success(
@@ -149,7 +157,7 @@ def renderjobsedit(request, job_id):
             messages.error(request, f'Oops, something has gone wrong. Please try again later. \
                         If the problem persists, please contact support')
     else:
-        form = JobPost.objects.all()
+        form = JobPost()
         messages.info(request, f'You are currently editing, {job.job_name}.')
 
     template = 'home/edit_job.html'

@@ -25,7 +25,7 @@ class CreateJobPost(forms.ModelForm):
             'job_name': 'Job Name',
             'job_category': 'Job Category',
             'job_salary': 'Job Starting Salary',
-            'job_date': 'Job Expected Start Date',
+            'job_start': 'Job Expected Start Date',
         }
 
         self.fields['job_name'].widget.attrs['autofocus'] = True
