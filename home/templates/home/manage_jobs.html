@@ -16,10 +16,11 @@
 {% block content %}
 <div class="container">
     <div class="row mb-4 pt-5">
-            <div class="col-6">
+            <div class="col-4">
                 <h2 class="page-title">Jobs Managment</h2>
             </div>
-            <div class="col-6">
+            <div class="col-8">
+                <a href="{% url 'applicants' %}" aria-label="Send the user to job applications" class="btn btn-outline-black offset-md-6 mb-2">Job Applications <i class="fas fa-chevron-right"></i></a>
                 <a href="{% url 'job_post' %}" aria-label="Send the user to the create job page." class="btn btn-outline-black offset-md-6">New Job Post <i class="fas fa-chevron-right"></i></a>
             </div>
         <hr class="mt-2">

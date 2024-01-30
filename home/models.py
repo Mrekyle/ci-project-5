@@ -39,3 +39,27 @@ class JobCategory(models.Model):
 
     class Meta:
         verbose_name_plural = 'Job Category'
+
+
+class JobApp(models.Model):
+    """
+        Job Application Model
+    """
+
+    date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=25, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    phone_number = models.CharField(max_length=20, blank=True, null=True)
+    job = models.ForeignKey(
+        JobPost, null=True, blank=True, on_delete=models.SET_NULL)
+    resume = models.ImageField(blank=True, null=True)
+    cover_letter = models.CharField(max_length=500, blank=True, null=True)
+
+    def __str__(self):
+        """
+            Returns the applicants name
+        """
+        return self.name
+
+    class Meta():
+        verbose_name_plural = 'Job Application'

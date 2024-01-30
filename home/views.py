@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
 
-from .models import JobPost
-from .forms import CreateJobPost
+from .models import JobPost, JobApp
+from .forms import CreateJobPost, JobApplication
 
 # Create your views here.
 
@@ -186,6 +186,64 @@ def del_job(request, job_id):
         request, f'Job: {job.job_name}, Has been successfully deleted.')
 
     return redirect(reverse('job_managment'))
+
+
+@login_required
+def renderjob_apply(request):
+    """
+        Renders the job application
+    """
+
+    jobs = JobPost
+    form = JobApplication
+
+    if request.method == 'POST':
+        form = JobApplication(request.POST, request.FILES)
+        if request.method == 'POST':
+            job = form.save()
+            messages.success(request, f'Successfully applied for {job.name}.')
+            return redirect(reverse('jobs'))
+        else:
+            messages.error(
+                request, f'Oops, something went wrong. Please try again')
+    else:
+        form = JobApplication()
+
+    form = JobApplication
+    template = 'job_apply.html'
+
+    context = {
+        'form': form,
+        'jobs': jobs,
+    }
+
+    return render(request, template, context)
+
+
+def renderjob_applicants(request):
+    """
+        Renders all job applications made.
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, f"Sorry you dont have access to be here. \
+                       Only store owners can do that!")
+        return redirect(reverse('home'))
+
+    jobs = JobApp.objects.all().order_by('date')
+
+    p = Paginator(jobs, 6)
+    page = request.GET.get('page')
+    paginate = p.get_page(page)
+
+    template = 'applications.html'
+
+    context = {
+        'jobs': jobs,
+        'paginate': paginate,
+    }
+
+    return render(request, template, context)
 
 
 def renderroadmap(request):

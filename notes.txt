@@ -1,8 +1,5 @@
-Fix emails 
 validation tools
-Fix contact email 
-
-Add comparison in html for jobs post and favorites number 
+Fix emails
 
 Edit settings to fix static 
 
@@ -13,6 +10,12 @@ Style form
 Placeholders on jobs Form
 Form functionality
 
-Style jobs page
-
 Comparison in html to display other message for favorites and jobs
+
+Add job applications form and functionalitty
+    Edit form.py for application form 
+
+job aplications page
+    Style page
+    showing jobs applicants
+    allow for applicant delete/ status change

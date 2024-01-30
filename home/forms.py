@@ -1,5 +1,5 @@
 from django import forms
-from .models import JobPost, JobCategory
+from .models import JobPost, JobCategory, JobApp
 
 
 class CreateJobPost(forms.ModelForm):
@@ -40,3 +40,13 @@ class CreateJobPost(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0'
             self.fields[field].label = False
+
+
+class JobApplication(forms.ModelForm):
+    """
+        Job application form 
+    """
+
+    class Meta():
+        model = JobApp
+        fields = {}
