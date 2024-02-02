@@ -202,7 +202,7 @@ def renderjob_apply(request):
         if request.method == 'POST':
             job = form.save()
             messages.success(request, f'Successfully applied for {job.name}.')
-            return redirect(reverse('jobs'))
+            return redirect(reverse('home'))
         else:
             messages.error(
                 request, f'Oops, something went wrong. Please try again')
@@ -236,11 +236,14 @@ def renderjob_applicants(request):
     page = request.GET.get('page')
     paginate = p.get_page(page)
 
+    # job = get_object_or_404(JobPost)
+
     template = 'applications.html'
 
     context = {
         'jobs': jobs,
         'paginate': paginate,
+        # 'job_post': job,
     }
 
     return render(request, template, context)

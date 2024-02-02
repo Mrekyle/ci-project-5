@@ -28,12 +28,12 @@
         <div class="container mb-5 mt-5">
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card border border-dark rounded-0 shadow">
                         <div class="row">
                             <div class="col-12">
                                 <div class="card-title">
                                     <p class="text-center mt-2 h2 font-weight-bold">
-                                        {{ job.job_name }}
+                                        {{ job.job.job_name }}
                                     </p>
                                     <hr class="w-75">
                                 </div>
@@ -41,19 +41,22 @@
                         </div>
                         <div class="row">
                             <div class="col-4 ml-3">
-                                <div class="card-txt mb-1"><i class="fa-solid fa-wallet"></i> Salary: <span class="font-weight-bold">£ {{ job.job_salary|intcomma }}</span></div>
-                                <div class="card-txt mb-1"><i class="fa-solid fa-clock"></i> Expected Start: <span class="font-weight-bold">{{ job.job_start }}</span></div>
-                                <div class="card-txt"><i class="fa-solid fa-warehouse"></i> Department: <span class="font-weight-bold">{{ job.job_category.friendly_name }}</span></div>
+                                <div class="card-txt"><i class="fa-solid fa-user "></i> Name: <span class="font-weight-bold">{{ job.name }}</span></div>
+                                <div class="card-txt"><i class="fa-solid fa-envelope"></i> Email Address: <span class="font-weight-bold">{{ job.email }}</span></div>
+                                <div class="card-txt"><i class="fa-solid fa-phone"></i> Phone Number: <span class="font-weight-bold">{{ job.phone_number }}</span></div>
+                                <hr class="w-25">
+                                <div class="card-txt"><i class="fa-solid fa-calendar-days"></i> Application Date: <span class="font-weight-bold">{{ job.date }}</span></div>
                             </div>
                             <div class="col-6">
-
-                                <div class="card-body">{{ job.job_desc}}</div>
+                                <div class="card-body">{{ job.cover_letter }}</div>
+                                <hr class="w-75">
+                                <div class="card-body">Resume: <a class="btn btn-outline-black" rel="noopener" aria-label="Downloads applicants resume">Download{{ job.resume }}</a></div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <hr class="w-75">
                             <div class="col-12 text-right">
-                                <a href="{% url 'apply' %}" class="btn btn-outline-black mr-3" rel="opener" aria-label="Opens the job application">Apply Now! <i class="fas fa-chevron-right"></i></a>
+                                <a class="btn btn-outline-black mr-3" rel="noopener" aria-label="Deletes the job application">Delete Applicant <i class="fas fa-trash"></i></a>
                             </div>
                         </div>
                     </div>

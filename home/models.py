@@ -46,7 +46,7 @@ class JobApp(models.Model):
         Job Application Model
     """
 
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateField(auto_now_add=True)
     name = models.CharField(max_length=25, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     phone_number = models.CharField(max_length=20, blank=True, null=True)

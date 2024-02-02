@@ -2,7 +2,7 @@ validation tools
 Fix emails
 
 Edit settings to fix static 
-
+HOSTING!!!!
 Check static files working on deployed version
 
 Form on edit jobs page
@@ -16,6 +16,4 @@ Add job applications form and functionalitty
     Edit form.py for application form 
 
 job aplications page
-    Style page
-    showing jobs applicants
-    allow for applicant delete/ status change
+    allow for applicant delete
