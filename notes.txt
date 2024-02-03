@@ -5,10 +5,6 @@ Check static files working on deployed version
 
 Form on edit jobs page
 
-Comparison in html to display other message for favorites and jobs
-
-Add jobs testing to readme
-Url form resume
 Jobs posting page
 
 Edit product page bugs  

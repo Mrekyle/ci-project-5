@@ -191,9 +191,10 @@ During the development of the Project it has been subjected to different testing
 | Change Password | Allows the user to change their password | Passed |
 | Email Verification | Allows the user to verify their email address | Passed |
 | Change Email | Allows the user to change or update their email | Passed |
-| Item rating | Allow the user to select a rating on the item | |
-| Item Comments | Allows users to comment on the item to tell other users about the item | |
-| Item Favorites | Allows the user to 'favorite' an item for quick access later on | | 
+| Jop Application | Allow a user of the application to submit an application for a job | Passed |
+| Job Application Message | Display a message informing the user that the application was submitted successfully | Passed |
+| Item Favorites | Allows the user to 'favorite' an item for quick access later on | Passed |
+| Item Remove avorites | Allow the user to remove an item from their favorites | Passed |
 | Select Quantity | Allows the user to adjust quantity of items to add to the bag | Passed |
 | Add items to bag | Allow the user to add items from the store to the bag | Passed |
 | Bag items edit | Allow the user to change item quantity and remove items from the shopping bag | Passed |
@@ -219,9 +220,16 @@ During the development of the Project it has been subjected to different testing
 | Admin product create | Allow the store admins to create products on the store | Passed |
 | Admin product edit | Allow the store admins to edit current products on the store | passed |
 | Admin product delete | Allow the store admins to delete current products on the store | Passed |
+| Admin Job Create | Allow the admin to create a job post | Passed |
+| Admin Job Edit | Allow the admin to edit a job post | Passed |
+| Admin Job Delete | Allow the admin to delete a job | Passed |
+| Admin View Applicants | Allow the admin to view job applications | Passed |
+| Admin Delete Applications | Allows the admin to delete new job applications | Passed |
+| Job Post Message | Display a message when a job was posted successfully | Passed |
+| Job Edit Message | Display a message when a job was edited successfully | Passed |
+| Job Delete Message | Display a message when a job was Deleted successfully | Passed |
 | Total Store Items | Allows the Admin to see the total number of items in the store | Passed |
 | Total Revenue | Allow the store admins to view the total store revenue | Passed |
-
 
 <br>
 <details>
@@ -271,16 +279,18 @@ During the development of the application there were many different bugs along t
 
 | Bug | Fix |
 |-----|-----|
-| Profiles Modules not being found | Fixed by re ordering the urls in the main application files |
+| Profiles Modules not being found | Fixed by re ordering the urls in the main application files | Fixed |
 | Product filtering selection not displaying on the selection box. But filtering products | Unfixed |
-| Product Quantity selection not working. Page refreshing on button click | Small typos in the JS file |
-| Orders not being saved to the database. But being sent to stripe | Connected to other small bugs. But fixed by fixing a typo with the UUID generation |
-| Checkout success page not loading | Error in the name of the checkout success page file name |
-| Pagination errors. Cant paginate an un ordered list | Fixed by adding the order_by() method onto the selector |
+| Product Quantity selection not working. Page refreshing on button click | Small typos in the JS file | Fixed |
+| Orders not being saved to the database. But being sent to stripe | Connected to other small bugs. But fixed by fixing a typo with the UUID generation | Fixed |
+| Checkout success page not loading | Error in the name of the checkout success page file name | Fixed |
+| Pagination errors. Cant paginate an un ordered list | Fixed by adding the order_by() method onto the selector | Fixed |
 | Confirmation emails not being sent during development | Due to stripes webhook handlers not working in development on a local host. But working when deployed |
-| Delivery costs not calculating correctly | Fixed by changing the percentage to be divided by |
+| Delivery costs not calculating correctly | Fixed by changing the percentage to be divided by | Fixed |
 | Product category not displaying on product card in store page | Unfixed |
-| Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts |
+| Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts | Fixed |
+| Image on product edit page not displaying | Not Identified cause | Unfixed |
+| Favourites being shown on the product edit form | Not Identified Cause | Unfixed | 
 
 ## Project Deployment
 
