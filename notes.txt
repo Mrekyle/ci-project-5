@@ -6,8 +6,6 @@ HOSTING!!!!
 Check static files working on deployed version
 
 Form on edit jobs page
-Style form
-Placeholders on jobs Form
 Form functionality
 
 Comparison in html to display other message for favorites and jobs
@@ -17,3 +15,5 @@ Add job applications form and functionalitty
 
 job aplications page
     allow for applicant delete
+
+Add jobs testing to readme

@@ -17,7 +17,7 @@ class JobPost(models.Model):
     job_salary = models.DecimalField(max_digits=10, decimal_places=2)
 
     class Meta():
-        verbose_name_plural = 'Job Posting'
+        verbose_name_plural = 'Job Postings'
 
     def __str__(self):
         return self.job_name
@@ -38,7 +38,7 @@ class JobCategory(models.Model):
         return self.friendly_name
 
     class Meta:
-        verbose_name_plural = 'Job Category'
+        verbose_name_plural = 'Job Categories'
 
 
 class JobApp(models.Model):
@@ -53,7 +53,7 @@ class JobApp(models.Model):
     job = models.ForeignKey(
         JobPost, null=True, blank=True, on_delete=models.SET_NULL)
     resume = models.ImageField(blank=True, null=True)
-    cover_letter = models.CharField(max_length=500, blank=True, null=True)
+    cover_letter = models.TextField(max_length=500, blank=True, null=True)
 
     def __str__(self):
         """
@@ -62,4 +62,4 @@ class JobApp(models.Model):
         return self.name
 
     class Meta():
-        verbose_name_plural = 'Job Application'
+        verbose_name_plural = 'Job Applicants'

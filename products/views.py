@@ -172,6 +172,7 @@ def renderedit(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def del_product(request, product_id):
     """
         Handles the delete methods for a product on the store

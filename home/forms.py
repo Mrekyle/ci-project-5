@@ -32,6 +32,8 @@ class CreateJobPost(forms.ModelForm):
 
         for field in self.fields:
             self.fields['job_category'].choices = friendly_names
+            self.fields['job_salary'].widget.attrs.update(
+                {'placeholder': 'Job Salary'})
             if field != 'job_desc':
                 if self.fields[field].required:
                     placeholder = f'{placeholders} *'
@@ -49,4 +51,10 @@ class JobApplication(forms.ModelForm):
 
     class Meta():
         model = JobApp
-        fields = {}
+        fields = {'name', 'email', 'phone_number',
+                  'job', 'cover_letter', 'resume'}
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['cover_letter'].widget.attrs.update(
+            {'class': 'form-control testing', 'rows': '8'})

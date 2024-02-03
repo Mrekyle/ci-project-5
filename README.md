@@ -85,6 +85,9 @@ The basic features that are currently implemented into the application are
 - User to save information to their account
 - User to see previous order history
 - User to sign up for mailing list
+- Job Postings
+- Job Applications
+- Job CRUD (Create, Update, Delete)
 
 - Admin CRUD (create, update and delete products)
 - Admin Full Order history
@@ -107,6 +110,7 @@ Future features that are in development are
 - Order dispatch emails
 - Live Support Chats and messaging
 - Locality Mobile App
+- Job Applicants Status Updates 
 
 </details>
 

@@ -96,9 +96,12 @@ def renderjobpost(request):
         form = CreateJobPost()
 
     form = CreateJobPost()
+    job_post = JobPost.objects.all()
+
     template = 'home/job_post.html'
     context = {
         'form': form,
+        'job_post': job_post,
     }
 
     return render(request, template, context)
@@ -188,13 +191,12 @@ def del_job(request, job_id):
     return redirect(reverse('job_managment'))
 
 
-@login_required
 def renderjob_apply(request):
     """
         Renders the job application
     """
 
-    jobs = JobPost
+    jobs = JobPost.objects.all()
     form = JobApplication
 
     if request.method == 'POST':
@@ -214,12 +216,13 @@ def renderjob_apply(request):
 
     context = {
         'form': form,
-        'jobs': jobs,
+        'job': jobs,
     }
 
     return render(request, template, context)
 
 
+@login_required
 def renderjob_applicants(request):
     """
         Renders all job applications made.
@@ -236,17 +239,34 @@ def renderjob_applicants(request):
     page = request.GET.get('page')
     paginate = p.get_page(page)
 
-    # job = get_object_or_404(JobPost)
-
     template = 'applications.html'
 
     context = {
         'jobs': jobs,
         'paginate': paginate,
-        # 'job_post': job,
     }
 
     return render(request, template, context)
+
+
+@login_required
+def del_applicant(request, app_id):
+    """
+        Handles the delete methods for job applications that 
+        have been submitted
+    """
+
+    if not request.user.is_superuser:
+        messages.error(request, f"Sorry you dont have access to be here. \
+                       Only store owners can do that!")
+        return redirect(reverse('home'))
+
+    applicant = get_object_or_404(JobApp, pk=app_id)
+    applicant.delete()
+    messages.success(
+        request, f'Job Applicant: {applicant.name}, Has been successfully deleted.')
+
+    return redirect(reverse('applicants'))
 
 
 def renderroadmap(request):
