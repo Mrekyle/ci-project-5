@@ -90,7 +90,7 @@ def renderjobpost(request):
         form = CreateJobPost(request.POST, request.FILES)
         if request.method == 'POST':
             job = form.save()
-            messages.success(request, f'Job {job.name} successfully posted.')
+            messages.success(request, f'Job successfully posted.')
             return redirect(reverse('job_managment'))
         else:
             messages.error(
