@@ -1,68 +1,62 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block extra_title %}
-    - Edit: {{ job.job_name }}
-{% endblock %}
-
-{% block pageheader %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block extra_title %} - Edit: {{
+job.job_name }} {% endblock %} {% block pageheader %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
 <div class="container mb-5">
-    <div class="row">
-        <div class="col">
-            <hr class="w-75 mb-2">
-                <h2 class="page-title text-left">Edit Job: <span class="font-weight-bold">{{ job.job_name }}</span></h2>
-            <hr class="w-75 mt-2">
-        </div>
+  <div class="row">
+    <div class="col">
+      <hr class="w-75 mb-2" />
+      <h2 class="page-title text-left">
+        Edit Job: <span class="font-weight-bold">{{ job.job_name }}</span>
+      </h2>
+      <hr class="w-75 mt-2" />
     </div>
+  </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-12">
-            <form method="POST" action="" class="form mb-4" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                    {% if field.name != 'Image' %}
-                        {{ field| as_crispy_field }}
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
-                {% endfor %}
-                <div class="text-right">
-                    <a class="btn btn-outline-black" href="{% url 'product_managment' %}" aria-label="Send the admin to the product managment page.">Cancel</a>
-                    <button class="btn btn-outline-black" type="submit">Confirm Edit</button>
-                </div>
-            </form>
-            <form method="POST" action="{% url 'edit_job' job.id %}" class="form mb-4" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form.as_p }}
-                            
-                <div class="text-right">
-                    <a class="btn btn-outline-black" href="{% url 'job_managment' %}" aria-label="Send the admin to the jobs managment page.">Cancel</a>
-                    <button class="btn btn-outline-black" type="submit">Confirm Edit</button>
-                </div>
-            </form>
+  <div class="row">
+    <div class="col-12">
+      <form
+        method="POST"
+        action="{% url 'edit_job' job.id %}"
+        class="form mb-4"
+        enctype="multipart/form-data"
+      >
+        {% csrf_token %} {{ form.as_p }}
+
+        <div class="text-right">
+          <a
+            class="btn btn-outline-black"
+            href="{% url 'job_managment' %}"
+            aria-label="Send the admin to the jobs managment page."
+            >Cancel</a
+          >
+          <button class="btn btn-outline-black" type="submit">
+            Confirm Edit
+          </button>
         </div>
+      </form>
     </div>
+  </div>
 </div>
 <div class="row mt-4 mb-5">
-    <div class="container mt-5">
-        <a href="{% url 'job_managment' %}" aria-label="Send the user back to the job managment page" class="btn btn-outline-black"><i class="fas fa-chevron-left"></i> Back</a>
-    </div>
+  <div class="container mt-5">
+    <a
+      href="{% url 'job_managment' %}"
+      aria-label="Send the user back to the job managment page"
+      class="btn btn-outline-black"
+      ><i class="fas fa-chevron-left"></i> Back</a
+    >
+  </div>
 </div>
-{% endblock %}
-
-{% block padding %}
-    <div class="container">
-        <div class="row">
-            <div class="padding-container"></div>
-        </div>
-    </div>
+{% endblock %} {% block padding %}
+<div class="container">
+  <div class="row">
+    <div class="padding-container"></div>
+  </div>
+</div>
 {% endblock %}
