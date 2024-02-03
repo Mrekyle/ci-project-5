@@ -110,7 +110,8 @@ Future features that are in development are
 - Order dispatch emails
 - Live Support Chats and messaging
 - Locality Mobile App
-- Job Applicants Status Updates 
+- Job Applicants Status Updates
+- Full Job postings page
 
 </details>
 

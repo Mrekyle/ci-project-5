@@ -1,5 +1,6 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.core.mail import send_mail
+from django.urls import reverse_lazy
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -83,19 +84,20 @@ def renderjobpost(request):
                        If you believe it is a mistake, please contact us.')
         return redirect(reverse('home'))
 
+    form = CreateJobPost()
+
     if request.method == 'POST':
         form = CreateJobPost(request.POST, request.FILES)
         if request.method == 'POST':
             job = form.save()
             messages.success(request, f'Job {job.name} successfully posted.')
-            return redirect(reverse('jobs'))
+            return redirect(reverse('job_managment'))
         else:
             messages.error(
                 request, f'Oops, something went wrong. Please try again')
     else:
         form = CreateJobPost()
 
-    form = CreateJobPost()
     job_post = JobPost.objects.all()
 
     template = 'home/job_post.html'
@@ -150,12 +152,12 @@ def renderjobsedit(request, job_id):
     job = get_object_or_404(JobPost, pk=job_id)
 
     if request.method == 'POST':
-        form = CreateJobPost(request.POST, instance=job)
+        form = CreateJobPost(request.POST, request.FILES, instance=job)
         if form.is_valid():
             form.save()
             messages.success(
                 request, f'Job - {job.job_name}, Successfully Edited.')
-            return redirect(reverse('product_detail',))
+            return redirect(reverse('job_managment',))
         else:
             messages.error(request, f'Oops, something has gone wrong. Please try again later. \
                         If the problem persists, please contact support')

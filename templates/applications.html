@@ -23,6 +23,12 @@
             <hr class="w-75 mt-2">
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <a class="btn btn-outline-black" href="{% url 'job_managment' %}" aria-label="Send the admin back to the job managment page."><i class="fas fa-chevron-left"></i> Back</a>
+            
+        </div>
+    </div>
 </div>
 {% for job in paginate %}
         <div class="container mb-5 mt-5">
@@ -50,7 +56,7 @@
                             <div class="col-6">
                                 <div class="card-body">{{ job.cover_letter }}</div>
                                 <hr class="w-75">
-                                <div class="card-body">Resume: <a class="btn btn-outline-black" rel="noopener" aria-label="Downloads applicants resume">Download{{ job.resume }}</a></div>
+                                <div class="card-body">Resume: <a class="btn btn-outline-black" rel="noopener" aria-label="Downloads applicants resume" href="">Download Resume <i class="fas fa-download"></i></a></div>
                             </div>
                         </div>
                         <div class="row mb-3">

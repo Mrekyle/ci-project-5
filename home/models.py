@@ -52,7 +52,7 @@ class JobApp(models.Model):
     phone_number = models.CharField(max_length=20, blank=True, null=True)
     job = models.ForeignKey(
         JobPost, null=True, blank=True, on_delete=models.SET_NULL)
-    resume = models.ImageField(blank=True, null=True)
+    resume = models.FileField(upload_to='static/resume', blank=True, null=True)
     cover_letter = models.TextField(max_length=500, blank=True, null=True)
 
     def __str__(self):

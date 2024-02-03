@@ -6,14 +6,13 @@ HOSTING!!!!
 Check static files working on deployed version
 
 Form on edit jobs page
-Form functionality
 
 Comparison in html to display other message for favorites and jobs
 
-Add job applications form and functionalitty
-    Edit form.py for application form 
-
-job aplications page
-    allow for applicant delete
-
 Add jobs testing to readme
+Url form resume
+Jobs posting page
+
+Edit product page bugs  
+    images
+    favorites
