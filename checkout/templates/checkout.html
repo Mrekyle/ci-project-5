@@ -50,15 +50,12 @@
                     {{ order_form.country | as_crispy_field}}
                     {{ order_form.postcode | as_crispy_field}}
                     <div class="form-check form-check-inline float-right px-2">
-                        {% if user.is_authenticated %}
-                            <label class="form-check-label" for="id-save-info">Save delivery information to my account:</label>
-                            <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
-                        {% else %}
-                            <label class="form-check-label" for="id-save-info">
-                                <a class="small text-info" href="{% url 'account_signup' %}" aria-label="Opens the account registration page">Create an account</a> |
-                                <a class="small text-info" href="{% url 'account_login' %}" aria-label="Opens the user login page">Have an account already? Login now</a>
-                                {% endif %}
-                            </label>
+
+                        <label class="form-check-label" for="id-save-info">
+                            <a class="small text-info" href="{% url 'account_signup' %}" aria-label="Opens the account registration page">Create an account</a> |
+                            <a class="small text-info" href="{% url 'account_login' %}" aria-label="Opens the user login page">Have an account already? Login now</a>
+                
+                        </label>
                     </div>
                 </fieldset>
                 <fieldset class="rounded mt-4 px-4">

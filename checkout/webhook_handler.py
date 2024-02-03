@@ -15,6 +15,9 @@ class StripeWH_Handler:
     """
         Stripe webhook handler
     """
+    
+    def __init__(self, request):
+        self.request = request
 
     def _send_email_confirmation(self, order):
         """
@@ -24,21 +27,16 @@ class StripeWH_Handler:
         custom_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
-            {'order': order},
-        )
+            {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': settings.DEFAULT_CONFIRMATION_EMAIL}
-        )
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         send_mail(
             subject,
             body,
-            settings.DEFAULT_CONFIRMATION_EMAIL,
+            settings.DEFAULT_FROM_EMAIL,
             [custom_email]
         )
-
-    def __init__(self, request):
-        self.request = request
 
     def handle_event(self, event):
         """
@@ -57,19 +55,18 @@ class StripeWH_Handler:
         """
 
         intent = event.data.object
-        pid = intent.pid
+        pid = intent.id
         bag = intent.metadata.bag
-        save_info = intent.metadata.save_info
 
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
         )
 
-        billing_details = stripe.charge.billing_details
+        billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)
 
-        for field, value in shipping_details.address_items():
+        for field, value in shipping_details.address.items():
             if value == '':
                 shipping_details.address[field] = None
 
@@ -78,15 +75,6 @@ class StripeWH_Handler:
 
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
-            if save_info:
-                profile.def_phone_number = shipping_details.phone
-                profile.def_street_address1 = shipping_details.street_address1
-                profile.def_street_address2 = shipping_details.street_address2
-                profile.def_town_or_city = shipping_details.town_or_city
-                profile.def_county = shipping_details.country
-                profile.def_country = shipping_details.country
-                profile.def_postcode = shipping_details.postcode
-                profile.save()
 
         order_exists = False
         attempt = 1
@@ -99,7 +87,7 @@ class StripeWH_Handler:
                     phone_number__iexact=shipping_details.phone,
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
-                    county__iexact=shipping_details.address.staticmethod,
+                    county__iexact=shipping_details.address.state,
                     country__iexact=shipping_details.address.country,
                     postcode__iexact=shipping_details.address.postal_code,
                     grand_total=grand_total,
@@ -126,7 +114,7 @@ class StripeWH_Handler:
                         phone_number=shipping_details.phone,
                         street_address1=shipping_details.address.line1,
                         street_address2=shipping_details.address.line2,
-                        county=shipping_details.address.staticmethod,
+                        county=shipping_details.address.state,
                         country=shipping_details.address.country,
                         postcode=shipping_details.address.postal_code,
                         grand_total=grand_total,

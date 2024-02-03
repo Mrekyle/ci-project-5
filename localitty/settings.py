@@ -69,7 +69,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'localitty.urls'
@@ -164,7 +163,17 @@ SITE_ID = 1
 
 # STORAGE OPTIONS
 
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 if 'USE_AWS' in os.environ:
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
     AWS_STORAGE_BUCKET_NAME = 'localitty'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
@@ -178,12 +187,7 @@ if 'USE_AWS' in os.environ:
 
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-else:
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 WSGI_APPLICATION = 'localitty.wsgi.application'
 
@@ -207,21 +211,20 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 # EMAIL BACKENDS
 
-# if 'DEVELOPMENT' not in os.environ:
-#     EMAIL_HOST = 'smtp.google.com'
-#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#     EMAIL_HOST_PASS = os.environ.get('EMAIL_HOST_PASS')
-#     EMAIL_PORT = 587
-#     EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'order-confirmation@example.com'
+
+# if 'DEVELOPMENT' in os.environ:
 #     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+#     DEFAULT_FROM_EMAIL = 'order-confirmation@example.com'
 # else:
 #     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#     DEFAULT_FROM_EMAIL = 'support@localitty.com'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'support@localitty.com'
-# EMAIL_FILE_PATH = '/checkout/templates/checkout/confirmation-emails'
+#     EMAIL_USE_TLS = True
+#     EMAIL_PORT = 587
+#     EMAIL_HOST = 'smtp.gmailcom'
+#     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+#     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+#     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 # ACCOUNT VERIFICATION
 

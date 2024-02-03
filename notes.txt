@@ -1,8 +1,6 @@
 validation tools
 Fix emails
 
-Edit settings to fix static 
-HOSTING!!!!
 Check static files working on deployed version
 
 Form on edit jobs page
@@ -16,3 +14,6 @@ Jobs posting page
 Edit product page bugs  
     images
     favorites
+
+    remove items from store orders page
+    Edit stripe handler endpoints
