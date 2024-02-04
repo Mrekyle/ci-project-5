@@ -152,7 +152,7 @@ def renderjobsedit(request, job_id):
     job = get_object_or_404(JobPost, pk=job_id)
 
     if request.method == 'POST':
-        form = CreateJobPost(request.POST, request.FILES, instance=job)
+        form = CreateJobPost(request.POST, instance=job)
         if form.is_valid():
             form.save()
             messages.success(
@@ -162,7 +162,7 @@ def renderjobsedit(request, job_id):
             messages.error(request, f'Oops, something has gone wrong. Please try again later. \
                         If the problem persists, please contact support')
     else:
-        form = JobPost()
+        form = CreateJobPost(instance=job)
         messages.info(request, f'You are currently editing, {job.job_name}.')
 
     template = 'home/edit_job.html'

@@ -291,6 +291,7 @@ During the development of the application there were many different bugs along t
 | Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts | Fixed |
 | Image on product edit page not displaying | Not entirely sure what caused this error. But dditing forms.py file seemed to fix the issue. | Fixed |
 | Favourites being shown on the product edit form | Due to all fields being rendered on the form. Edited forms.py to remove that field | Fixed |
+| Job Edit form not displaying | Due to the job post model being used instead of the form inside of the view | Fixed |
 
 ## Project Deployment
 

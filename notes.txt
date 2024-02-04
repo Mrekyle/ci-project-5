@@ -4,6 +4,5 @@ CHECK:
 
 FIX:
 
-    Form on edit jobs page
     Deployed Emails/Sendmail Functions
-    Edit stripe handler endpoints
+    Contact Email 
