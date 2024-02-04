@@ -31,19 +31,29 @@ def rendersupport(request):
     template = 'home/support.html'
 
     if request.method == 'POST':
-        message_name = request.POST.get['message_name']
-        message_email = request.POST.get['message_email']
-        message_select = request.POST.get['select_option']
-        message_body = request.POST.get['message_body']
+        message_name = request.POST.get('message_name')
+        message_email = request.POST.get('message_email')
+        message_select = request.POST.get('select_option')
+        message_body = request.POST.get('message_body')
+        
+        full_message = f"""
+            You have received a message request from {message_name}.
+            They need help with - {message_select}.
+            ------------------------------------
+
+            {message_body}
+
+            ------------------------------------
+            Please reply to {message_email}
+        """
 
         send_mail(
-            message_select,
-            message_body,
-            message_email,
-            ['settings.DEFAULT_FROM_EMAIL', 'settings.EMAIL_HOST_USER']
+            subject=message_select,
+            message=full_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[settings.DEFAULT_FROM_EMAIL]
         )
 
-        print(message_name)
 
         messages.success(request, f'Thank you {message_name} your message sent successfully. \
                         We will get back to you as soon as we can.')

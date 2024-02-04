@@ -32,10 +32,10 @@ class StripeWH_Handler:
             'confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         send_mail(
-            subject,
-            body,
-            settings.DEFAULT_FROM_EMAIL,
-            [custom_email]
+            subject=subject,
+            message=body,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[custom_email]
         )
 
     def handle_event(self, event):

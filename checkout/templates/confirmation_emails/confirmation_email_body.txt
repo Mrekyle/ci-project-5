@@ -11,11 +11,11 @@ Grand Total: £{{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city}}, {{ order.country }}.
 
-Once your order has been dispatched we will send you another email letting you know, so you can get ready for your order.
+Once your order has been dispatched we will send you another email letting you know, so you can get ready to receive your order.
 
-We have your phone number on file as {{ order.phone_number }}
+In case we have a problem with your order and need to get in touch. We have your phone number on file as {{ order.phone_number }}. If this is wrong, please send a support ticket/update your personal information.
 
-If you have any questions regarding this or any other orders. Please feel free to contact us at {{ contact_email }}.
+If you have any questions regarding this or any of your other orders. Please feel free to contact us at {{ contact_email }}.
 
 Thank you for your order!
 
