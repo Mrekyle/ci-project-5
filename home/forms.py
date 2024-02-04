@@ -35,7 +35,7 @@ class CreateJobPost(forms.ModelForm):
             self.fields['job_salary'].widget.attrs.update(
                 {'placeholder': 'Job Salary'})
             self.fields['job_start'].widget.attrs.update(
-                {'placeholder': 'Job Start Date - DD/MM/YYY'})
+                {'placeholder': 'Job Start Date - MM/DD/YYY'})
             if field != 'job_desc':
                 if self.fields[field].required:
                     placeholder = f'{placeholders} *'

@@ -289,8 +289,8 @@ During the development of the application there were many different bugs along t
 | Delivery costs not calculating correctly | Fixed by changing the percentage to be divided by | Fixed |
 | Product category not displaying on product card in store page | Unfixed |
 | Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts | Fixed |
-| Image on product edit page not displaying | Not Identified cause | Unfixed |
-| Favourites being shown on the product edit form | Not Identified Cause | Unfixed | 
+| Image on product edit page not displaying | Not entirely sure what caused this error. But dditing forms.py file seemed to fix the issue. | Fixed |
+| Favourites being shown on the product edit form | Due to all fields being rendered on the form. Edited forms.py to remove that field | Fixed |
 
 ## Project Deployment
 

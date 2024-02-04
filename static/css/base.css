@@ -295,8 +295,8 @@ a.cat-badge > span.badge:hover {
 .app-delete:hover,
 .app-delete:active,
 .app-delete:focus {
-    background: rgb(255, 99, 99);
-    color: black;
+    background: rgb(255, 93, 93);
+    color: whitesmoke;
     border: 1px solid black;
     padding: 3px, 2px, 3px, 2px;
 }
@@ -327,18 +327,17 @@ a.cat-badge > span.badge:hover {
     background: #6c757db4;
 }
 
-.btn-outline-red {
+.btn-add-favorite {
     background: white;
-    color: rgb(0, 0, 0) !important;
-    border: 1.5px solid rgb(0, 0, 0);
+    color: black !important;
+    border: 1.5px solid black;
 }
 
-.btn-outline-red:hover,
-.btn-outline-red:active,
-.btn-outline-red:focus {
-    background: #666666;
-    color: white !important;
-    border: 1.5px solid rgba(255, 79, 79, 0.806)
+.btn-add-favorite:hover,
+.btn-add-favorite:active,
+.btn-add-favorite:focus {
+    color: black;
+    background: #59f2ff;
 }
 
 .btn-outline-black {
@@ -550,7 +549,7 @@ a.cat-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 90px;
+        padding-top: 100px;
     }
 }
 

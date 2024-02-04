@@ -1,15 +1,9 @@
-validation tools
-Fix emails
+CHECK:
 
-Check static files working on deployed version
+    validation tools
 
-Form on edit jobs page
+FIX:
 
-Jobs posting page
-
-Edit product page bugs  
-    images
-    favorites
-
-    remove items from store orders page
+    Form on edit jobs page
+    Deployed Emails/Sendmail Functions
     Edit stripe handler endpoints

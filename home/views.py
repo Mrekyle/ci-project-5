@@ -205,7 +205,7 @@ def renderjob_apply(request):
         form = JobApplication(request.POST, request.FILES)
         if request.method == 'POST':
             job = form.save()
-            messages.success(request, f'Successfully applied for {job.name}.')
+            messages.success(request, f'Successfully applied for {job.job_name}.')
             return redirect(reverse('home'))
         else:
             messages.error(
