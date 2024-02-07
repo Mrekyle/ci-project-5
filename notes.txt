@@ -1,7 +1,3 @@
 CHECK:
 
     validation tools
-
-FIX:
-
-    Deployed Emails
