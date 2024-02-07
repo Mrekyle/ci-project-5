@@ -9,6 +9,7 @@ Link to live Localitty project: [Localitty - CI Project Five - Eccommerce Specia
 2. Features
     - Implemented
     - Future Development
+    - Security Features
 3. Business Plan
     - The plan
     - Media Page
@@ -17,7 +18,7 @@ Link to live Localitty project: [Localitty - CI Project Five - Eccommerce Specia
     - Manual
 6. Bugs
 7. Project Deployment
-8. Sources
+6. Sources
     - Code
     - Colors
     - Images
@@ -71,7 +72,7 @@ Although not all designs are implemented into the live application is leaving ro
 
 </details>
 
-## Future Development
+## Features
 
 ### Implemented
 
@@ -112,6 +113,20 @@ Future features that are in development are
 - Locality Mobile App
 - Job Applicants Status Updates
 - Full Job postings page
+
+</details>
+
+### Secruity
+
+With an online store secruity is one of the highest priotirys beside the functions of the store itself.
+This is to protect the users, protect the store and all its data.
+
+<details>
+<summary>Security Features</summary>
+
+- Django All Auth( Used for Django account creation and secruity )
+- ElephantSQL ( Used to store all the data orom the store, users, orders, products )
+- Heroku ( Secure online website hosting  Through the use of Config vars to connect to ourside sources )
 
 </details>
 

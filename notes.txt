@@ -4,5 +4,4 @@ CHECK:
 
 FIX:
 
-    Deployed Emails/Sendmail Functions
-    Contact Email 
+    Deployed Emails
