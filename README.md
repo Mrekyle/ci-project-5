@@ -6,19 +6,21 @@ Link to live Localitty project: [Localitty - CI Project Five - Eccommerce Specia
 1. The Project
     - Project Goals
     - Initial Design
-2. Features
+2. M.V.P
+3. Features
+    - The Plan
     - Implemented
     - Future Development
     - Security Features
-3. Business Plan
+4. Business Plan
     - The plan
     - Media Page
-4. Technology used
-5. Testing
+5. Technology used
+6. Testing
     - Manual
-6. Bugs
-7. Project Deployment
-6. Sources
+7. Bugs
+8. Project Deployment
+9. Sources
     - Code
     - Colors
     - Images
@@ -59,20 +61,86 @@ The design was intended to be simple and intuitive for the user. To allow them t
 Despite there being other pages on the application that are not included in the initial wireframe design. They all followed the core theme of the application and store. This allowed less going back and forth designing new pages in wireframe's, meaning the development of certain features and pages could commence straight away.
 
 </details>
-
-
+<br>
 <details>
 <summary>Database Diagram</summary>
 <br>
 With the design of the database being a crucial part of the applications core design it was important to get it right. 
 
-Although not all designs are implemented into the live application is leaving room for future development with the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
+Although not all designs are implemented into the live application this is leaving room for future development such as the implementation of 'user product rating and comments' and 'individual supplier stores' to allow them to manage their own products and sell on the platform.
 
 <img alt="Localitty database design" height="250px" width="400px" src="static/media/readme/locality-database.png">
 
 </details>
 
+## M.V.P - Minium Viable Product for launch
+
+Having a basic plan of a minium product that is able to be launched and used as intended is one of the best places to start. As this enables the developer to start the programming side of the product, with a direction to follow and targets to hit as the project grows.
+
+1. Basic Website 
+    - Basic responsive landing pages
+    - Clear intent of the product
+    - Visually Appealing design
+2. Product Pages
+    - Main store page showing the entire range
+    - Product search and filtering options
+    - Product detail pages ( Image, Description, Price )
+    - Add to cart
+    - Quantity Selection buttons
+3. Shopping Cart 
+    - View items in cart
+    - Update quantity/Remove from cart
+    - Proceed to checkout
+4. User Authentication
+    - Allow the user to create a secure account
+    - Allow guest users to checkout securely without creating an account. But give the option at checkout
+5. Checkout 
+    - Input shipping details
+    - Input Billing details 
+    - Order summary and order confirmation 
+    - Secure checkout. Using products such as stripe
+6. Order History
+    - Show the users order history
+7. Notifications
+    - Show confirmation messages to the user
+        - Added item to cart
+        - Updated quantity/cart
+        - Order confirmation
+        - Contact form submitted successfully 
+    - Email notifications
+        - Order confirmation
+        - Account managment options
+        - Support form confirmation
+8. Support
+    - Support forms/support chats 
+9. Security 
+    - Add SSL Certificates
+    - Secure encryption of passwords and billing information
+    - Ensure all users data is securely stored in a protected database
+10. User Feedback 
+    - Give feedback on the products
+    - Give feedback on the store itself
+    - Report any bugs to the site admins
+
 ## Features
+
+### The Plan
+
+Having a plan determined by the M.V.P results in a developer building out a task list. Of features that are essential to the store and others that are not. But will be added at a later stage in the products development cycle.
+
+By using Agile development methods I created a Kanban bored using githubs projects features. This allowed me to keep track of the project as a whole, Features I was working on and any bugs that had arisen that I wasn't able to fix right away.
+
+<details>
+<summary>Kanban Board</summary>
+<br>
+<img alt="Kanban bored of the project" height="300px" src="static/media/readme/kanban.png">
+</details>
+<br>
+<details>
+<summary>Bug Reports</summary>
+<br>
+<img alt="Bug reports on the project" height="300px" src="static/media/readme/bugs.png">
+</details>
 
 ### Implemented
 
@@ -116,9 +184,9 @@ Future features that are in development are
 
 </details>
 
-### Secruity
+### Security
 
-With an online store secruity is one of the highest priotirys beside the functions of the store itself.
+With an online store security is one of the highest priority beside the functions of the store itself.
 This is to protect the users, protect the store and all its data.
 
 <details>
@@ -127,6 +195,7 @@ This is to protect the users, protect the store and all its data.
 - Django All Auth( Used for Django account creation and secruity )
 - ElephantSQL ( Used to store all the data orom the store, users, orders, products )
 - Heroku ( Secure online website hosting  Through the use of Config vars to connect to ourside sources )
+- CSRF Tokens provided by django ( Allow the secure movement of data between the user and the backend of the application )
 
 </details>
 
