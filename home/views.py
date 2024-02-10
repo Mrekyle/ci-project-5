@@ -35,7 +35,7 @@ def rendersupport(request):
         message_email = request.POST.get('message_email')
         message_select = request.POST.get('select_option')
         message_body = request.POST.get('message_body')
-        
+
         full_message = f"""
             You have received a message request from {message_name}.
             They need help with - {message_select}.
@@ -54,11 +54,12 @@ def rendersupport(request):
             recipient_list=[settings.DEFAULT_FROM_EMAIL]
         )
 
-
         messages.success(request, f'Thank you {message_name} your message sent successfully. \
                         We will get back to you as soon as we can.')
         return render(request, template)
     else:
+        messages.error(request, f'Ooos, Somethings gone wrong here. Please check the form and try again. \
+                       If the problem persists please email directly at support@locatlitty.com')
         return render(request, template)
 
 
@@ -215,7 +216,8 @@ def renderjob_apply(request):
         form = JobApplication(request.POST, request.FILES)
         if request.method == 'POST':
             job = form.save()
-            messages.success(request, f'Successfully applied for {job.job_name}.')
+            messages.success(
+                request, f'Successfully applied for {job.job_name}.')
             return redirect(reverse('home'))
         else:
             messages.error(
