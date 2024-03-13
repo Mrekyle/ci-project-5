@@ -1,4 +1,2 @@
 
-HTML validator each page
 Check all functionalitty CRUD functions (job posting, product posting)
-Check for broken links (every single page, footer, remove commented out code)

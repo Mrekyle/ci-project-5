@@ -335,10 +335,10 @@ Testing the html is a vital part of web development, To ensure that all features
 <br>
 
 Deployed application showing no errors on the home page. All pages tested under the same conditions using the same validation tools. All showing the same results with no errors present.
-<br>
-<img alt="Html testing" height="300px" src="static/media/readme/lighthouse.png">
+<br><br>
+<img alt="Html testing" height="300px" src="static/media/readme/no-error.png">
 
-<br>
+<br><br>
 Despite errors being shown in the validation tools. No errors due to html are present. The errors are due to the validation tools not working with the django/python syntax. This can be avoided by using different validation middlewares that are designed to work with django and python. This was the result of testing each page individually inside a validator. Which then contains the django and python code.
 <br>
 <img alt="Html testing Errors" height="300px" src="static/media/readme/html-error.png">
