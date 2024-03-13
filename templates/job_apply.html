@@ -27,7 +27,7 @@
     <div class="container mb-5 mt-3">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <form class="mb-5" action="" method="POST" enctype="multipart/form-data">
+                <form class="mb-5" action="#" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     <fieldset class="rounded px-4 mb-2">
                         <legend class="fieldset-label small text-black px-1 w-auto mb-2">About You:</legend>
@@ -39,9 +39,16 @@
                         <legend class="fieldset-label small text-black px-1 w-auto mb-2">The Job:</legend>
                         {{ form.job | as_crispy_field }}
                         {{ form.cover_letter | as_crispy_field }}
-                        {{ form.resume | as_crispy_field }}
                     </fieldset>
-                    <button type="submit" class="ml-4 btn btn-outline-black rounded-0 mt-2">Apply Now! <i class="fas fa-chevron-right"></i></button>
+                    <div class="row">
+                        <div class="col-6 ml-5">
+                            <input class="form-check-input" name="send-copy" id="sendCopy" type="checkbox">
+                            <label for="sendCopy" class="form-check-label ps-2">Send me a copy</label> 
+                        </div>
+                        <div class="col-6">
+                            <button type="submit" class="ml-4 btn btn-outline-black rounded-0 mt-2">Apply Now! <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
                 </form>
             </div> 
         </div>

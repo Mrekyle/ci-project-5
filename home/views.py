@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
+from datetime import date
 
 from .models import JobPost, JobApp
 from .forms import CreateJobPost, JobApplication
@@ -58,7 +59,7 @@ def rendersupport(request):
                         We will get back to you as soon as we can.')
         return render(request, template)
     else:
-        messages.error(request, f'Ooos, Somethings gone wrong here. Please check the form and try again. \
+        messages.error(request, f'Oops, Somethings gone wrong here. Please check the form and try again. \
                        If the problem persists please email directly at support@locatlitty.com')
         return render(request, template)
 
@@ -216,8 +217,87 @@ def renderjob_apply(request):
         form = JobApplication(request.POST, request.FILES)
         if request.method == 'POST':
             job = form.save()
+
+            """
+                Application success sent to admin
+            """
+
+            app_date = date.today()
+            app_name = form.cleaned_data['name']
+            app_email = form.cleaned_data['email']
+            app_number = form.cleaned_data['phone_number']
+            app_job = form.cleaned_data['job']
+            app_cover_letter = form.cleaned_data['cover_letter']
+            app_subject = f'New application submitted for: {app_job}'
+            send_copy = request.POST.get('send-copy')
+
+            full_message = f"""
+
+            New application submitted for {app_job} on {app_date}
+            ------------------------------------------------------
+            
+            Applicant Details:
+            
+            Name - {app_name}
+            Email - {app_email}
+            Phone Number - {app_number}
+
+            ------------------------------------------------------
+
+            Cover Letter:
+
+            {app_cover_letter}
+
+            """
+
+            send_mail(
+                subject=app_subject,
+                message=full_message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[settings.DEFAULT_FROM_EMAIL]
+            )
+
+            print(app_job)
+
+            if send_copy == 'on':
+                """
+                    Sends a copy of the application back to the applicant
+                    If they select the option
+                """
+
+                applicant_message = f"""
+
+                Thank you for your application. Application submitted for: {app_job} on {app_date}
+                ------------------------------------------------------
+                
+                Your Details:
+                
+                Name - {app_name}
+                Email - {app_email}
+                Phone Number - {app_number}
+
+                ------------------------------------------------------
+
+                Your Cover Letter:
+
+                {app_cover_letter}
+
+                ------------------------------------------------------
+
+                If something doesn't seem right and you wish to change the information you submitted.
+                Or withdraw your application, Please send an email to support@localitty.com.
+
+                """
+
+                send_mail(
+                    subject=app_subject,
+                    message=applicant_message,
+                    from_email=settings.DEFAULT_FROM_EMAIL,
+                    recipient_list=[app_email]
+                )
+
             messages.success(
-                request, f'Successfully applied for {job.job_name}.')
+                request, f'Application successfully submitted for {app_job}. We will get back to you as soon as we have reviewed your application.')
             return redirect(reverse('home'))
         else:
             messages.error(

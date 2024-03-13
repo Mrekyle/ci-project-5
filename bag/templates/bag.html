@@ -91,7 +91,7 @@
                             </tr>
                         {% endfor %}
                         <tr>
-                            <td colspan="6" class="mt-3 text-right">
+                            <td colspan="5" class="mt-3 text-right">
                                 <p><strong>Bag Total: £{{ total_cost|floatformat:2 }}</strong></p>
                                 <p><strong>Delivery Total: £{{ delivery|floatformat:2 }}</strong></p>
                                 <h5 class="mt-2"><strong>Total Cost: £{{ grand_total|floatformat:2 }}</strong></h5>
@@ -155,4 +155,4 @@
 {{ block.super }}
 {% include 'includes/product_quantity.html' %}
 {% include 'includes/bag_update.html' %}
-{% endblock %}å
+{% endblock %}

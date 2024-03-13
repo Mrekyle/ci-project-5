@@ -192,9 +192,9 @@ This is to protect the users, protect the store and all its data.
 <details>
 <summary>Security Features</summary>
 
-- Django All Auth( Used for Django account creation and secruity )
-- ElephantSQL ( Used to store all the data orom the store, users, orders, products )
-- Heroku ( Secure online website hosting  Through the use of Config vars to connect to ourside sources )
+- Django All Auth( Used for Django account creation and security )
+- ElephantSQL ( Used to store all the data from the store, users, orders, products )
+- Heroku ( Secure online website hosting  Through the use of Config vars to connect to outside sources )
 - CSRF Tokens provided by django ( Allow the secure movement of data between the user and the backend of the application )
 
 </details>
@@ -245,7 +245,7 @@ An online presence for a new business is a crucial part of the launch of a new c
 <details>
 <summary>Media Page</summary>
 <br>
-<img alt="Clone the repo" height="300px" src="static/media/readme/locality-media.png">
+<img alt="Localitty facebook media mockup page" height="300px" src="static/media/readme/locality-media.png">
 </details>
 
 ## Technology Used
@@ -277,8 +277,9 @@ During the development of the Project it has been subjected to different testing
 | Change Email | Allows the user to change or update their email | Passed |
 | Jop Application | Allow a user of the application to submit an application for a job | Passed |
 | Job Application Message | Display a message informing the user that the application was submitted successfully | Passed |
+| Job Send copy | Send a copy of the job application to the applicant | Passed |
 | Item Favorites | Allows the user to 'favorite' an item for quick access later on | Passed |
-| Item Remove avorites | Allow the user to remove an item from their favorites | Passed |
+| Item Remove favorites | Allow the user to remove an item from their favorites | Passed |
 | Select Quantity | Allows the user to adjust quantity of items to add to the bag | Passed |
 | Add items to bag | Allow the user to add items from the store to the bag | Passed |
 | Bag items edit | Allow the user to change item quantity and remove items from the shopping bag | Passed |
@@ -312,6 +313,7 @@ During the development of the Project it has been subjected to different testing
 | Job Post Message | Display a message when a job was posted successfully | Passed |
 | Job Edit Message | Display a message when a job was edited successfully | Passed |
 | Job Delete Message | Display a message when a job was Deleted successfully | Passed |
+| Job Application Email | Send an email with the job applicants data to the admin | Passed |
 | Total Store Items | Allows the Admin to see the total number of items in the store | Passed |
 | Total Revenue | Allow the store admins to view the total store revenue | Passed |
 
@@ -320,19 +322,34 @@ During the development of the Project it has been subjected to different testing
 <summary>Lighthouse</summary>
 <br>
 Although only one image is shown of a lighthouse score. The average score across the site is 75 to 80 of total performance
-
-<img alt="Clone the repo" height="300px" src="static/media/readme/lighthouse.png">
+<br>
+<img alt="Lighthouse testing" height="300px" src="static/media/readme/lighthouse.png">
 
 </details>
 <br>
 
+<details>
+<summary>HTML </summary>
+<br>
+Testing the html is a vital part of web development, To ensure that all features and parts of a website function as intended by the developer.
+
+<br>
+<img alt="Html testing" height="300px" src="static/media/readme/lighthouse.png">
+
+<br>
+Despite errors being shown in the validation tools. No errors due to html are present. The errors are due to the validation tools not working with the django/python syntax. This can be avoided by using different validation middlewares that are designed to work with django and python.
+<br>
+<img alt="Html testing Errors" height="300px" src="static/media/readme/html-error.png">
+
+</details>
+<br>
 
 <details>
 <summary>Css Testing</summary>
 <br>
 Despite there being errors in the validation. I believe this is due to the validation service not being updated for newer versions of css.
-
-<img alt="Clone the repo" height="300px" src="static/media/readme/css-validate.png">
+<br><br>
+<img alt="CSS Testing" height="300px" src="static/media/readme/css-validate.png">
 
 </details>
 <br>
@@ -341,8 +358,8 @@ Despite there being errors in the validation. I believe this is due to the valid
 <summary>Javascript Testing</summary>
 <br>
 Despite there being warnings on the JS testing. This is due to missing semi colons and JSON syntax not being recognized. Not causing any code breaking bugs.
-<br>
-<img alt="Clone the repo" height="300px" src="static/media/readme/js-testing.png">
+<br><br>>
+<img alt="JS Testing" height="300px" src="static/media/readme/js-testing.png">
 
 </details>
 <br>
@@ -351,7 +368,13 @@ Despite there being warnings on the JS testing. This is due to missing semi colo
 <summary>Pep8</summary>
 <br>
 
-As far as I am aware there is no real pep8 validation service that I have been able to fine. All the testing I have done for this is in the built in problems tab in VsCode/Gitpd. Not throwing any problems apart from unknown words that I have chosen for class names. Or names through out the project.
+Despite warnings about line length and blank spaces at the end of the lines of code. There are no significant application breaking bugs in any of the python code that is running the application.
+<br><br>
+
+<img alt="Pep8 Showing line to long errors" height="300px" src="static/media/readme/pep81.png">
+<br>
+<img alt="Pep8 Showing no errors in code" height="300px" src="static/media/readme/pep82.png">
+
 
 </details>
 <br>
@@ -374,52 +397,80 @@ During the development of the application there were many different bugs along t
 | Product category not displaying on product card in store page | Unfixed |
 | Delivery Charge not calculating correctly at checkout | Due to total amount not being divided inside of the contexts | Fixed |
 | Image on product edit page not displaying | Not entirely sure what caused this error. But dditing forms.py file seemed to fix the issue. | Fixed |
-| Favourites being shown on the product edit form | Due to all fields being rendered on the form. Edited forms.py to remove that field | Fixed |
+| Favorites being shown on the product edit form | Due to all fields being rendered on the form. Edited forms.py to remove that field | Fixed |
 | Job Edit form not displaying | Due to the job post model being used instead of the form inside of the view | Fixed |
 
 ## Project Deployment
 
 Heroku was used to deploy the application live to the internet. The live Application can be found here.
-<br><br>
+<br>
 [Localitty](https://ci-localitty-e5ac9cc8af68.herokuapp.com/)
 
 <details>
 <summary>Elephant SQL Deployment</summary>
-
+<br>
 The database behind Localitty was done by utilizing the free tier of SQL from ElephantSQL. By following the below steps you can see how the database was created and in the following Heroku deployment steps. You can see how they are linked together to work with each other. 
 
 ### Step One
+
+<br>
+Create a new instance on your user dashboard
+<br>
 
 <img alt="Create the Database" height="300px" src="static/media/readme/sql-1.png">
 
 ### Step Two 
 
+<br>
+Name the instance of for your app and select the plan that is required. That is connected to a certain project. It is recommended that these are similar, so not to get confused.
+<br>
+
 <img alt="Fill Out the information" height="300px" src="static/media/readme/sql-2.png">
 
 </details>
 
+<br>
+
 <details>
 <summary>Heroku Deployment</summary>
-
+<br>
 Heroku is used as a way for developers and companies to deploy and manage their websites with ease. Allowing the easy connection of things such as databases and media storage. 
 
 ### Step One
+<br>
+Click on the create an app button on your heroku dashboard.
+<br>
 
 <img alt="Create The App" height="300px" src="static/media/readme/heroku-1.png">
 
-### Step Two 
+### Step Two
 
-<img alt="Add Config Variables" height="300px" src="static/media/readme/heroku-2.png">
+<br> 
+Name your new application and select a server that is local to you, to improve the speed and reliability of your application.
+<br>
 
-With the use of Config Variables, it is telling the web server where certain locations of things such as databases, media storages, email services etc.. Giving the required information for that service to be used.
+<img alt="Name the app" height="300px" src="static/media/readme/heroku-2.png">
 
-### Step Three 
 
-<img alt="Link to the Github Repo" height="300px" src="static/media/readme/heroku-3.png">
+### Step Three
 
+<br>
 Linking the Heroku app to the Github repo allows for smoother and automatic deployments. Directly from pushing an update to github, the Heroku Service will automatically build a new version and deploy with web app.
+<br>
+
+<img alt="Link to github" height="300px" src="static/media/readme/heroku-3.png">
+
+### Step Four
+
+<br>
+Add config variables to your app. So you are able to control things from inside of the app from an external source. Such as sending emails by connecting to smtp servers. Or a database so you can store information required for features of the app to run.
+<br>
+
+<img alt="Add the config vars" height="300px" src="static/media/readme/heroku-4.png">
 
 </details>
+
+<br>
 
 If you are wanting to take a look at the code and potentially add on your own features to the project you can do so by cloning or forking the repo. By doing this it will allow you to locally develop and add your own features to the app.
 
@@ -427,9 +478,22 @@ If you are wanting to take a look at the code and potentially add on your own fe
 <summary>Clone and Forking</summary>
 <br>
 
-By clicking the clone repo button. You are able to then clone the repo as it is. By clicking the fork button you are able to take the code and add it to your own account where you can develop and push new and improved features to the main application. 
+By clicking the fork button. You are able to then clone the repo as it is and add it as a repo inside of your own github profile. Where you can develop and push new and improved features to the repo on your profile without touching the original project. 
 
-<img alt="Clone the repo" height="300px" src="static/media/readme/forking.png">
+Step 1
+<br>
+<img alt="Clone the repo" height="300px" src="static/media/readme/fork-repo.png">
+
+<br>
+Step 2
+<br>
+<img alt="Clone the repo" height="300px" src="static/media/readme/fork-repo1.png">
+
+<br>
+Alternatively you are able to simply clone the repo straight from the code itself. Without adding it to your own github profile. But when doing this, a warning is required as pushing new code and features to this method will push them to the main repo of the project. This can be avoided by making a new branch of the code.
+
+<br>
+<img alt="Clone the code" height="300px" src="static/media/readme/clone-repo.png">
 
 </details>
 

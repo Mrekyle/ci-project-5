@@ -194,8 +194,8 @@
 {% block postloadjs %}
 {{ block.super }}
 
-<script type="text/javascript" src="{% static 'js/returnTop.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/productSort.js' %}"></script>
+<script src="{% static 'js/returnTop.js' %}"></script>
+<script src="{% static 'js/productSort.js' %}"></script>
 {% include 'includes/product_quantity.html' %}
 
 {% endblock %}

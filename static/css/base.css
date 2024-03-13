@@ -133,6 +133,13 @@ a.cat-badge > span.badge:hover {
     height: 320px;
 }
 
+#mc_embed_signup{
+    background:#fff; 
+    clear: left; 
+    font: 14px Helvetica,Arial,sans-serif; 
+    width: 400px;
+}
+
 /* ROADMAP PAGE */
 
 .phase-list {

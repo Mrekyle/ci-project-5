@@ -11,7 +11,7 @@ def handler404(request, exception):
     return render(request, template, status=404)
 
 
-def handler500(request, exception):
+def handler500(request):
     """ 
         Renders the error 404 page of the application
     """

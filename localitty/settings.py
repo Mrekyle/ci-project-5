@@ -29,12 +29,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if 'DEVELOPMENT' in os.environ:
-    DEBUG = True
-    ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
-else:
-    DEBUG = False
-    ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1']
+
+# if 'DEVELOPMENT' in os.environ:
+#     DEBUG = True
+#     ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
+# else:
+#     DEBUG = False
+#     ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
 
 
 # Application definition
@@ -73,6 +76,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'localitty.urls'
@@ -217,7 +221,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'order-confirmation@example.com'
+    DEFAULT_FROM_EMAIL = 'localitty@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
