@@ -332,7 +332,9 @@ Although only one image is shown of a lighthouse score. The average score across
 <summary>HTML </summary>
 <br>
 Testing the html is a vital part of web development, To ensure that all features and parts of a website function as intended by the developer.
+<br>
 
+Deployed website showing errors. But only due to the django syntax inside of the html file. And the validation tool used not understanding or working with such syntax.
 <br>
 <img alt="Html testing" height="300px" src="static/media/readme/lighthouse.png">
 

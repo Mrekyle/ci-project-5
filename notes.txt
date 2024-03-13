@@ -1,8 +1,4 @@
-Remove middleware from allauth allauth.account.middleware.AccountMiddleware must be added to settings.MIDDLEWARE
 
 HTML validator each page
-Broken readme images
-Job application email to site admin/applicant. Message to applicant 
 Check all functionalitty CRUD functions (job posting, product posting)
 Check for broken links (every single page, footer, remove commented out code)
-Deployment guide for readme
