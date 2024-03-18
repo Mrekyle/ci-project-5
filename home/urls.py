@@ -16,4 +16,5 @@ urlpatterns = [
     path('delete_applicants/<int:app_id>/',
          views.del_applicant, name='del_applicant'),
     path('roadmap/', views.renderroadmap, name='roadmap'),
+    path('coming_soon/', views.comingsoon, name='coming_soon')
 ]

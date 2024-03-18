@@ -227,6 +227,7 @@ As a company it is a priority for us to be a sustainable and environmentally fri
 - Digital Marketing: Utilize social media, SEO, and online advertising to reach and engage the target audience.
 - Partnerships: Collaborate with local food bloggers and community organizations.
 - Customer Loyalty Programs: Reward loyal customers with discounts, exclusive deals, and eventually referral programs.
+- Use a monthly news letter to showcase certain products and new features to the targeted users. 
 
 ### Operation Plan: 
 
@@ -288,11 +289,13 @@ During the development of the Project it has been subjected to different testing
 | Add items to basket message | Display a message when an item is added to the basket | Passed |
 | Remove items from basket message | Display a message when an item is adjusted or removed from basket | Passed |
 | Order confirmation message | Display a message once an order has been completed | Passed |
+| Newsletter sign up | Allow users to sign up to a monthly newsletter about new products and services | Passed |
 | Display message for errors | Display a message if a user cannot access a certain page of the application | Passed |
 | Product Add Message | Display a message when a product is added to the store | Passed |
 | Product Edit Message | Display a message when a product is being edited | Passed |
 | Delete Product Message | Display a message when a product has been deleted | Passed |
 | Error 404 Page | Display an Error 404 page if there is an error on the application | Passed |
+| Error 500 Page | Display an Error 500 page if there is an error on the application | Passed |
 | Secure Checkout | Allows the user to add their billing information securely into the app | Passed
 | Checkout | Allow the user to checkout securely checkout and process the order | Passed |
 | Order Creation | Order is created inside of the database | Passed |

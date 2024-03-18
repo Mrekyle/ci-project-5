@@ -1,2 +1,4 @@
 
-Check all functionalitty CRUD functions (job posting, product posting)
+Check all functionalitty CRUD functions (job posting, product posting, support email, full checkout process)
+
+Check for broken links

@@ -59,8 +59,6 @@ def rendersupport(request):
                         We will get back to you as soon as we can.')
         return render(request, template)
     else:
-        messages.error(request, f'Oops, Somethings gone wrong here. Please check the form and try again. \
-                       If the problem persists please email directly at support@locatlitty.com')
         return render(request, template)
 
 
@@ -371,3 +369,20 @@ def renderroadmap(request):
     template = 'home/roadmap.html'
 
     return render(request, template)
+
+
+def comingsoon(request):
+    """
+        Renders a coming soon message
+    """
+
+    template = ''
+
+    if request.user.is_superuser:
+        messages.info(request,
+                      f'Sorry about that, Nothing seems to be there at the moment. Our team are currently working hard to get this up and running. Please check back soon')
+        return redirect(reverse('admin'))
+    elif request.user:
+        messages.info(request,
+                      f'Sorry about that, Nothing seems to be there at the moment. Our team are currently working hard to get this up and running. Please check back soon')
+        return redirect(reverse('home'))
