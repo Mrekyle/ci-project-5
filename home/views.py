@@ -265,7 +265,10 @@ def renderjob_apply(request):
 
                 applicant_message = f"""
 
-                Thank you for your application. Application submitted for: {app_job} on {app_date}
+                Thank you for your application. Application submitted for: {app_job} on {app_date}.
+
+                Once our team has had a chance to review your application they will get back 
+                to you as soon as they can.
                 ------------------------------------------------------
                 
                 Your Details:

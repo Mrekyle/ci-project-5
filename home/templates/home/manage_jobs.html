@@ -23,6 +23,7 @@
             <div class="col-8">
                 <a href="{% url 'applicants' %}" aria-label="Send the user to job applications" class="btn btn-outline-black offset-md-6 mb-2">Job Applications <i class="fas fa-chevron-right"></i></a>
                 <a href="{% url 'job_post' %}" aria-label="Send the user to the create job page." class="btn btn-outline-black offset-md-6">New Job Post <i class="fas fa-chevron-right"></i></a>
+                <a href="{% url 'jobs' %}" aria-label="Shows the user the current job postings." class="btn btn-outline-black offset-md-6">Current Jobs <i class="fas fa-chevron-right"></i></a>
             </div>
         <hr class="mt-2">
     </div>
@@ -45,7 +46,7 @@
                     <tbody>
                         {% for jobs in paginate %}
                             <tr>
-                                <td><a class="product-hover" href="" aria-label="Opens the job post">{{ jobs.job_name }}</a></td>
+                                <td><a class="product-hover" href="{% url 'coming_soon' %}" aria-label="Coming soon">{{ jobs.job_name }}</a></td>
                                 <td>{{ jobs.job_category.friendly_name }}</td>
                                 <td><strong>£ {{ jobs.job_salary|intcomma }}</strong></td>
                                 <td>{{ jobs.job_start }}</td>

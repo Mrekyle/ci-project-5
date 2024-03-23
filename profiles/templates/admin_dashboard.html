@@ -36,7 +36,7 @@
             <p class="mt-2"><strong>{{ count }}</strong></p>
         </div>
         <div class="col-4 total-revenue">
-            <a href="#" class="total-revenue" aria-label="Does Nothing. Here for future development/linking into finance software">Store Revenue</a>
+            <a href="{% url 'coming_soon' %}" class="total-revenue" aria-label="Does Nothing. Here for future development/linking into finance software">Store Revenue</a>
             <p class="mt-2"><strong>£ {{ grand_total_sum|floatformat:2 }}</strong></p>
         </div>
     </div>
